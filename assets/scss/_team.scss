@@ -1,0 +1,449 @@
+/*----------------------------------------*/
+/*  19. Team CSS
+/*----------------------------------------*/
+
+.team {
+    &__area {
+        background: $creamyellow;
+    }
+    &__shape {
+        & img {
+            position: absolute;
+            &.t-shape-1 {
+                top: 20%;
+                left: 19%;
+                z-index: 1;
+                -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                animation: hero-shape-2 2s linear 0s infinite alternate;
+                @media #{$xxl, $xl} {
+                    left: 13%;
+                }
+                @media #{$lg} {
+                    left: 6%;
+                }
+                @media #{$md, $sm} {
+                    top: 7%;
+                    left: 5%;
+                }
+                @media #{$sm} {
+                    top: 2%;
+                }
+                @media #{$xs} {
+                    top: 1%;
+                    left: 3%;
+                }
+            }
+            &.t-shape-2 {
+                top: 26%;
+                left: 9%;
+                @media #{$xxl, $xl} {
+                    left: 1%;
+                }
+                @media #{$lg} {
+                    left: -5%;
+                }
+                @media #{$md} {
+                    top: 23%;
+                    left: -2%;
+                }
+                @media #{$sm} {
+                    top: 15%;
+                    left: 2%;
+                }
+                @media #{$xs} {
+                    top: 16%;
+                    left: -10%;
+                }
+            }
+            &.t-shape-3 {
+                top: 27%;
+                right: 21%;
+                -webkit-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-5 2s linear 0s infinite alternate;
+                animation: hero-shape-5 2s linear 0s infinite alternate;
+                @media #{$xl} {
+                    right: 19%;
+                }
+                @media #{$lg} {
+                    right: 13%;
+                }
+                @media #{$md, $sm} {
+                    right: 4%;
+                }
+                @media #{$xs} {
+                    top: 16%;
+                    right: 2%;
+                }
+            }
+            &.t-shape-4 {
+                top: 17%;
+                right: 14%;
+                @media #{$lg} {
+                    right: 9%;
+                }
+                @media #{$md, $sm, $xs} {
+                    top: 14%;
+                    right: 11%;
+                }
+                @media #{$sm, $xs} {
+                    top: 4%;
+                }
+            }
+        }
+        &-2 {
+            & img {
+                &.t-shape-1 {
+                    top: 7%;
+                }
+                &.t-shape-2 {
+                    top: 13%;
+                }
+                &.t-shape-3 {
+                    top: 14%;
+                }
+                &.t-shape-4 {
+                    top: 8%;
+                }
+            }
+        }
+    }
+    &__heading {
+        p {
+            padding: 0 380px;
+            @media #{$xl} {
+                padding: 0 280px;
+            }
+            @media #{$lg} {
+                padding: 0 180px;
+            }
+            @media #{$md} {
+                padding: 0 80px;
+            }
+            @media #{$sm} {
+                padding: 0 30px;
+            }
+            @media #{$xs} {
+                padding: 0;
+            }
+        }
+        .section {
+            &__title {
+                span {
+                    @media #{$sm} {
+                        display: inline;
+                    }
+                    &::after {
+                        @media #{$sm} {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__thumb {
+        position: relative;
+        text-align: center;
+        img {
+            object-fit: cover;
+            height: 365px;
+            @include border-radius(20px);
+            @media #{$xl} {
+                height: 330px;
+            }
+            @media #{$lg} {
+                height: 280px;
+            }
+        }
+    }
+    &__content {
+        position: relative;
+        padding: 20px 35px 30px 35px;
+        margin: 0 20px;
+        margin-top: -50px;
+        @media #{$xl} {
+            padding: 15px 30px 25px 30px;
+        }
+        @media #{$lg} {
+            padding: 10px 25px 20px 25px;
+            margin: 0 10px;
+            margin-top: -30px;
+        }
+        @media #{$md} {
+            margin: 0 30px;
+            margin-top: -50px;
+        }
+        @media #{$sm, $xs} {
+            margin: 0 70px;
+            margin-top: -50px;
+        }
+        @media #{$xs} {
+            margin: 0 40px;
+            margin-top: -50px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            background: $blue;
+            opacity: 0.8;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            @include border-radius(20px);
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: -13px;
+            background: $blue;
+            opacity: 0.8;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            @include border-radius(20px);
+        }
+    }
+    &__title {
+        color: $white;
+        font-size: 24px;
+        position: relative;
+        z-index: 5;
+        margin-bottom: 5px;
+        &:hover {
+            color: $lightyellow;
+        }
+        @media #{$xl, $md, $sm, $xs} {
+            font-size: 22px;
+        }
+        @media #{$lg} {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+    }
+    &__position {
+        color: $white;
+        position: relative;
+        z-index: 5;
+        @media #{$lg} {
+            font-size: 14px;
+        }
+    }
+    &__details {
+        &-thumb {
+            position: relative;
+            img {
+                object-fit: cover;
+                height: 633px;
+                @include border-radius(20px);
+                @media #{$xl} {
+                    height: 600px;
+                }
+                @media #{$lg} {
+                    height: 500px;
+                }
+                @media #{$md} {
+                    height: 350px;
+                }
+                @media #{$xs} {
+                    height: 500px;
+                }
+            }
+            &-content {
+                position: relative;
+                padding: 25px 40px 25px 40px;
+                margin: 0 80px 0 108px;
+                margin-top: -39px;
+                @media #{$xl} {
+                    padding: 25px 35px 22px 35px;
+                    margin: 0 55px 0 78px;
+                    margin-top: -39px;
+                }
+                @media #{$lg} {
+                    padding: 20px 30px 20px 30px;
+                    margin: 0 45px 0 65px;
+                    margin-top: -30px;
+                }
+                @media #{$md} {
+                    padding: 20px 25px 20px 25px;
+                    margin: 0 25px 0 25px;
+                    margin-top: -20px;
+                }
+                @media #{$sm} {
+                    padding: 25px 35px 25px 35px;
+                }
+                @media #{$xs} {
+                    padding: 20px;
+                    margin: 0 40px 0 45px;
+                    margin-top: -39px;
+                }
+                span {
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    position: relative;
+                    z-index: 2;
+                }
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    background: $blue;
+                    opacity: 0.8;
+                    z-index: 1;
+                    height: 100%;
+                    width: 100%;
+                    @include border-radius(20px);
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: -50px;
+                    top: -37px;
+                    background: $blue;
+                    opacity: 0.8;
+                    z-index: 1;
+                    height: 108px;
+                    width: 405px;
+                    @include border-radius(20px);
+                    @media #{$lg} {
+                        width: 343px;
+                    }
+                    @media #{$md} {
+                        width: 250px;
+                        left: -18px;
+                    }
+                    @media #{$xs} {
+                        left: -29px;
+                        width: 294px;
+                    }
+                }
+            }
+            &-social {
+                position: relative;
+                z-index: 2;
+                margin-top: 42px;
+                @media #{$xl, $lg, $xs} {
+                    margin-top: 35px;
+                }
+                @media #{$md} {
+                    margin-top: 30px;
+                }
+                a {
+                    font-size: 16px;
+                    border: 1px solid $white;
+                    color: $white;
+                    display: inline-block;
+                    width: 38px;
+                    height: 38px;
+                    line-height: 38px;
+                    text-align: center;
+                    @include border-radius(50%);
+                    @media #{$md, $xs} {
+                        font-size: 14px;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    &:hover {
+                        color: $lightyellow;
+                    }
+                    &:not(:last-child) {
+                        margin-right: 28px;
+                        @media #{$xl} {
+                            margin-right: 24px;
+                        }
+                        @media #{$lg, $md} {
+                            margin-right: 10px;
+                        }
+                        @media #{$xs} {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        &-content {
+            @media #{$md} {
+                margin-left: 30px;
+            }
+            @media #{$sm, $xs} {
+                margin-top: 60px;
+            }
+            h2 {
+                font-size: 45px;
+                margin-bottom: 30px;
+                @media #{$lg} {
+                    font-size: 40px;
+                }
+                @media #{$md, $sm} {
+                    font-size: 35px;
+                }
+                @media #{$xs} {
+                    font-size: 30px;
+                }
+            }
+            p {
+                margin-bottom: 25px;
+                padding-right: 75px;
+                @media #{$xl} {
+                    padding-right: 60px;
+                }
+                @media #{$lg, $md, $sm, $xs} {
+                    padding-right: 0;
+                }
+            }
+        }
+        &-counter {
+            margin-top: 60px;
+            &-item {
+                position: relative;
+                &:not(:last-child) {
+                    margin-right: 90px;
+                    @media #{$xs} {
+                        margin-right: 0;
+                        margin-bottom: 40px;
+                    }
+                }
+                h2 {
+                    font-size: 45px;
+                    margin-bottom: 10px;
+                    @media #{$xl} {
+                        font-size: 40px;
+                    }
+                    @media #{$lg, $md, $sm, $xs} {
+                        font-size: 35px;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                    color: $blue;
+                    font-weight: 600;
+                    padding-right: 0;
+                    margin-bottom: 0;
+                    @media #{$lg, $md} {
+                        font-size: 16px;
+                    }
+                }
+                &:not(:last-child) {
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        right: -48px;
+                        height: 100%;
+                        border-right: 1px solid $gray;
+                        @media #{$xs} {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

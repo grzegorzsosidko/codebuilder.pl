@@ -1,0 +1,369 @@
+/*----------------------------------------*/
+/*  05. Services CSS
+/*----------------------------------------*/
+
+.services {
+    &__area {
+        background: $dark;
+    }
+    &__shape {
+        & img {
+            position: absolute;
+            &.services-s-1 {
+                top: 0;
+                right: 11%;
+            }
+            &.services-s-2 {
+                top: 13%;
+                right: 16%;
+                -webkit-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-5 2s linear 0s infinite alternate;
+                animation: hero-shape-5 2s linear 0s infinite alternate;
+                @media #{$md} {
+                    top: 9%;
+                }
+            }
+            &.services-s-3 {
+                top: 39%;
+                right: 0;
+                -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                animation: hero-shape-2 2s linear 0s infinite alternate;
+            }
+        }
+    }
+    &__title {
+        position: relative;
+        .section {
+            &__title {
+                color: $white;
+                span {
+                    &::after {
+                        background: $blue;
+                    }
+                }
+            }
+        }
+    }
+    &__details {
+        @media #{$md, $sm, $xs} {
+            padding-bottom: 260px;
+        }
+        &-shape {
+            & img {
+                position: absolute;
+                &.s-details-s-1 {
+                    top: 4%;
+                    left: 34.5%;
+                    mix-blend-mode: multiply;
+                    z-index: 1;
+                    @media #{$xxl, $xl, $lg} {
+                        left: 29.5%;
+                    }
+                    @media #{$md, $sm, $xs} {
+                        top: 3%;
+                        left: 11%;
+                    }
+                    @media #{$xs} {
+                        top: 2%;
+                    }
+                }
+                &.s-details-s-2 {
+                    top: 34%;
+                    left: 30.5%;
+                    @media #{$xxl, $xl, $lg} {
+                        left: 26.5%;
+                    }
+                    @media #{$md, $sm, $xs} {
+                        top: 19.8%;
+                        left: 4.5%;
+                    }
+                    @media #{$sm, $xs} {
+                        top: 15%;
+                    }
+                }
+                &.s-details-s-3 {
+                    top: 18%;
+                    right: 0;
+                    @media #{$xxl, $xl} {
+                        top: 15%;
+                    }
+                    @media #{$lg} {
+                        top: 11%;
+                    }
+                    @media #{$md} {
+                        top: 8%;
+                    }
+                    @media #{$sm} {
+                        top: 4%;
+                    }
+                    @media #{$xs} {
+                        top: 1%;
+                    }
+                }
+            }
+        }
+        &-thumb {
+            position: relative;
+            img {
+                object-fit: cover;
+                height: 563px;
+                @include border-radius(20px);
+                @media #{$md} {
+                    height: 500px;
+                }
+                @media #{$sm} {
+                    height: 400px;
+                }
+                @media #{$xs} {
+                    height: 350px;
+                }
+            }
+        }
+        &-content {
+            position: relative;
+            h2 {
+                font-size: 45px;
+                margin-bottom: 50px;
+                @media #{$lg, $md, $sm} {
+                    font-size: 38px;
+                }
+                @media #{$xs} {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+            p {
+                padding-right: 65px;
+                margin-bottom: 24px;
+                @media #{$xl, $lg, $md} {
+                    padding-right: 30px;
+                }
+                @media #{$sm, $xs} {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.single {
+    &__bg {
+        background: $sbox;
+        @include border-radius(20px);
+        position: relative;
+        margin-bottom: 30px;
+        @include transition(0.3s);
+        &:hover {
+            background: $sbox-hover;
+            @include transform(translateY(-10px));
+        }
+        &-pink {
+            background: $sbox-pink;
+            &:hover {
+                background: $sbox-pink;
+            }
+        }
+        &-yellow {
+            margin-top: -93px;
+            background: $softyellow;
+            &:hover {
+                background: $softyellow;
+            }
+            @media #{$sm, $xs} {
+                margin-top: 10px;
+            }
+        }
+        &-green {
+            margin-top: -187px;
+            background: $sbox-green;
+            &:hover {
+                background: $sbox-green;
+            }
+            @media #{$md} {
+                margin-top: 0;
+            }
+            @media #{$sm, $xs} {
+                margin-top: 10px;
+            }
+        }
+    }
+    &__service {
+        padding: 65px 70px;
+        @include transition(0.6s);
+        @media #{$xl} {
+            padding: 55px 60px;
+        }
+        @media #{$md} {
+            padding: 40px 45px;
+        }
+        @media #{$xs} {
+            padding: 40px 45px;
+        }
+        &-2 {
+            @media #{$lg} {
+                padding: 30px 35px;
+            }
+        }
+        &-icon {
+            position: relative;
+            margin-bottom: 40px;
+            z-index: 1;
+            & img {
+                margin-left: 10px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                top: 37px;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                background: $blue;
+                @include border-radius(50px);
+                z-index: -1;
+            }
+            &-pink {
+                &::after {
+                    background: $sbox-pink-btn;
+                }
+            }
+            &-yellow {
+                &::after {
+                    background: $lightyellow;
+                }
+            }
+            &-green {
+                &::after {
+                    background: $sbox-green-btn;
+                }
+            }
+        }
+        &-content {
+            h3 {
+                font-size: 24px;
+                color: $white;
+                margin-bottom: 32px;
+            }
+            p {
+                font-family: $poppins;
+                font-weight: normal;
+                color: $white;
+                margin-bottom: 40px;
+            }
+            &-2 {
+                h3 {
+                    color: $dark;
+                    @media #{$lg} {
+                        font-size: 22px;
+                    }
+                }
+                p {
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+.key {
+    &__factors {
+        margin-top: 68px;
+        &-title {
+            margin-bottom: 40px;
+            h3 {
+                font-family: $opensans;
+                font-weight: 700;
+            }
+        }
+        &-content {
+            @media #{$xs} {
+                margin-right: 15px;
+            }
+        }
+        &-icon {
+            margin-right: 30px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                height: 31px;
+                width: 31px;
+                @include border-radius(50%);
+                top: 15px;
+                left: 0;
+                background: $sdcolor;
+                z-index: -1;
+            }
+            i {
+                font-size: 30px;
+                color: $blue;
+                padding-left: 15px;
+            }
+        }
+        &-text {
+            @media #{$xs} {
+                margin-top: 30px;
+            }
+            h5 {
+                font-family: $opensans;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            P {
+                margin-bottom: 0;
+                padding-right: 60px;
+                @media #{$lg} {
+                    padding-right: 20px;
+                }
+                @media #{$md} {
+                    padding-right: 50px;
+                }
+                @media #{$sm} {
+                    padding-right: 10px;
+                }
+                @media #{$xs} {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    &__benefits {
+        &-title {
+            margin-top: 30px;
+            h3 {
+                font-family: $opensans;
+                font-weight: 700;
+                margin-bottom: 34px;
+            }
+        }
+        &-content {
+            margin-bottom: 48px;
+            ul {
+                li {
+                    padding-left: 35px;
+                    margin-bottom: 16px;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "\f061";
+                        font-family: "Font Awesome 6 Free";
+                        font-size: 12px;
+                        font-weight: 900;
+                        color: $white;
+                        text-align: center;
+                        height: 20px;
+                        width: 20px;
+                        top: 5px;
+                        left: 0;
+                        @include border-radius(50%);
+                        background: $gray;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

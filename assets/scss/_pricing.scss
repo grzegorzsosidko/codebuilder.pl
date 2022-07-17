@@ -1,0 +1,322 @@
+/*----------------------------------------*/
+/*  17. Pricing CSS
+/*----------------------------------------*/
+
+.pricing {
+    &__area {
+        background: $dark;
+    }
+    &__shape {
+        & img {
+            position: absolute;
+            &.p-shape-1 {
+                top: 20%;
+                left: 27%;
+                -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                animation: hero-shape-2 2s linear 0s infinite alternate;
+                @media #{$xl} {
+                    left: 21%;
+                }
+                @media #{$lg, $md} {
+                    top: 11%;
+                    left: 14%;
+                }
+                @media #{$sm} {
+                    top: 3%;
+                    left: 9%;
+                }
+                @media #{$xs} {
+                    top: 2%;
+                    left: 14%;
+                }
+            }
+            &.p-shape-2 {
+                top: 27%;
+                right: 23%;
+                -webkit-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-5 2s linear 0s infinite alternate;
+                animation: hero-shape-5 2s linear 0s infinite alternate;
+                @media #{$xl} {
+                    top: 29%;
+                    right: 21%;
+                }
+                @media #{$lg} {
+                    top: 25%;
+                    right: 17%;
+                }
+                @media #{$md} {
+                    top: 21%;
+                    right: 8%;
+                }
+                @media #{$sm} {
+                    top: 15%;
+                    right: 8%;
+                }
+            }
+            &.p-shape-3 {
+                top: 11%;
+                right: 7%;
+                @media #{$xl} {
+                    right: 2%;
+                }
+                @media #{$lg, $md} {
+                    top: 4%;
+                    right: 0;
+                }
+                @media #{$sm} {
+                    top: 2%;
+                    right: -15%;
+                }
+                @media #{$xs} {
+                    top: -3%;
+                    right: -20%;
+                }
+            }
+            &.p-shape-4 {
+                top: 31%;
+                left: 13%;
+                @media #{$xl} {
+                    left: 8%;
+                }
+                @media #{$lg, $md} {
+                    top: 25%;
+                    left: 7%;
+                }
+                @media #{$sm} {
+                    top: 16%;
+                    left: 8%;
+                }
+            }
+            &.p-shape-5 {
+                bottom: 7%;
+                right: 14%;
+                @media #{$xl} {
+                    right: 14%;
+                }
+                @media #{$lg} {
+                    bottom: 6%;
+                    right: 7%;
+                }
+                @media #{$md} {
+                    bottom: 4%;
+                    right: 47%;
+                }
+                @media #{$sm} {
+                    bottom: 3%;
+                    right: 12%;
+                }
+                @media #{$xs} {
+                    bottom: 2%;
+                }
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 50px;
+        position: relative;
+        .section {
+            &__title {
+                color: $white;
+                span {
+                    &::after {
+                        background: $blue;
+                    }
+                }
+            }
+        }
+        P {
+            color: $white;
+            padding: 0 50px;
+            @media #{$xl} {
+                padding: 0;
+            }
+            @media #{$lg} {
+                padding: 0 40px;
+            }
+            @media #{$md, $sm, $xs} {
+                padding: 0;
+            }
+        }
+    }
+    &__nav {
+        display: inline-block;
+        @include border-radius(30px);
+        padding: 8px;
+        background: $blue;
+
+        li {
+            display: inline-block;
+            button {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 15px 40px;
+                line-height: 1;
+                color: $dark;
+                @include border-radius(30px);
+                background: transparent;
+                &.active {
+                    background: $dark;
+                    color: $white;
+                }
+                &:hover {
+                    .nav-link:focus,
+                    &.nav-link:hover {
+                        color: $lightyellow;
+                    }
+                }
+            }
+        }
+    }
+    &__box {
+        background: $sbox;
+        @include border-radius(20px);
+        padding: 40px 70px;
+        position: relative;
+        @include transition(0.3s);
+        @media #{$xl} {
+            padding: 35px 50px;
+        }
+        @media #{$lg, $md} {
+            padding: 30px 40px;
+        }
+        @media #{$xs} {
+            padding: 40px 40px;
+        }
+        &:hover {
+            background: $blue;
+            .pricing {
+                &__amount {
+                    h2 {
+                        color: $dark;
+                    }
+                    &::before {
+                        border-color: $dark;
+                        width: 100%;
+                    }
+                }
+                &__item {
+                    ul {
+                        li {
+                            &::after {
+                                color: $dark;
+                            }
+                        }
+                    }
+                }
+                &__link {
+                    .m-btn {
+                        background: $dark;
+                    }
+                }
+            }
+        }
+        &.active {
+            background: $blue;
+            .pricing {
+                &__amount {
+                    h2 {
+                        color: $dark;
+                    }
+                    &::before {
+                        border-color: $dark;
+                    }
+                }
+                &__item {
+                    ul {
+                        li {
+                            &::after {
+                                color: $dark;
+                            }
+                        }
+                    }
+                }
+                &__link {
+                    .m-btn {
+                        background: $dark;
+                    }
+                }
+            }
+        }
+    }
+    &__header {
+        margin-bottom: 20px;
+        h3 {
+            color: $white;
+            margin-bottom: 8px;
+        }
+        P {
+            color: $white;
+            @media #{$xl} {
+                font-size: 15px;
+            }
+            @media #{$lg, $md} {
+                font-size: 13px;
+            }
+        }
+    }
+    &__amount {
+        position: relative;
+        margin-bottom: 45px;
+        &::before {
+            position: absolute;
+            content: "";
+            right: 0;
+            left: 0;
+            bottom: -30%;
+            border-bottom: 2px solid $blue;
+            width: 30%;
+            @include transition(0.6s);
+        }
+        h2 {
+            font-size: 50px;
+            color: $blue;
+            @media #{$lg} {
+                font-size: 38px;
+            }
+            @media #{$md} {
+                font-size: 45px;
+            }
+            > span {
+                font-size: 16px;
+                color: $white;
+                font-weight: normal;
+                margin-left: 8px;
+                @media #{$lg, $md} {
+                    font-size: 15px;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+    &__item {
+        margin-top: 60px;
+        ul {
+            li {
+                color: $white;
+                font-size: 16px;
+                margin-bottom: 16px;
+                position: relative;
+                padding-left: 30px;
+                @media #{$lg} {
+                    font-size: 15px;
+                }
+                &::after {
+                    position: absolute;
+                    content: "\f00c";
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 18px;
+                    font-weight: 900;
+                    color: $blue;
+                    left: 0;
+                    top: 1px;
+                }
+            }
+        }
+    }
+    &__link {
+        margin-top: 40px;
+    }
+}

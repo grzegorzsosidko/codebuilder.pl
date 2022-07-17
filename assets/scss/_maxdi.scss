@@ -1,0 +1,347 @@
+/*----------------------------------------*/
+/*  14. Maxdi CSS
+/*----------------------------------------*/
+
+.maxdi {
+    &__area {
+        background: $creamyellow;
+    }
+    &__shape {
+        & img {
+            position: absolute;
+            &.m-shape-1 {
+                top: 18%;
+                left: 16%;
+                z-index: 1;
+                -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                animation: hero-shape-2 2s linear 0s infinite alternate;
+                @media #{$xxl} {
+                    left: 8%;
+                }
+                @media #{$xl} {
+                    left: 5%;
+                    top: 22%;
+                }
+                @media #{$lg} {
+                    top: 27%;
+                    left: 10%;
+                }
+                @media #{$md} {
+                    top: 34%;
+                    left: 9%;
+                }
+                @media #{$sm, $xs} {
+                    top: 37%;
+                    left: 6%;
+                }
+            }
+            &.m-shape-2 {
+                top: 24%;
+                left: 8%;
+                @media #{$xxl, $xl} {
+                    left: 5%;
+                }
+                @media #{$lg, $md} {
+                    top: 31%;
+                    left: 6%;
+                }
+                @media #{$md} {
+                    top: 38%;
+                }
+                @media #{$sm, $xs} {
+                    top: 39%;
+                    left: 3%;
+                }
+                @media #{$xs} {
+                    top: 47%;
+                    left: -12%;
+                }
+            }
+            &.m-shape-3 {
+                top: 30%;
+                right: 22%;
+                -webkit-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-5 2s linear 0s infinite alternate;
+                animation: hero-shape-5 2s linear 0s infinite alternate;
+                @media #{$xxl, $xl} {
+                    right: 14%;
+                }
+                @media #{$lg} {
+                    right: 9%;
+                }
+                @media #{$md, $sm, $xs} {
+                    top: 36%;
+                    right: 5%;
+                }
+                @media #{$xs} {
+                    top: 44%;
+                }
+            }
+            &.m-shape-4 {
+                top: 18%;
+                right: 14%;
+                @media #{$xxl, $xl} {
+                    right: 8%;
+                }
+                @media #{$lg, $md, $sm, $xs} {
+                    top: 11%;
+                    right: 6%;
+                }
+            }
+        }
+    }
+    &__title {
+        p {
+            padding: 0 350px;
+            @media #{$xl} {
+                padding: 0 260px;
+            }
+            @media #{$lg} {
+                padding: 0 180px;
+            }
+            @media #{$md} {
+                padding: 0 80px;
+            }
+            @media #{$sm, $xs} {
+                padding: 0;
+            }
+        }
+        .section {
+            &__title {
+                span {
+                    @media #{$md, $sm} {
+                        display: inline;
+                    }
+                    &::after {
+                        @media #{$md, $sm} {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__counter {
+        position: absolute;
+        left: 20%;
+        top: 72%;
+        @media #{$xxl, $xl} {
+            left: 15%;
+        }
+        @media #{$lg} {
+            left: 13%;
+        }
+        @media #{$md} {
+            left: 12%;
+        }
+        @media #{$sm} {
+            left: 7%;
+        }
+        @media #{$xs} {
+            left: 10%;
+            top: 80%;
+        }
+        &-content {
+            position: relative;
+            z-index: 5;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 223px;
+                height: 223px;
+                left: 50%;
+                top: 50%;
+                @include transform(translate(-50%, -50%));
+                @include border-radius(50%);
+                background: $dark;
+                opacity: 0.8;
+                @media #{$md} {
+                    width: 185px;
+                    height: 185px;
+                }
+                @media #{$sm, $xs} {
+                    width: 165px;
+                    height: 165px;
+                }
+            }
+            h2 {
+                font-size: 45px;
+                color: $white;
+                position: relative;
+                z-index: 6;
+                @media #{$md} {
+                    font-size: 38px;
+                    margin-bottom: 3px;
+                }
+                @media #{$sm, $xs} {
+                    font-size: 32px;
+                    margin-bottom: 1px;
+                }
+            }
+            p {
+                font-size: 18px;
+                color: $white;
+                margin-bottom: 0;
+                position: relative;
+                z-index: 6;
+                @media #{$md} {
+                    font-size: 17px;
+                }
+                @media #{$sm, $xs} {
+                    font-size: 15px;
+                }
+            }
+            &-2 {
+                &::before {
+                    background: $blue;
+                    opacity: 0.9;
+                }
+            }
+        }
+        &-2 {
+            left: 73%;
+            top: 67%;
+            @media #{$xxl} {
+                left: 76%;
+            }
+            @media #{$xl} {
+                left: 80%;
+                top: 70%;
+            }
+            @media #{$lg} {
+                left: 81%;
+                top: 77%;
+            }
+            @media #{$md, $sm} {
+                left: 78%;
+            }
+            @media #{$xs} {
+                left: 60%;
+                top: 86%;
+            }
+        }
+    }
+    &__thumb {
+        &-1 {
+            position: relative;
+            margin-left: 209px;
+            @media #{$md} {
+                margin-left: 100px;
+            }
+            @media #{$sm, $xs} {
+                margin-left: 0;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 540px;
+                height: 540px;
+                left: 50%;
+                top: 50%;
+                @include transform(translate(-50%, -50%));
+                @include border-radius(50%);
+                background: $dark;
+                opacity: 0.9;
+                @media #{$xl} {
+                    width: 510px;
+                    height: 510px;
+                }
+                @media #{$lg} {
+                    width: 440px;
+                    height: 440px;
+                    top: 48.5%;
+                }
+                @media #{$md} {
+                    width: 350px;
+                    height: 350px;
+                    top: 45.5%;
+                }
+                @media #{$sm} {
+                    width: 320px;
+                    height: 320px;
+                    top: 43.5%;
+                }
+                @media #{$xs} {
+                    width: 260px;
+                    height: 260px;
+                    top: 39.5%;
+                }
+            }
+            img {
+                position: relative;
+                object-fit: cover;
+                width: 485px;
+                height: auto;
+                @include border-radius(50%);
+                opacity: 0.8;
+            }
+        }
+        &-2 {
+            position: relative;
+            margin-left: -35px;
+            margin-top: 130px;
+            img {
+                position: relative;
+                object-fit: cover;
+                width: 338px;
+                height: auto;
+                @include border-radius(50%);
+                opacity: 0.8;
+                z-index: 2;
+            }
+        }
+        &-3 {
+            position: relative;
+            margin-left: -84px;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 300px;
+                height: 300px;
+                left: 50%;
+                top: 26.5%;
+                @include transform(translate(-50%, -50%));
+                @include border-radius(50%);
+                background: $green;
+                opacity: 0.9;
+                z-index: 1;
+                @media #{$xl} {
+                    width: 280px;
+                    height: 280px;
+                }
+                @media #{$lg} {
+                    width: 240px;
+                    height: 240px;
+                    top: 25.3%;
+                }
+                @media #{$md} {
+                    width: 200px;
+                    height: 200px;
+                    top: 23.5%;
+                }
+                @media #{$sm} {
+                    width: 180px;
+                    height: 180px;
+                    top: 22.5%;
+                }
+                @media #{$xs} {
+                    width: 160px;
+                    height: 160px;
+                    top: 21.5%;
+                }
+            }
+            img {
+                position: relative;
+                object-fit: cover;
+                width: 255px;
+                height: auto;
+                @include border-radius(50%);
+                opacity: 0.8;
+                z-index: 2;
+            }
+        }
+    }
+}

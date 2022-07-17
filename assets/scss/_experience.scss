@@ -1,0 +1,179 @@
+/*----------------------------------------*/
+/*  08. Experience CSS
+/*----------------------------------------*/
+
+.experience {
+    &__area {
+        background: $dark;
+    }
+    &__shape {
+        & img {
+            position: absolute;
+            &.experience-s-1 {
+                top: 20%;
+                right: 42%;
+                -webkit-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-5 2s linear 0s infinite alternate;
+                animation: hero-shape-5 2s linear 0s infinite alternate;
+                @media #{$lg} {
+                    right: 34%;
+                }
+                @media #{$md} {
+                    top: 44%;
+                    right: 34%;
+                }
+                @media #{$sm} {
+                    top: 46%;
+                    right: 11%;
+                }
+                @media #{$xs} {
+                    top: 53%;
+                    right: 7%;
+                }
+            }
+            &.experience-s-2 {
+                top: 19%;
+                right: 12%;
+                -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                animation: hero-shape-2 2s linear 0s infinite alternate;
+                @media #{$xxl, $xl, $lg} {
+                    top: 15%;
+                    right: 5%;
+                }
+                @media #{$md} {
+                    top: 8%;
+                    right: 10%;
+                }
+                @media #{$sm} {
+                    top: 6%;
+                }
+                @media #{$xs} {
+                    top: 4%;
+                }
+            }
+            &.experience-s-3 {
+                bottom: 19%;
+                right: 49%;
+                @media #{$lg} {
+                    bottom: 22%;
+                    right: 52%;
+                }
+            }
+            &.experience-s-4 {
+                bottom: 15%;
+                right: 10%;
+                @media #{$xxl, $xl} {
+                    bottom: 9%;
+                    right: 4%;
+                }
+                @media #{$lg} {
+                    bottom: 11%;
+                    right: 6%;
+                }
+                @media #{$md} {
+                    bottom: 10%;
+                    right: 22%;
+                }
+                @media #{$sm, $xs} {
+                    bottom: 8%;
+                }
+            }
+        }
+    }
+    &__content {
+        @media #{$md, $sm, $xs} {
+            margin-bottom: 60px;
+        }
+        .section {
+            &__sub-title {
+                color: $lightyellow;
+            }
+            &__title {
+                color: $white;
+                span {
+                    &::after {
+                        background: $blue;
+                    }
+                }
+            }
+        }
+        p {
+            color: $white;
+        }
+        .m-btn {
+            &:hover {
+                background: $blue;
+                color: $lightyellow;
+            }
+        }
+    }
+    &__video-btn {
+        @include border-radius(50%);
+        display: inline-block;
+        position: absolute;
+        top: 74%;
+        right: 38%;
+        z-index: 4;
+        &::before {
+            animation-delay: 0.8s;
+        }
+        &::after,
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            @include border-radius(50%);
+            width: 100%;
+            height: 100%;
+            background: $white;
+            animation-name: videoBtn;
+            animation-duration: 1.8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        a {
+            height: 80px;
+            line-height: 80px;
+            width: 80px;
+            background: $white;
+            text-align: center;
+            display: inline-block;
+            @include border-radius(50%);
+            font-size: 25px;
+            color: $blue;
+            position: relative;
+            z-index: 2;
+        }
+        @media #{$md} {
+            top: 81%;
+            right: 64%;
+        }
+        @media #{$sm, $xs} {
+            top: 80%;
+            right: 40%;
+        }
+    }
+    &__thumb {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@keyframes videoBtn {
+    0% {
+        @include transform(scale(1));
+        opacity: 0.6;
+    }
+    50% {
+        @include transform(scale(1.5));
+        opacity: 0.3;
+    }
+    100% {
+        @include transform(scale(2));
+        opacity: 0;
+    }
+}

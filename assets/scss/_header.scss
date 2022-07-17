@@ -1,0 +1,281 @@
+/*----------------------------------------*/
+/*  02. Header CSS
+/*----------------------------------------*/
+
+.header {
+  &__area {
+    @media #{$md, $sm} {
+      padding: 15px 0;
+    }
+    @media #{$xs} {
+      padding: 10px 0;
+    }
+    &.sticky {
+      left: 0;
+      top: 0;
+      width: 100%;
+      margin: auto;
+      position: fixed !important;
+      background: $white;
+      @include box-shadow(0 0 70px 0 rgba(29, 35, 58, 0.12));
+      animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+      -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+      -moz-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+      -o-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+      z-index: 99;
+      & .main-menu-3 {
+        ul {
+          li {
+            a {
+              color: $dark;
+            }
+            &:hover {
+              & > a {
+                color: $blue;
+              }
+            }
+          }
+        }
+        & .header__right {
+          & .m-btn {
+            background: $blue;
+            &:hover {
+              background: $dark;
+            }
+          }
+        }
+      }
+    }
+    &-2 {
+      &.sticky {
+        background: $dark;
+      }
+    }
+  }
+  &__transparent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+  }
+  &__white {
+    & .main-menu {
+      ul {
+        li {
+          a {
+            color: $white;
+          }
+          &:hover {
+            & > a {
+              color: $lightyellow;
+            }
+          }
+          .submenu {
+            li {
+              a {
+                color: $dark;
+              }
+            }
+          }
+        }
+      }
+      & .header__right {
+        & .m-btn {
+          background: $dark;
+        }
+      }
+    }
+  }
+  &__right {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 95px;
+    @media #{$xl}{
+      padding-left: 60px;
+    }
+    @media #{$lg}{
+      padding-left: 25px;
+    }
+    .m-btn {
+      &:hover{
+        color: $lightyellow;
+        background: $blue;
+      }
+    }
+  }
+}
+
+/* main-menu */
+.main-menu {
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+      @include transition(0.3s);
+      a {
+        color: $dark;
+        font-family: $poppins;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 40px 0;
+        display: block;
+        line-height: 1;
+        position: relative;
+        &:hover {
+          color: $blue;
+        }
+      }
+      .submenu {
+        position: absolute;
+        top: 85%;
+        left: 20px;
+        min-width: 220px;
+        background: $white;
+        transition: all 0.3s ease-in-out;
+        text-align: left;
+        @include box-shadow(0 0 50px 0 rgba(29, 35, 58, 0.08));
+        padding: 15px 10px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 99;
+        @include border-radius(10px);
+        @include transition(0.3s);
+        li {
+          display: block;
+          margin: 0;
+          width: 100%;
+          padding: 8px 25px 8px 25px;
+          a {
+            padding: 0px;
+            font-size: 14px;
+            position: relative;
+            display: inline-block;
+            @include transition(0.6s);
+            &::before {
+              content: "";
+              width: 0;
+              height: 1.5px;
+              bottom: 0;
+              position: absolute;
+              left: auto;
+              right: 0;
+              transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+              background: $blue;
+              -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+              -moz-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+              -ms-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+              -o-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+            }
+          }
+          &:hover {
+            a {
+              color: $blue;
+              &::before {
+                width: 100%;
+                left: 0;
+                right: auto;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .submenu {
+          left: 0;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &-2 {
+    ul {
+      li {
+        a {
+          color: $white;
+        }
+        .submenu {
+          background: $sbox;
+        }
+      }
+    }
+  }
+}
+
+/* mobile-menu */
+.mobile-menu.mean-container {
+  clear: both;
+  overflow: hidden;
+}
+
+/* sidebar */
+.sidebar {
+  &__contact {
+    margin-top: 30px;
+    h4 {
+      font-size: 27px;
+      color: $white;
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        font-size: 15px;
+        color: $white;
+        margin-bottom: 15px;
+        list-style: none;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        i {
+          color: $lightblue;
+          vertical-align: middle;
+          width: 25px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  &__social {
+    margin-top: 35px;
+    a {
+      height: 38px;
+      width: 38px;
+      line-height: 38px;
+      text-align: center;
+      font-size: 14px;
+      display: inline-block;
+      margin-right: 10px;
+      background: $sbtn-hover-bg;
+      color: $white;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      @include border-radius(5px);
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 0%;
+        background: $blue;
+        z-index: -1;
+        @include transition(0.3s);
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+        i {
+          color: $lightblue;
+        }
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+/*----------------------------------------*/
+/*  06. Facts CSS
+/*----------------------------------------*/
+
+.facts {
+    &__pb {
+        @media #{$md, $sm, $xs} {
+            padding-bottom: 110px;
+        }
+    }
+    &__thumb {
+        &-shape {
+            & img {
+                position: absolute;
+                &.facts-s-1 {
+                    top: 21%;
+                    left: 16%;
+                    mix-blend-mode: multiply;
+                    @media #{$xxl} {
+                        left: 9%;
+                    }
+                    @media #{$xl} {
+                        left: 5%;
+                    }
+                    @media #{$lg} {
+                        left: 2%;
+                    }
+                    @media #{$md, $sm} {
+                        top: 15%;
+                        left: 10%;
+                    }
+                    @media #{$xs} {
+                        top: 6%;
+                        left: 6%;
+                    }
+                }
+                &.facts-s-2 {
+                    top: 37%;
+                    left: 29%;
+                    mix-blend-mode: multiply;
+                    @media #{$xxl} {
+                        left: 25%;
+                    }
+                    @media #{$xl} {
+                        left: 17%;
+                    }
+                    @media #{$lg} {
+                        left: 15%;
+                    }
+                    @media #{$md, $sm} {
+                        top: 24%;
+                        left: 35%;
+                    }
+                    @media #{$xs} {
+                        top: 21%;
+                        left: 27%;
+                    }
+                }
+                &.facts-s-3 {
+                    top: 20%;
+                    left: 44%;
+                    -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                    -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                    -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                    animation: hero-shape-2 2s linear 0s infinite alternate;
+                    @media #{$lg} {
+                        left: 40%;
+                    }
+                    @media #{$md, $sm} {
+                        top: 12%;
+                        left: 73%;
+                    }
+                    @media #{$sm} {
+                        left: 82%;
+                    }
+                    @media #{$xs} {
+                        top: 4%;
+                        left: 75%;
+                    }
+                }
+                &.facts-s-4 {
+                    bottom: 10%;
+                    left: 33%;
+                    @media #{$lg} {
+                        left: 9%;
+                    }
+                    @media #{$md} {
+                        bottom: 36%;
+                        left: 78%;
+                    }
+                }
+            }
+        }
+        &-image {
+            & img {
+                margin-left: -45px;
+                @media #{$md, $sm, $xs} {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    &__content {
+        padding-left: 120px;
+        &-text {
+            margin-bottom: 60px;
+        }
+        @media #{$lg} {
+            padding-left: 70px;
+        }
+        @media #{$md, $sm, $xs} {
+            padding-left: 0;
+            padding-top: 60px;
+        }
+    }
+    &__counter {
+        &-text {
+            &:not(:last-child) {
+                padding-right: 75px;
+            }
+            h2 {
+                font-size: 45px;
+                margin-bottom: 20px;
+            }
+            h5 {
+                font-size: 18px;
+                margin-bottom: 25px;
+                display: inline-block;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -15px;
+                    width: 100%;
+                    border-bottom: 1px solid $gray;
+                }
+            }
+        }
+    }
+}

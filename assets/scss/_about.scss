@@ -1,0 +1,246 @@
+/*----------------------------------------*/
+/*  04. About CSS
+/*----------------------------------------*/
+
+.about {
+    &__pb {
+        @media #{$md, $sm} {
+            padding-bottom: 245px;
+        }
+        @media #{$xs} {
+            padding-bottom: 20px;
+        }
+    }
+    &__title {
+        position: relative;
+        z-index: 5;
+    }
+    &__thumb {
+        &-shape {
+            & img {
+                position: absolute;
+                z-index: 3;
+                &.about-s-1 {
+                    bottom: 11%;
+                    left: 12%;
+                    -webkit-animation: hero-shape-2 2s linear infinite alternate;
+                    -moz-animation: hero-shape-2 2s linear infinite alternate;
+                    -o-animation: hero-shape-2 2s linear infinite alternate;
+                    animation: hero-shape-2 2s linear infinite alternate;
+                    @media #{$xxl, $xl} {
+                        left: 4%;
+                    }
+                    @media #{$lg} {
+                        left: 3%;
+                    }
+                }
+                &.about-s-2 {
+                    bottom: 19%;
+                    left: 42%;
+                    mix-blend-mode: multiply;
+                    @media #{$xxl, $xl} {
+                        bottom: 18%;
+                        left: 39%;
+                    }
+                    @media #{$lg} {
+                        bottom: 13%;
+                        left: 30%;
+                    }
+                    @media #{$md} {
+                        bottom: 50%;
+                        left: 63%;
+                    }
+                }
+            }
+        }
+        &-image {
+            position: relative;
+            & img {
+                position: relative;
+                object-fit: cover;
+                width: 631px;
+                height: 409px;
+                @include border-radius(150px 20px 20px 20px);
+                @media #{$lg} {
+                    width: 431px;
+                    height: 350px;
+                }
+                @media #{$md, $sm, $xs} {
+                    width: 600px;
+                    height: 370px;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                top: -22px;
+                left: -23px;
+                width: 597px;
+                height: 364px;
+                background: $lightyellow;
+                @include border-radius(171px 41px 41px 41px);
+                @media #{$xl} {
+                    width: 500px;
+                }
+                @media #{$lg} {
+                    width: 397px;
+                    height: 310px;
+                }
+                @media #{$md, $sm, $xs} {
+                    width: 522px;
+                    height: 341px;
+                }
+                @media #{$xs} {
+                    width: 95%;
+                }
+            }
+        }
+    }
+    &__content {
+        margin-top: -24px;
+        @media #{$lg} {
+            margin-top: -30px;
+        }
+        @media #{$md, $sm, $xs} {
+            margin-top: -20px;
+        }
+        & p {
+            margin-bottom: 40px;
+            @media #{$xl} {
+                margin-bottom: 30px;
+            }
+            @media #{$lg} {
+                margin-bottom: 20px;
+            }
+            @media #{$md, $sm, $xs} {
+                margin-top: 50px;
+                margin-bottom: 35px;
+            }
+        }
+        & ul {
+            position: relative;
+            margin-bottom: 20px;
+            & li {
+                padding-left: 37px;
+                position: relative;
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                    @media #{$lg} {
+                        margin-bottom: 12px;
+                    }
+                }
+                &::after {
+                    position: absolute;
+                    content: "\f061";
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 12px;
+                    font-weight: 900;
+                    background: $gray;
+                    color: $white;
+                    @include border-radius(50px);
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    left: 0;
+                    top: 5px;
+                    line-height: 20px;
+                }
+                @media #{$xl, $lg} {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    &__counter {
+        &-bg {
+            position: absolute;
+            right: 16%;
+            bottom: 5%;
+            background: $blue;
+            width: 811px;
+            height: 207px;
+            z-index: 3;
+            @include border-radius(20px 20px 80px 20px);
+            @media #{$xl} {
+                width: 781px;
+                height: 177px;
+            }
+            @media #{$lg} {
+                width: 750px;
+                height: 150px;
+            }
+            @media #{$md, $sm} {
+                bottom: 45px;
+                left: 0;
+                width: 770px;
+                height: 170px;
+            }
+            @media #{$sm} {
+                width: 100%;
+                height: 160px;
+            }
+        }
+        &-content {
+            padding-left: 100px;
+            padding-top: 50px;
+            @media #{$xl} {
+                padding-top: 42px;
+            }
+            @media #{$lg} {
+                padding-left: 90px;
+                padding-top: 35px;
+            }
+            @media #{$md} {
+                padding-left: 92px;
+                padding-top: 39px;
+            }
+            @media #{$sm} {
+                padding-left: 49px;
+                padding-top: 38px;
+            }
+        }
+        &-text {
+            position: relative;
+            &:not(:last-child) {
+                margin-right: 90px;
+                @media #{$sm} {
+                    margin-right: 83px;
+                }
+            }
+            h2 {
+                font-size: 45px;
+                color: $white;
+                @media #{$lg} {
+                    font-size: 40px;
+                    margin-bottom: 4px;
+                }
+                @media #{$md, $sm} {
+                    margin-bottom: 3px;
+                }
+                @media #{$sm} {
+                    font-size: 30px;
+                }
+            }
+            p {
+                font-size: 18px;
+                color: $lightyellow;
+                margin-bottom: 0;
+                @media #{$md, $sm} {
+                    margin-top: 0;
+                }
+                @media #{$sm} {
+                    font-size: 16px;
+                }
+            }
+            &:not(:last-child) {
+                &::before {
+                    position: absolute;
+                    content: "";
+                    right: -48px;
+                    height: 100%;
+                    border-right: 1px solid $white;
+                }
+            }
+        }
+    }
+}

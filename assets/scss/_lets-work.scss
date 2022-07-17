@@ -1,0 +1,95 @@
+/*----------------------------------------*/
+/*  12. Lets-work CSS
+/*----------------------------------------*/
+
+.lets-work {
+    &__area {
+        background: $creamyellow;
+    }
+    &__shape {
+        & img {
+            position: absolute;
+            &.lets-work-shape-1 {
+                bottom: -5.5%;
+                left: 8%;
+                z-index: 2;
+                @media #{$xl, $lg} {
+                    left: 4%;
+                    max-width: 31%;
+                }
+                @media #{$md, $sm} {
+                    left: 2%;
+                    max-width: 35%;
+                }
+                @media #{$sm} {
+                    max-width: 40%;
+                }
+                @media #{$xs} {
+                    left: 0;
+                    bottom: -5.7%;
+                    max-width: 56%;
+                }
+            }
+            &.lets-work-shape-2 {
+                top: -23%;
+                right: 9%;
+                @media #{$xxl, $xl, $lg, $md} {
+                    right: 2%;
+                }
+                @media #{$xl, $lg} {
+                    max-width: 32%;
+                }
+                @media #{$md} {
+                    max-width: 36%;
+                }
+                @media #{$sm, $xs} {
+                    right: 4%;
+                    max-width: 41%;
+                }
+                @media #{$xs} {
+                    top: -21%;
+                    right: 0;
+                    max-width: 57%;
+                }
+            }
+            &.lets-work-shape-3 {
+                top: 21%;
+                left: 20%;
+                @media #{$md} {
+                    top: 16%;
+                    left: 11%;
+                }
+                @media #{$sm} {
+                    top: 9%;
+                    left: 12%;
+                }
+            }
+            &.lets-work-shape-4 {
+                top: 70%;
+                right: 22%;
+                @media #{$sm} {
+                    top: 73%;
+                    right: 15%;
+                }
+            }
+        }
+    }
+    &__title {
+        padding: 0 350px;
+        @media #{$xl} {
+            padding: 0 250px;
+        }
+        @media #{$lg} {
+            padding: 0 250px;
+        }
+        @media #{$md} {
+            padding: 0 150px;
+        }
+        @media #{$sm} {
+            padding: 0 60px;
+        }
+        @media #{$xs} {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,165 @@
+/*----------------------------------------*/
+/*  18. Page-title CSS
+/*----------------------------------------*/
+
+.page__title {
+    &-area {
+        background: $blue;
+    }
+    &-height {
+        min-height: 640px;
+        @media #{$lg, $md, $sm, $xs} {
+            min-height: 540px;
+        }
+    }
+    &-shape {
+        & img {
+            position: absolute;
+            &.page-title-s-1 {
+                top: 24%;
+                left: 37.5%;
+                z-index: 1;
+                @media #{$xxl} {
+                    left: 42%;
+                }
+                @media #{$xl} {
+                    left: 51.5%;
+                }
+            }
+            &.page-title-s-2 {
+                top: 40%;
+                right: 37%;
+                z-index: 2;
+                @media #{$md} {
+                    right: 42%;
+                }
+                @media #{$xs} {
+                    right: 8%;
+                }
+            }
+            &.page-title-s-3 {
+                top: 22%;
+                left: 0;
+                z-index: 1;
+            }
+            &.page-title-s-4 {
+                top: 0;
+                left: 8%;
+                z-index: 1;
+                @media #{$xxl} {
+                    left: 3%;
+                }
+                @media #{$xl} {
+                    left: -5%;
+                }
+                @media #{$lg} {
+                    left: -19%;
+                }
+                @media #{$md} {
+                    left: -15%;
+                }
+                @media #{$sm, $xs} {
+                    top: -2%;
+                    left: -18%;
+                }
+                @media #{$xs} {
+                    left: -40%;
+                    max-width: 115%;
+                }
+            }
+            &.page-title-s-5 {
+                top: 0;
+                left: 0;
+            }
+            &.page-title-s-6 {
+                bottom: 0;
+                left: 21%;
+                @media #{$lg} {
+                    left: 30%;
+                }
+                @media #{$sm, $xs} {
+                    left: 40%;
+                }
+            }
+            &.page-title-s-7 {
+                bottom: 9%;
+                right: 0;
+                @media #{$md, $sm} {
+                    bottom: -10%;
+                }
+                @media #{$sm} {
+                    right: -6%;
+                }
+            }
+        }
+    }
+    &-heading {
+        position: relative;
+        font-size: 60px;
+        margin-bottom: 0;
+        color: $white;
+        z-index: 3;
+        @media #{$xl} {
+            font-size: 50px;
+        }
+        @media #{$lg} {
+            font-size: 45px;
+        }
+        @media #{$md} {
+            font-size: 40px;
+        }
+        @media #{$sm, $xs} {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        @media #{$xs} {
+            font-size: 30px;
+        }
+    }
+}
+
+.breadcrumb {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 3;
+    @media #{$sm, $xs} {
+        justify-content: flex-start;
+    }
+    &-item {
+        &.active {
+            font-family: $poppins;
+            font-size: 20px;
+            font-weight: 500;
+            color: $white;
+            &::before {
+                content: "\f178";
+                font-family: "Font Awesome 6 Free";
+                font-size: 20px;
+                color: $white;
+                padding-right: 10px;
+                font-weight: 900;
+            }
+        }
+        a {
+            font-family: $poppins;
+            font-size: 20px;
+            font-weight: 500;
+            color: $lightyellow;
+            &:hover {
+                color: $dark;
+            }
+        }
+        & + .breadcrumb-item {
+            padding-left: 10px;
+            &::before {
+                content: "\f178";
+                font-family: "Font Awesome 6 Free";
+                font-size: 20px;
+                color: $white;
+                padding-right: 10px;
+                font-weight: 900;
+            }
+        }
+    }
+}

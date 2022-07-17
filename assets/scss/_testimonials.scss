@@ -1,0 +1,186 @@
+/*----------------------------------------*/
+/*  09. Testimonials CSS
+/*----------------------------------------*/
+
+.testimonials {
+    &__area {
+        &::before {
+            position: absolute;
+            content: "";
+            right: 0;
+            left: 0;
+            top: 0;
+            background: $creamyellow;
+            margin: auto;
+            height: 73%;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    &__shape {
+        & img {
+            position: absolute;
+            &.t-shape-1 {
+                top: 20%;
+                left: 19%;
+                z-index: 1;
+                @media #{$xxl, $xl} {
+                    left: 13%;
+                }
+                @media #{$lg} {
+                    left: 12%;
+                }
+                @media #{$md, $sm} {
+                    top: 7%;
+                    left: 5%;
+                }
+            }
+            &.t-shape-2 {
+                top: 26%;
+                left: 9%;
+                @media #{$xxl, $xl} {
+                    left: 1%;
+                }
+                @media #{$lg} {
+                    left: -3%;
+                }
+                @media #{$md, $sm} {
+                    top: 29%;
+                    left: -11%;
+                }
+                @media #{$sm, $xs} {
+                    top: 33%;
+                    left: 2%;
+                }
+                @media #{$xs} {
+                    left: -14%;
+                }
+            }
+            &.t-shape-3 {
+                top: 27%;
+                right: 25%;
+                -webkit-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-5 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-5 2s linear 0s infinite alternate;
+                animation: hero-shape-5 2s linear 0s infinite alternate;
+                @media #{$xl} {
+                    right: 19%;
+                }
+                @media #{$lg} {
+                    right: 13%;
+                }
+                @media #{$md, $sm} {
+                    right: 4%;
+                }
+                @media #{$xs} {
+                    right: 73%;
+                    top: 4%;
+                }
+            }
+            &.t-shape-4 {
+                top: 17%;
+                right: 14%;
+                @media #{$lg} {
+                    right: 9%;
+                }
+                @media #{$md, $sm} {
+                    top: 14%;
+                    right: 11%;
+                }
+                @media #{$xs} {
+                    top: 8%;
+                    right: 11%;
+                }
+            }
+            &.t-shape-5 {
+                bottom: 26%;
+                left: 8%;
+                -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                animation: hero-shape-2 2s linear 0s infinite alternate;
+            }
+        }
+    }
+    &__title {
+        p {
+            padding: 0 380px;
+            @media #{$xl} {
+                padding: 0 280px;
+            }
+            @media #{$lg} {
+                padding: 0 180px;
+            }
+            @media #{$md} {
+                padding: 0 80px;
+            }
+            @media #{$sm} {
+                padding: 0 30px;
+            }
+            @media #{$xs} {
+                padding: 0;
+            }
+        }
+    }
+    &__item {
+        background: $white;
+        @include box-shadow(0 0 50px 0 rgba(29, 35, 58, 0.07));
+        @include border-radius(20px);
+        &-content {
+            padding: 48px 54px;
+            @media #{$lg, $md} {
+                padding: 32px 38px;
+            }
+        }
+    }
+    &__logo {
+        margin-bottom: 50px;
+        @media #{$lg} {
+            margin-bottom: 40px;
+        }
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__client {
+        &-thumb {
+            margin-right: 20px;
+            @media #{$lg, $md} {
+                margin-right: 17px;
+            }
+        }
+        &-text {
+            h4 {
+                color: $blue;
+                font-size: 20px;
+                margin-bottom: 7px;
+                @media #{$lg} {
+                    font-size: 17px;
+                    margin-bottom: 0;
+                }
+                @media #{$md} {
+                    font-size: 18px;
+                    margin-bottom: 4px;
+                }
+            }
+            span {
+                font-size: 14px;
+                @media #{$lg} {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    background: $lightyellow;
+    height: 10px;
+    width: 10px;
+    opacity: 1;
+    &.swiper-pagination-bullet-active {
+        background: $blue;
+        width: 32px;
+        border-radius: 5px;
+    }
+}

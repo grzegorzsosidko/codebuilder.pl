@@ -1,0 +1,57 @@
+/*----------------------------------------*/
+/*  16. Customers CSS
+/*----------------------------------------*/
+
+.customers {
+    &__shape {
+        & img {
+            position: absolute;
+            &.c-s-1 {
+                top: 56%;
+                left: 13%;
+                @media #{$xxl, $xl, $lg, $md} {
+                    top: 78%;
+                    left: 7%;
+                }
+                @media #{$sm} {
+                    top: 69%;
+                    left: 8%;
+                }
+                @media #{$xs} {
+                    top: 73%;
+                    left: 6%;
+                }
+            }
+            &.c-s-2 {
+                top: 44%;
+                right: 14%;
+                @media #{$xxl, $xl, $lg, $md} {
+                    top: 44%;
+                    right: 9%;
+                }
+                @media #{$sm} {
+                    top: 53%;
+                    right: 10%;
+                }
+                @media #{$xs} {
+                    top: 55%;
+                    right: 0;
+                }
+            }
+        }
+    }
+    &__container {
+        margin-top: 70px;
+        padding: 65px 95px;
+        @include border-radius(28px);
+        background: $white;
+        @include box-shadow(0 0 50px 0 rgba(29, 35, 58, 0.1));
+        position: relative;
+        @media #{$lg} {
+            padding: 60px 85px;
+        }
+        @media #{$md, $sm, $xs} {
+            padding: 45px 60px;
+        }
+    }
+}

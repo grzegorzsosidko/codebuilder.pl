@@ -1,0 +1,389 @@
+/*----------------------------------------*/
+/*  15. Project CSS
+/*----------------------------------------*/
+
+.project {
+    &__area {
+        @media #{$xs} {
+            padding-top: 30px;
+        }
+        &-pt{
+            @media #{$md, $sm} {
+                padding-top: 100px;
+            }
+            @media #{$xs} {
+                padding-top: 0;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 578px;
+            left: 0;
+            top: 28.7%;
+            background: $blue;
+            @media #{$xl} {
+                height: 495px;
+                top: 30.9%;
+            }
+            @media #{$lg} {
+                height: 428px;
+                top: 28.8%;
+            }
+            @media #{$md} {
+                height: 426px;
+            }
+            @media #{$sm} {
+                height: 500px;
+                top: 25%;
+            }
+            @media #{$xs} {
+                height: 650px;
+                top: 15%;
+            }
+        }
+        &-2 {
+            &::before {
+                top: 22.15%;
+                @media #{$xl} {
+                    height: 513px;
+                }
+                @media #{$lg} {
+                    height: 422px;
+                }
+                @media #{$md} {
+                    height: 404px;
+                }
+                @media #{$sm} {
+                    top: 20.6%;
+                }
+            }
+        }
+    }
+    &__shape {
+        & img {
+            position: absolute;
+            &.project-s-1 {
+                top: 7%;
+                left: 43%;
+                -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                animation: hero-shape-2 2s linear 0s infinite alternate;
+                @media #{$xxl} {
+                    left: 41%;
+                }
+                @media #{$lg} {
+                    left: 45%;
+                }
+                @media #{$md} {
+                    left: 51%;
+                }
+                @media #{$sm} {
+                    left: 50%;
+                }
+                @media #{$xs} {
+                    top: 1%;
+                    left: 87%;
+                }
+            }
+            &.project-s-2 {
+                bottom: -4%;
+                left: 35%;
+                @media #{$xl} {
+                    bottom: -2%;
+                    left: 26%;
+                }
+                @media #{$lg} {
+                    bottom: -1%;
+                    left: 19%;
+                }
+                @media #{$md} {
+                    bottom: -4%;
+                    left: 25%;
+                }
+                @media #{$sm} {
+                    bottom: -6%;
+                    left: 46%;
+                }
+            }
+            &.project-s-3 {
+                top: 43%;
+                right: 14%;
+                -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
+                -o-animation: hero-shape-2 2s linear 0s infinite alternate;
+                animation: hero-shape-2 2s linear 0s infinite alternate;
+                @media #{$xl} {
+                    top: 40%;
+                    right: 17%;
+                }
+                @media #{$lg} {
+                    top: 38%;
+                }
+                @media #{$md} {
+                    top: 27%;
+                    right: 10%;
+                }
+                @media #{$sm} {
+                    top: 40%;
+                    right: 5%;
+                }
+                @media #{$xs} {
+                    top: 42%;
+                    right: 0;
+                }
+            }
+            &.project-s-4 {
+                top: 51%;
+                right: 7%;
+                opacity: 0.8;
+                z-index: 1;
+                @media #{$xl} {
+                    top: 49%;
+                }
+                @media #{$lg} {
+                    top: 47%;
+                }
+            }
+        }
+        &.contact__shape {
+            img {
+                &.c-s-2 {
+                    bottom: 20%;
+                    @media #{$md} {
+                        left: 17%;
+                    }
+                }
+                &.c-s-3 {
+                    top: 33%;
+                }
+                &.c-s-4 {
+                    top: 7%;
+                    left: 14%;
+                }
+            }
+        }
+    }
+    &__thumb {
+        &-1 {
+            & img {
+                object-fit: cover;
+                height: 735px;
+                width: 508px;
+                @include border-radius(20px 200px 20px 20px);
+                filter: grayscale(100);
+                -webkit-filter: grayscale(100);
+                mix-blend-mode: multiply;
+                @media #{$xl} {
+                    height: 652px;
+                    width: 508px;
+                }
+                @media #{$lg} {
+                    height: 535px;
+                    width: 450px;
+                }
+                @media #{$md} {
+                    height: 500px;
+                }
+                @media #{$sm, $xs} {
+                    height: 335px;
+                    @include border-radius(20px 150px 20px 20px);
+                }
+                @media #{$xs} {
+                    height: 400px;
+                    width: 310px;
+                    margin-top: -30px;
+                }
+            }
+        }
+        &-2 {
+            margin-left: 60px;
+            margin-top: -105px;
+            position: relative;
+            @media #{$md} {
+                margin-top: -100px;
+            }
+            @media #{$sm} {
+                margin-left: 30px;
+                margin-top: -75px;
+            }
+            @media #{$xs} {
+                margin-left: 90px;
+                margin-top: -90px;
+            }
+            & img {
+                object-fit: cover;
+                height: 473px;
+                width: 369px;
+                @include border-radius(175px 20px 20px 20px);
+                @media #{$xl} {
+                    height: 415px;
+                    width: 369px;
+                }
+                @media #{$lg} {
+                    height: 350px;
+                    width: 330px;
+                }
+                @media #{$md} {
+                    height: 262px;
+                    width: 340px;
+                }
+                @media #{$sm, $xs} {
+                    height: 250px;
+                    @include border-radius(130px 20px 20px 20px);
+                }
+                @media #{$xs} {
+                    height: 360px;
+                    width: 280px;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 350px;
+                height: 315px;
+                right: -26%;
+                top: -53px;
+                @include border-radius(175px 20px 20px 20px);
+                background: $green;
+                mix-blend-mode: multiply;
+                z-index: 1;
+                @media #{$lg} {
+                    width: 322px;
+                    height: 265px;
+                    right: -21%;
+                }
+                @media #{$md} {
+                    width: 248px;
+                    height: 203px;
+                    right: -14%;
+                    top: -29px;
+                }
+                @media #{$sm} {
+                    width: 214px;
+                    height: 213px;
+                    @include border-radius(130px 20px 20px 20px);
+                    right: -15%;
+                }
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+        }
+        &-3{
+            @media #{$xl} {
+                &::before{
+                    height: 297px;
+                }
+            }
+            @media #{$lg} {
+                &::before{
+                    height: 271px;
+                }
+            }
+            @media #{$md} {
+                &::before{
+                    height: 225px;
+                }
+            }
+        }
+    }
+    &__wrapper {
+        margin-top: -304px;
+        @media #{$xl} {
+            margin-top: -280px;
+        }
+        @media #{$lg} {
+            margin-top: -240px;
+        }
+        @media #{$sm} {
+            margin-top: 0;
+        }
+        @media #{$xs} {
+            margin-top: 50px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1027px;
+            height: 432px;
+            background: $dark;
+            right: 0;
+            @include border-radius(20px 0 0 132px);
+            @media #{$xxl} {
+                width: 55.3%;
+            }
+            @media #{$xl} {
+                width: 65%;
+                height: 420px;
+            }
+            @media #{$lg} {
+                width: 68%;
+                height: 392px;
+            }
+            @media #{$md} {
+                width: 75%;
+                height: 377px;
+            }
+            @media #{$sm} {
+                width: 100%;
+                height: 386px;
+                @include border-radius(10px 100px 0 0);
+            }
+        }
+    }
+    &__content {
+        padding-top: 87px;
+        position: relative;
+        margin-left: 125px;
+        @media #{$xl} {
+            padding-top: 75px;
+            margin-left: 25px;
+        }
+        @media #{$lg} {
+            padding-top: 60px;
+            margin-left: 115px;
+        }
+        @media #{$md} {
+            padding-top: 59px;
+            margin-left: 110px;
+        }
+        @media #{$sm, $xs} {
+            padding-top: 68px;
+            margin-left: 0;
+        }
+    }
+    &__title {
+        .section {
+            &__sub-title {
+                color: $white;
+            }
+            &__title {
+                color: $white;
+                span {
+                    &::after {
+                        background: $blue;
+                    }
+                }
+            }
+        }
+        &-2{
+            .section {
+                &__sub-title {
+                    color: $blue;
+                }
+            }
+        }
+        p {
+            color: $white;
+        }
+        .m-btn {
+            &:hover {
+                color: $lightyellow;
+                background: $blue;
+            }
+        }
+    }
+}
