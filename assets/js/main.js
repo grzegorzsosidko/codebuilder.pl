@@ -1,10 +1,23 @@
 (function ($) {
-"use strict";
+	"use strict";
 
 	// Meanmenu
 	$('#mobile-menu').meanmenu({
 		meanMenuContainer: '.mobile-menu',
 		meanScreenWidth: "991"
+	});
+
+	/* ----------------------------
+	    Tilt Animation 
+	-------------------------------*/
+	$('.js-tilt').tilt({
+		base: window,
+		reset: true,
+		scale: 1.02,
+		reverse: true,
+		max: 15,
+		perspective: 3e3,
+		speed: 4e3
 	});
 
 	// Mobile Side Menu
@@ -29,12 +42,12 @@
 	});
 
 	// Data-background
-	$("[data-background]").each(function(){
+	$("[data-background]").each(function () {
 		$(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
 	});
 
 	// Preloader
-	var win =  $(window);
+	var win = $(window);
 	win.on('load', function () {
 		$('#pre-loader').delay(350).fadeOut('slow');
 		$('body').delay(350).css({
@@ -54,26 +67,28 @@
 	});
 
 	// Isotop
-	$('.grid').imagesLoaded( function() {
+	$('.grid').imagesLoaded(function () {
 		// init Isotope
 		var $grid = $('.grid').isotope({
-		itemSelector: '.grid-item',
-		percentPosition: true,
-		masonry: {
-			// use outer width of grid-sizer for columnWidth
-			columnWidth: '.grid-item',
-		}
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			masonry: {
+				// use outer width of grid-sizer for columnWidth
+				columnWidth: '.grid-item',
+			}
 		});
-		
+
 		// filter items on button click
-		$('.portfolio__menu').on( 'click', 'button', function() {
+		$('.portfolio__menu').on('click', 'button', function () {
 			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({ filter: filterValue });
+			$grid.isotope({
+				filter: filterValue
+			});
 		});
 	});
 
 	// for menu active class
-	$('.portfolio__menu button').on('click', function(event) {
+	$('.portfolio__menu button').on('click', function (event) {
 		$(this).siblings('.active').removeClass('active');
 		$(this).addClass('active');
 		event.preventDefault();
@@ -82,51 +97,51 @@
 
 	// Testimonial Slider Js
 	var swiper = new Swiper(".testimonials__slider", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+		slidesPerView: 3,
+		spaceBetween: 30,
 		loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
 		breakpoints: {
 			0: {
-			  slidesPerView: 1,
+				slidesPerView: 1,
 			},
 			768: {
-			  slidesPerView: 2,
+				slidesPerView: 2,
 			},
 			992: {
-			  slidesPerView: 3,
+				slidesPerView: 3,
 			},
-		  },
-      });
+		},
+	});
 
 
 	// Brand Slider Js
 	var swiper = new Swiper(".brand__slider", {
-        slidesPerView: 5,
-        spaceBetween: 30,
+		slidesPerView: 5,
+		spaceBetween: 30,
 		loop: true,
 		breakpoints: {
 			0: {
-			  slidesPerView: 2,
-			  spaceBetween: 50,
+				slidesPerView: 2,
+				spaceBetween: 50,
 			},
 			576: {
-			  slidesPerView: 3,
-			  spaceBetween: 50,
+				slidesPerView: 3,
+				spaceBetween: 50,
 			},
 			768: {
-			  slidesPerView: 4,
-			  spaceBetween: 60,
+				slidesPerView: 4,
+				spaceBetween: 60,
 			},
 			992: {
-			  slidesPerView: 4,
+				slidesPerView: 4,
 			},
-		  },
-      });
-	
+		},
+	});
+
 
 	// WOW active
 	new WOW().init();
