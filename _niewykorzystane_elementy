@@ -1,0 +1,467 @@
+        <style>
+            /* Spacing */
+            .section-padding {
+                padding: 120px 0;
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1549px) {
+                .section-padding {
+                    padding: 150px 0;
+                }
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                .section-padding {
+                    padding: 110px 0;
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .section-padding {
+                    padding: 80px 0;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .section-padding {
+                    padding: 60px 0;
+                }
+            }
+
+            @media only screen and (max-width: 479px) {
+                .section-padding {
+                    padding: 60px 0;
+                }
+            }
+
+            .about-two {
+                background-color: #f2f5fb;
+                position: relative;
+            }
+
+            .about-two .btn-style-one {
+                margin-top: 30px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .about-two .btn-style-one {
+                    margin-top: 10px;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .about-two .btn-style-one {
+                    margin-top: 10px;
+                }
+            }
+
+            .about-two-images {
+                display: flex;
+                position: absolute;
+                text-align: right;
+                flex-direction: column;
+                top: -64px;
+                right: 58px;
+            }
+
+            @media only screen and (min-width: 1550px) and (max-width: 1680px) {
+                .about-two-images {
+                    right: 0;
+                }
+            }
+
+            @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+                .about-two-images {
+                    top: 0px;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                .about-two-images {
+                    top: 0;
+                    right: 0px;
+                    width: 66%;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1549px) {
+                .about-two-images {
+                    position: relative;
+                }
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                .about-two-images {
+                    position: relative;
+                    top: 0;
+                    right: 0px;
+                    width: 60%;
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .about-two-images {
+                    top: 0;
+                    position: relative;
+                    right: 0px;
+                    width: 64%;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .about-two-images {
+                    top: 0;
+                    position: relative;
+                    right: 0px;
+                    width: 52%;
+                }
+            }
+
+            @media only screen and (max-width: 575px) {
+                .about-two-images {
+                    width: 100%;
+                }
+            }
+
+            .about-two-images .top {
+                display: flex;
+                margin-bottom: 30px;
+                margin-left: 140px;
+                z-index: 1;
+            }
+
+            @media only screen and (min-width: 1550px) and (max-width: 1680px) {
+                .about-two-images .top {
+                    margin-left: 100px;
+                }
+            }
+
+            @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+                .about-two-images .top {
+                    margin-left: 40px;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                .about-two-images .top {
+                    margin-left: 100px;
+                }
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                .about-two-images .top {
+                    margin-left: 0;
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .about-two-images .top {
+                    margin-left: 0;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .about-two-images .top {
+                    margin-left: 0;
+                }
+            }
+
+            @media only screen and (max-width: 575px) {
+                .about-two-images .top {
+                    width: 100%;
+                    flex-direction: column;
+                }
+            }
+
+            .about-two-images .top img {
+                align-self: flex-end;
+                margin-right: 30px;
+            }
+
+            .about-two-images .top img:last-child {
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+
+            @media only screen and (max-width: 575px) {
+                .about-two-images .top img {
+                    margin-right: 0px;
+                    margin-bottom: 30px;
+                    width: 100%;
+                }
+            }
+
+            .about-two-images .bottom {
+                display: flex;
+                z-index: 1;
+            }
+
+            @media only screen and (min-width: 1550px) and (max-width: 1680px) {
+                .about-two-images .bottom {
+                    margin-left: 0px;
+                }
+            }
+
+            @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+                .about-two-images .bottom {
+                    margin-left: 40px;
+                }
+            }
+
+            @media only screen and (max-width: 575px) {
+                .about-two-images .bottom {
+                    width: 100%;
+                    flex-direction: column;
+                }
+            }
+
+            .about-two-images .bottom img {
+                align-self: flex-start;
+                margin-right: 30px;
+            }
+
+            @media only screen and (max-width: 575px) {
+                .about-two-images .bottom img {
+                    margin-bottom: 30px;
+                    width: 100%;
+                }
+            }
+
+            .about-two-images .bottom img:last-child {
+                margin-right: 0px;
+            }
+
+            @media only screen and (max-width: 575px) {
+                .about-two-images .bottom img:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+
+            .about-two-circle {
+                position: absolute;
+                top: 120px;
+                left: 50px;
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                .about-two-circle {
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .about-two-circle {
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .about-two-circle {
+                    display: none;
+                }
+            }
+
+            /* Section Heading */
+            .section-head .title {
+                font-size: 60px;
+                font-family: "Jost", sans-serif;
+                font-weight: 500;
+                line-height: 1.16;
+                color: #1c1c1c;
+            }
+
+            @media only screen and (max-width: 767px) {
+                .section-head .title {
+                    font-size: 50px;
+                }
+            }
+
+            @media only screen and (max-width: 575px) {
+                .section-head .title {
+                    font-size: 36px;
+                }
+            }
+
+            @media only screen and (max-width: 479px) {
+                .section-head .title {
+                    font-size: 30px;
+                }
+            }
+
+            .section-head .title-two {
+                font-size: 48px;
+                font-family: "Jost", sans-serif;
+                font-weight: 500;
+                line-height: 1.16;
+                color: #1c1c1c;
+            }
+
+            @media only screen and (max-width: 767px) {
+                .section-head .title-two {
+                    font-size: 40px;
+                }
+            }
+
+            @media only screen and (max-width: 575px) {
+                .section-head .title-two {
+                    font-size: 30px;
+                }
+            }
+
+            .section-head .subtitle {
+                font-size: 18px;
+                font-family: "Jost", sans-serif;
+                font-weight: 500;
+                line-height: 1.9;
+                color: #7153d9;
+                text-transform: uppercase;
+                letter-spacing: 8px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                .section-head .subtitle {
+                    font-size: 16px;
+                    letter-spacing: 4px;
+                }
+            }
+
+            .section-head .text {
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #8d8e99;
+                margin-top: 30px;
+                max-width: 510px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .section-head .text {
+                    max-width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .section-head .text {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    max-width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 479px) {
+                .section-head .text {
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+            }
+
+            .section-head .text-two {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #54545f;
+                margin-top: 40px;
+                max-width: 510px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .section-head .text-two {
+                    max-width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .section-head .text-two {
+                    font-size: 16px;
+                    margin-top: 20px;
+                    max-width: 100%;
+                }
+            }
+
+            .section-head.section-title-center {
+                margin-bottom: 90px;
+                margin-top: -5px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .section-head.section-title-center {
+                    margin-bottom: 80px;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .section-head.section-title-center {
+                    margin-bottom: 60px;
+                }
+            }
+
+            @media only screen and (max-width: 479px) {
+                .section-head.section-title-center {
+                    margin-bottom: 60px;
+                }
+            }
+
+            .section-head.section-title-center .text {
+                max-width: 648px;
+            }
+        </style>
+
+        <div class="section-padding about-two" style="padding: 250px 0 210px 0">
+            <div class="container">
+                <div class="row align-items-center mb-n30">
+                    <div class="col-xxl-5 col-lg-4 col-12 mb-30">
+                        <div class="about-content">
+
+                            <div class="section-head">
+                                <div class="about__title mb-80">
+                                    <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s">
+                                        About Us
+                                    </h4>
+                                    <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
+                                        <span>We are here</span>
+                                        product look more elegant
+                                        and stylish
+                                    </h2>
+                                </div>
+                                <div class="d-none d-md-block">
+                                    <a class="m-btn" href="contact.html">Get A Quote</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-lg-8 col-12 mb-30">
+                        <div class="about-two-images">
+
+                            <div class="top">
+                                <img class="js-tilt"
+                                    src="https://ethemestudio.com/demo/egens/assets/images/about/about-2-1.png"
+                                    alt="About-Image"
+                                    style="will-change: transform; transition: all 4000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s; transform: perspective(3000px) rotateX(0deg) rotateY(0deg);">
+                                <img class="js-tilt"
+                                    src="https://ethemestudio.com/demo/egens/assets/images/about/about-2-2.png"
+                                    alt="About-Image">
+                            </div>
+
+                            <div class="bottom">
+                                <img class="js-tilt"
+                                    src="https://ethemestudio.com/demo/egens/assets/images/about/about-2-3.png"
+                                    alt="About-Image">
+                                <img class="js-tilt"
+                                    src="https://ethemestudio.com/demo/egens/assets/images/about/about-2-4.png"
+                                    alt="About-Image">
+                            </div>
+
+                            <div class="about-two-circle wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".1s"
+                                style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.1s; animation-name: zoomIn;">
+                                <img src="https://ethemestudio.com/demo/egens/assets/images/about/shape-three.png"
+                                    alt="CircleShape">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

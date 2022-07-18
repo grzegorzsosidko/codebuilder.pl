@@ -2388,8 +2388,8 @@ textarea {
   }
 }
 .facts__thumb-shape img.facts-s-3 {
-  top: 20%;
-  left: 44%;
+  top: 18%;
+  left: 45.8%;
   -webkit-animation: hero-shape-2 2s linear 0s infinite alternate;
   -moz-animation: hero-shape-2 2s linear 0s infinite alternate;
   -o-animation: hero-shape-2 2s linear 0s infinite alternate;
@@ -3778,8 +3778,8 @@ textarea {
 .faq__thumb-image img {
   position: relative;
   object-fit: cover;
-  width: 564px;
-  height: 366px;
+  /* width: 564px;
+  height: 466px; */
   border-radius: 150px 20px 20px 20px;
   -webkit-border-radius: 150px 20px 20px 20px;
   -moz-border-radius: 150px 20px 20px 20px;
@@ -5385,7 +5385,7 @@ textarea {
   }
 }
 .footer__widget-phone {
-  margin-bottom: 53px;
+  margin-bottom: 23px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .footer__widget-phone {
