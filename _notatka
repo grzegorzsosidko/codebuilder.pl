@@ -4,13 +4,16 @@
 
 : ====================================================================================================================================== :
 
+
     ZŁOŻYĆ PODANIE NA STUDIA
     ROZESŁAĆ ZAPYTANIE OFERTOWE DO ZNAJOMYCH I WSPÓŁPRACOWNIKÓW
     PRZYGOTOWAĆ WYCENĘ I ROZLICZENIE DLA POLBIONICA.pl (nowa strona Internetowa)
     ROZPISKA DLA GREENMAX (Rozliczyć dot. robotę)
     WYSŁAĆ ZAPYTANIE PREZENTUJĄCE MNIE, DO DAMIANA (Project menager)
 
+
 : ====================================================================================================================================== :
+
 
     Atrybuty do wykonania przed rozpoczęciem projektu: 
 
@@ -20,7 +23,9 @@
         4. Przygotowanie tekstów do treści strony Internetowej
         5. Zebranie informacji nt. działalności Adama, jego umiejętności, zakresu działań
 
+
 : ====================================================================================================================================== : 
+
 
     Struktura strony Internetowej: codebuilder.pl
 
@@ -179,8 +184,10 @@
 
 : ====================================================================================================================================== :
 
+
     <body class="content cardsContainer" id="cards-container" oncontextmenu="window.event.returnValue=false;">
     <script language="JavaScript"> document.onkeypress=function(n){if(123==(n=n||window.event).keyCode)return!1},document.onmousedown=function(n){if(123==(n=n||window.event).keyCode)return!1},document.onkeydown=function(n){if(123==(n=n||window.event).keyCode)return!1}; </script>'
+
 
         • Projektowanie i rozwój bezpieczeństwa sieci (PKWiU 62.01.12.0) - 8,5%
         • Projektowanie i rozwój oprogramowania (62.01.11.0) - 12%
