@@ -82,7 +82,7 @@
                                     <li><a href="services.html">Services</a>
                                         <ul class="submenu">
                                             <li><a href="services.html">Services</a></li>
-                                            <li><a href="services-details.html">Services Details</a></li>
+                                            <li><a href="###">Services Details</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="portfolio.html">Portfolio</a>
@@ -105,11 +105,43 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </header>
     <!-- header end -->
 
 
+    <style>
+        #scrollBarTop {
+            border-radius: 0 10px 10px 0;
+            background-color: #75dab4;
+            width: 0;
+            height: 1px;
+            position: fixed;
+            top: 94.1px;
+            z-index: 1000302;
+            transition: width 0.3s ease-in-out;
+        }
+    </style>
+
+    <div id="scrollBarTop"></div>
+
+    <script>
+        const ProgressOnScroll = () => {
+            const d = document;
+            const win = window;
+            win.addEventListener('scroll', () => {
+                const scroll = d.getElementById("scrollBarTop"),
+                    w = d.documentElement.scrollTop,
+                    h = d.body.scrollHeight,
+                    width = Math.ceil(w / (h - win.innerHeight) * 100);
+
+                scroll.style.width = `${width}%`;
+            });
+        };
+
+        ProgressOnScroll();
+    </script>
 
     <!-- mobile menu sidebar start -->
     <div class="fix">
@@ -385,6 +417,18 @@
                     alt="">
             </div>
 
+            <div class="hero__shape">
+                <img class="hero-shape-1 wow zoomIn" data-wow-delay=".8s"
+                    src="assets/images/shape/hero/hero-shape-1.png" alt=""
+                    style="visibility: visible; animation-delay: 0.8s; animation-name: zoomIn;">
+                <img class="hero-shape-2 d-none d-md-block" src="assets/images/shape/hero/hero-shape-2.png" alt="">
+                <img class="hero-shape-3" src="assets/images/shape/hero/hero-shape-3.png" alt="">
+                <img class="hero-shape-4 d-none d-sm-block" src="assets/images/shape/hero/hero-shape-4.png" alt="">
+                <img class="hero-shape-5 d-none d-sm-block" src="assets/images/shape/hero/hero-shape-5.png" alt="">
+                <img class="hero-shape-6 d-none d-xl-block" src="assets/images/shape/hero/hero-shape-6.png" alt="">
+                <!-- <img class="hero-shape-7 d-none d-sm-block" src="assets/images/shape/hero/hero-shape-7.png" alt=""> -->
+            </div>
+
             <div class="container">
                 <div class="row align-items-center justify-content-center justify-content-md-start">
                     <!-- Welcome content Area -->
@@ -393,9 +437,7 @@
                             <h1 class="welcome-content--l3__sub-title aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="500" data-aos-once="true">Get Started</h1>
                             <h1 class="welcome-content--l3__title aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="500" data-aos-delay="300" data-aos-once="true">Make More Time <br
-                                    class="d-none d-xs-block"> For The Work That <br class="d-none d-xs-block"> Matters
-                                Most</h1>
+                                data-aos-duration="500" data-aos-delay="300" data-aos-once="true">Zwiększamy Twoje <br class="d-none d-xs-block"> zasięgi w Internecie </h1>
                             <p class="welcome-content--l3__descriptions aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="500" data-aos-delay="400" data-aos-once="true">When, while lovely
                                 valley teems with vapour around
@@ -458,9 +500,138 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        <!-- 
+
+        <style>
+            .me-3 {
+                margin-right: 1rem !important
+            }
+
+            .fs-sm {
+                font-size: 0.875rem !important
+            }
+        </style>
+
+        <section class="about__area fix p-relative pt-50 pb-0 about__pb">
+            <div class="container pt-75 pb-0">
+                <div class="row">
+
+                    <div class="col-lg-12 overflow-hidden">
+                        <div class="row">
+                            <div class="col-sm-3 mb-lg-3 mb-3 pb-lg-2">
+                                <div class="d-flex align-items-center">
+                                    <img class="me-3"
+                                        src="https://createx.createx.studio/assets/img/seo-agency/home/awards/01.png"
+                                        alt="Clutch" width="75">
+                                    <div>
+                                        <p class="mb-0 fs-sm">Top SEO Companies 2020 by Clutch</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 mb-lg-3 mb-3 pb-lg-2">
+                                <div class="d-flex align-items-center">
+                                    <img class="me-3"
+                                        src="https://createx.createx.studio/assets/img/seo-agency/home/awards/02.png"
+                                        alt="UpCity" width="75">
+                                    <div>
+                                        <p class="mb-0 fs-sm">Top Digital Marketing Agency 2019 by UpCity</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 mb-lg-3 mb-3 pb-lg-2">
+                                <div class="d-flex align-items-center">
+                                    <img class="me-3"
+                                        src="https://createx.createx.studio/assets/img/seo-agency/home/awards/03.png"
+                                        alt="Forbes Agency Council" width="75">
+                                    <div>
+                                        <p class="mb-0 fs-sm">Official Member 2020 by Forbes Agency Council</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 mb-lg-3 mb-3 pb-lg-2">
+                                <div class="d-flex align-items-center">
+                                    <img class="me-3"
+                                        src="https://createx.createx.studio/assets/img/seo-agency/home/awards/04.png"
+                                        alt="Top Developers" width="75">
+                                    <div>
+                                        <p class="mb-0 fs-sm">Top SEO Companies 2020 by Top Developers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+
+        <!-- 
+        <div class="pt-150">
+            <div class="container">
+                
+                <div class="row">                        
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single__bg single__bg-green">
+                            <div class="single__service single__service-2">
+                                <div class="single__service-icon single__service-icon-pink">
+                                    <img src="assets/images/icon/s2-icon-1.png" alt="icon">
+                                </div>
+                                <div class="single__service-content single__service-content-2">
+                                    <h3>UI/UX Design</h3>
+                                    <p>Beautiful and Influential websites &amp; apps that are mobile friendly quick to load and help drive sales giving you a solid presence online.</p>
+                                </div>
+                                <div class="single__service-link">
+                                    <a href="services-details.html" class="s-btn s-btn-pink">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                            
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single__bg single__bg-yellow">
+                            <div class="single__service single__service-2">
+                                <div class="single__service-icon single__service-icon-yellow">
+                                    <img src="assets/images/icon/s2-icon-2.png" alt="icon">
+                                </div>
+                                <div class="single__service-content single__service-content-2">
+                                    <h3>Web Development</h3>
+                                    <p>Beautiful and Influential websites &amp; apps that are mobile friendly quick to load and help drive sales giving you a solid presence online.</p>
+                                </div>
+                                <div class="single__service-link">
+                                    <a href="services-details.html" class="s-btn s-btn-yellow">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                            
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single__bg single__bg-pink">
+                            <div class="single__service single__service-2">
+                                <div class="single__service-icon single__service-icon-green">
+                                    <img src="assets/images/icon/s2-icon-3.png" alt="icon">
+                                </div>
+                                <div class="single__service-content single__service-content-2">
+                                    <h3>App Development</h3>
+                                    <p>Beautiful and Influential websites &amp; apps that are mobile friendly quick to load and help drive sales giving you a solid presence online.</p>
+                                </div>
+                                <div class="single__service-link">
+                                    <a href="services-details.html" class="s-btn s-btn-green">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
         <!-- https://www.devsnews.com/template/neeha/neeha/index.html -->
-
-
 
         <!-- <style>
             /* CUSTOM CLASSES */
@@ -2293,7 +2464,7 @@
                                         <p>Beautiful and Influential websites &amp; apps that are mobile friendly quick to load and help drive sales giving you a solid presence online.</p>
                                     </div>
                                     <div class="single__service-link">
-                                        <a href="services-details.html" class="s-btn s-btn-pink">Find out more</a>
+                                        <a href="###" class="s-btn s-btn-pink">Find out more</a>
                                     </div>
                                 </div>
                             </div>
@@ -2309,7 +2480,7 @@
                                         <p>Beautiful and Influential websites &amp; apps that are mobile friendly quick to load and help drive sales giving you a solid presence online.</p>
                                     </div>
                                     <div class="single__service-link">
-                                        <a href="services-details.html" class="s-btn s-btn-yellow">Find out more</a>
+                                        <a href="###" class="s-btn s-btn-yellow">Find out more</a>
                                     </div>
                                 </div>
                             </div>
@@ -2325,7 +2496,7 @@
                                         <p>Beautiful and Influential websites &amp; apps that are mobile friendly quick to load and help drive sales giving you a solid presence online.</p>
                                     </div>
                                     <div class="single__service-link">
-                                        <a href="services-details.html" class="s-btn s-btn-green">Find out more</a>
+                                        <a href="###" class="s-btn s-btn-green">Find out more</a>
                                     </div>
                                 </div>
                             </div>
@@ -2386,8 +2557,39 @@
         </section> -->
         <!-- hero area end -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- about area start -->
-        <section class="about__area fix p-relative pt-120 pb-120 about__pb">
+        <section class="about__area fix p-relative pt-60 pb-120 about__pb">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-10">
@@ -2448,15 +2650,6 @@
         </section>
         <!-- about area end -->
 
-
-
-
-
-
-
-
-
-
         <!-- services area start -->
         <section class="services__area p-relative fix mt-75 pt-120 pb-90">
             <div class="services__shape">
@@ -2491,7 +2684,7 @@
                                         and help drive sales giving you a solid presence online.</p>
                                 </div>
                                 <div class="single__service-link">
-                                    <a href="services-details.html" class="s-btn">Find out more</a>
+                                    <a href="###" class="s-btn">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -2508,7 +2701,7 @@
                                         and help drive sales giving you a solid presence online.</p>
                                 </div>
                                 <div class="single__service-link">
-                                    <a href="services-details.html" class="s-btn">Find out more</a>
+                                    <a href="###" class="s-btn">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -2525,7 +2718,7 @@
                                         and help drive sales giving you a solid presence online.</p>
                                 </div>
                                 <div class="single__service-link">
-                                    <a href="services-details.html" class="s-btn">Find out more</a>
+                                    <a href="###" class="s-btn">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -2542,7 +2735,7 @@
                                         and help drive sales giving you a solid presence online.</p>
                                 </div>
                                 <div class="single__service-link">
-                                    <a href="services-details.html" class="s-btn">Find out more</a>
+                                    <a href="###" class="s-btn">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -2559,7 +2752,7 @@
                                         and help drive sales giving you a solid presence online.</p>
                                 </div>
                                 <div class="single__service-link">
-                                    <a href="services-details.html" class="s-btn">Find out more</a>
+                                    <a href="###" class="s-btn">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -2576,7 +2769,7 @@
                                         and help drive sales giving you a solid presence online.</p>
                                 </div>
                                 <div class="single__service-link">
-                                    <a href="services-details.html" class="s-btn">Find out more</a>
+                                    <a href="###" class="s-btn">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -2604,7 +2797,8 @@
                             </div>
 
                             <div class="facts__thumb-image">
-                                <img src="_zdjęcia/img-20.png" alt="Code Builder">
+                                <img src="https://alimasha.net/template/maxdi/assets/images/facts/facts-img.png"
+                                    alt="Code Builder">
                             </div>
 
                         </div>
@@ -2765,7 +2959,6 @@
         </section>
         <!-- portfolio area end -->
 
-
         <style>
             .grad {
                 background-image: linear-gradient(180deg, #fffef2, #fff) !important;
@@ -2918,28 +3111,42 @@
         </section>
 
         <!-- experience area start -->
-        <!-- <section class="experience__area fix p-relative pt-120 pb-120">
+        <section class="experience__area fix p-relative pt-120 pb-120">
             <div class="experience__shape">
-                <img class="experience-s-1" src="assets/images/shape/experience/experience-s-1.png" alt="Code Builder">
-                <img class="experience-s-2" src="assets/images/shape/experience/experience-s-2.png" alt="Code Builder">
+                <img class="experience-s-1" src="assets/images/shape/experience/experience-s-1.png" alt="">
+                <img class="experience-s-2" src="assets/images/shape/experience/experience-s-2.png" alt="">
                 <img class="experience-s-3 d-none d-lg-block" src="assets/images/shape/experience/experience-s-3.png"
-                    alt="Code Builder">
-                <img class="experience-s-4" src="assets/images/shape/experience/experience-s-4.png" alt="Code Builder">
+                    alt="">
+                <img class="experience-s-4" src="assets/images/shape/experience/experience-s-4.png" alt="">
             </div>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-5 col-lg-6 col-md-9 col-sm-10">
                         <div class="experience__content">
-                            <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s">
+
+                            <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                                 25 Years Of Experience
                             </h4>
-                            <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
+
+                            <h2 class="section__title wow fadeInUp" data-wow-delay=".3s"
+                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
                                 <span>Ready to get our</span>
                                 digital services?
                             </h2>
-                            <p class="wow fadeInUp" data-wow-delay=".4s">That's not on the roadmap losing these latest
-                                prospects is like putting socks on an octopus to give you a heads-up.</p>
-                            <a href="contact.html" class="m-btn mt-35 wow fadeInUp" data-wow-delay=".6s">Start a
+
+                            <p class="wow fadeInUp" data-wow-delay=".4s"
+                                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">That's not
+                                on the roadmap losing these latest prospects is like putting socks on an octopus to give
+                                you a heads-up.</p>
+
+                            <p class="wow fadeInUp" data-wow-delay=".4s"
+                                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">That's not
+                                on the roadmap losing these latest prospects is like putting socks on an octopus to give
+                                you a heads-up.</p>
+
+                            <a href="contact.html" class="m-btn mt-35 wow fadeInUp" data-wow-delay=".6s"
+                                style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Start a
                                 Project</a>
                         </div>
                     </div>
@@ -2949,12 +3156,12 @@
                                     class="fas fa-play"></i></a>
                         </div>
                         <div class="experience__thumb text-end">
-                            <img src="assets/images/experience/experience-img.png" alt="Code Builder">
+                            <img src="_zdjęcia/img-11.png" style="max-width: 65%;" alt="Code Builder">
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- experience area end -->
 
@@ -4947,11 +5154,11 @@
                             </div>
                             <div class="footer__widget-link">
                                 <ul>
-                                    <li><a href="services-details.html">Strony Internetowe</a></li>
-                                    <li><a href="services-details.html">Aplikacje webowe</a></li>
-                                    <li><a href="services-details.html">Sklepy Internetowe</a></li>
-                                    <li><a href="services-details.html">Grafika komputerowa</a></li>
-                                    <li><a href="services-details.html">Reklama Internetowa</a></li>
+                                    <li><a href="###">Strony Internetowe</a></li>
+                                    <li><a href="###">Aplikacje webowe</a></li>
+                                    <li><a href="###">Sklepy Internetowe</a></li>
+                                    <li><a href="###">Grafika komputerowa</a></li>
+                                    <li><a href="###">Reklama Internetowa</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -4963,11 +5170,11 @@
                             </div>
                             <div class="footer__widget-link">
                                 <ul>
-                                    <li><a href="services-details.html">O firmie</a></li>
-                                    <li><a href="services-details.html">Portfolio</a></li>
-                                    <li><a href="services-details.html">Kalkulator</a></li>
-                                    <li><a href="services-details.html">Kontakt</a></li>
-                                    <li><a href="services-details.html">Faqs</a></li>
+                                    <li><a href="###">O firmie</a></li>
+                                    <li><a href="###">Portfolio</a></li>
+                                    <li><a href="###">Kalkulator</a></li>
+                                    <li><a href="###">Kontakt</a></li>
+                                    <li><a href="###">Faqs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -5014,6 +5221,48 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/tilt.jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var text = ["Wróć do mnie ...", "... mam coś dla Ciebie!"];
+            var pageTitle = $("title").text();
+            var inicon = "img/favicon.png";
+            var sadicon = "img/favicon.png";
+            var counter = 0;
+            var stop = 0;
+            var intervaltime = 1000;
+
+            function change() {
+                if (stop == 1) {
+                    clearInterval(inst);
+                } else {
+                    $("title").text(text[counter]);
+                    counter++;
+                    if (counter >= text.length) {
+                        counter = 0;
+                    }
+                }
+            }
+
+            // Change page title on blur
+            $(window).blur(function () {
+                stop = 0;
+                var inst = setInterval(change, intervaltime);
+                $("#favicon").attr("href", sadicon);
+            });
+
+            // Change page title back on focus
+            $(window).focus(function () {
+                inst = null;
+                stop = 1;
+                $("#favicon").attr("href", inicon);
+                $("title").text(pageTitle);
+
+            });
+        });
+    </script>
 
 </body>
 
