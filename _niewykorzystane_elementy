@@ -465,3 +465,1953 @@
                 </div>
             </div>
         </div>
+
+
+
+
+        <!-- experience area end -->
+
+        <!-- 
+
+        <style>
+
+            .clients .brands:hover img {
+                -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            .clients .brands:hover .link {
+                opacity: 1 !important;
+                -webkit-transition: all 0;
+                -o-transition: all 0;
+                transition: all 0;
+            }
+
+            .clients .brands:hover .char {
+                -webkit-animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
+                animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
+                -webkit-animation-delay: calc(20ms * var(--char-index));
+                animation-delay: calc(20ms * var(--char-index));
+            }
+
+            .clients .brands .item {
+                text-align: center;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 10px;
+                height: 160px;
+                line-height: 160px;
+            }
+
+            .clients .brands .img {
+                position: relative;
+            }
+
+            .clients .brands .img img {
+                -webkit-transition: all .4s;
+                -o-transition: all .4s;
+                transition: all .4s;
+                max-width: 75px;
+                margin: auto;
+            }
+
+            .clients .brands .img .link {
+                font-size: 13px;
+                width: -webkit-max-content;
+                width: -moz-max-content;
+                width: max-content;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                opacity: 0;
+                -webkit-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+            }
+
+            .clients .bord .item {
+                margin-bottom: 30px;
+            }
+
+            .clients-brand .brands:hover .img {
+                -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            .clients-brand .brands:hover .link {
+                opacity: 1 !important;
+                -webkit-transition: all 0;
+                -o-transition: all 0;
+                transition: all 0;
+            }
+
+            .clients-brand .brands:hover .char {
+                -webkit-animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
+                animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
+                -webkit-animation-delay: calc(20ms * var(--char-index));
+                animation-delay: calc(20ms * var(--char-index));
+            }
+
+            .clients-brand .item {
+                position: relative;
+                text-align: center;
+            }
+
+            .clients-brand .item .link {
+                font-size: 16px;
+                width: -webkit-max-content;
+                width: -moz-max-content;
+                width: max-content;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                opacity: 0;
+                -webkit-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+            }
+
+            .clients-brand .img {
+                max-width: 85px;
+                margin: auto;
+                position: relative;
+                -webkit-transition: all .4s;
+                -o-transition: all .4s;
+                transition: all .4s;
+            }
+
+            .clients-brand .item a {
+                width: 80px;
+                opacity: .5;
+            }
+
+            .clients-brand .item a:hover {
+                opacity: 1;
+            }
+
+            /* ====================== [ Start Heading ] ====================== */
+
+            .sec-head {
+                position: relative;
+                margin: 0 auto 80px;
+            }
+
+            .sec-head h6 {
+                color: #75dab4;
+                font-weight: 300;
+                font-size: 17px;
+                text-transform: uppercase;
+                letter-spacing: 14px;
+                margin-bottom: 5px;
+            }
+
+            .sec-head h3 {
+                font-size: 80px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                text-shadow: 0 8px rgba(255, 255, 255, 0.05);
+            }
+
+            .sec-head .tbg {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 10vw;
+                font-weight: 700;
+                color: transparent;
+                -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+                opacity: .3;
+            }
+
+            .sec-head.tr-head {
+                text-align: right;
+                margin-bottom: 0;
+            }
+
+            .sec-head.tr-head .tbg {
+                text-align: left;
+            }
+
+            .sub-title {
+                position: relative;
+                padding-left: 20px;
+                margin-bottom: 20px;
+            }
+
+            .sub-title h6 {
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+
+            .sub-title span {
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: #75dab4;
+                position: absolute;
+                left: 6px;
+                bottom: 5px;
+            }
+
+            .sub-title span:first-of-type {
+                bottom: 11px;
+            }
+
+            .sub-title span:last-of-type {
+                left: 0px;
+            }
+            
+        </style>
+
+        <section class="clients section-padding" style="background-color: #0c0f16;">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-4 valign">
+                        <div class="section-head">
+                            <div class="about__title">
+                                <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s">
+                                    About Us
+                                </h4>
+                                <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
+                                    <span>We are here</span> product look more elegant
+                                </h2>
+                            </div>
+                            <div class="d-none d-md-block">
+                                <a class="m-btn" href="contact.html">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+
+                        TODO: pgwkancelaria.pl - strona WWW
+                        TODO: ARiMR - jako platforma 
+                        
+                        Intranet w Fabryka Okularów
+                        siis.com.pl
+                        time-couter.pl
+                        eMagazyn - magazyn sprzętu IT
+
+                        GreenDesk
+                        GreenOffert
+                        
+                            TODO: GreenWat.eu x
+                            TODO: KamilDemczuk.pl x
+                            TODO: AirOn24.com x
+
+                            TODO: eKP - platforma do Kart Pacjenta x
+                            TODO: KrajowyRejestrDofinansowań.pl  x
+                            TODO: System Rezerwaacji Badań Doktor Marchewka x
+
+                        Stowarzyszenie miłośników pałącu w Tarnogórze
+                        
+                        TODO: 20 sklepów Adama:
+                            
+                            Podrzucam sklepy, zobacz czy można coś z tego wybrać :)
+
+                                https://chalona.de/de/
+                                https://topduft24.de
+                                https://fishing-poliwka.de
+                                https://me-print.de/de/
+                                https://maxii-dekor.de/de/
+                                https://wolleundgarne.de/de/
+                                https://zileomed.de
+                                https://jowa-moebel.de
+                                https://putzduo-shop.de
+                                https://duo-life24.de
+                                https://polnische-delikatessen.de/de
+                                https://sweetbaby-shop.de/de/
+                                https://agis-naturshop.de/de/
+                                https://highandsafe.pl
+                                https://paddlestore.pl/pl/
+                                https://kajciasz.pl
+
+                        TODO: I jeszcze w trakcie realizacji, końcówka:
+
+                                https://polnische-spezialitaeten24.de
+                                https://gumowski-print.de
+                                https://ftz-terrassendach.de/shop/F
+
+                        -->
+        
+        <!--
+
+                    <div class="col-lg-8 text-white">
+                        <div>
+                            <div class="row bord">
+
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/5.png"
+                                                alt="logo5">
+                                            <a href="https://greenmax.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="greenmax.pl" style="--word-index: 0;"><span class="char"
+                                                        data-char="g" style="--char-index: 0;">g</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 1;">r</span><span class="char"
+                                                        data-char="e" style="--char-index: 2;">e</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 3;">e</span><span class="char"
+                                                        data-char="n" style="--char-index: 4;">n</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 5;">m</span><span class="char"
+                                                        data-char="a" style="--char-index: 6;">a</span><span
+                                                        class="char" data-char="x"
+                                                        style="--char-index: 7;">x</span><span class="char"
+                                                        data-char="." style="--char-index: 8;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 9;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 10;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/6.png"
+                                                alt="logo6">
+                                            <a href="https://psso.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 7;"><span class="word"
+                                                    data-word="psso.pl" style="--word-index: 0;"><span class="char"
+                                                        data-char="p" style="--char-index: 0;">p</span><span
+                                                        class="char" data-char="s"
+                                                        style="--char-index: 1;">s</span><span class="char"
+                                                        data-char="s" style="--char-index: 2;">s</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 3;">o</span><span class="char"
+                                                        data-char="." style="--char-index: 4;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 5;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 6;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".8s"
+                                        style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/7.png"
+                                                alt="logo7">
+                                            <a href="https://revindi.expert" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 14;"><span class="word"
+                                                    data-word="revindi.expert" style="--word-index: 0;"><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 0;">r</span><span class="char"
+                                                        data-char="e" style="--char-index: 1;">e</span><span
+                                                        class="char" data-char="v"
+                                                        style="--char-index: 2;">v</span><span class="char"
+                                                        data-char="i" style="--char-index: 3;">i</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 4;">n</span><span class="char"
+                                                        data-char="d" style="--char-index: 5;">d</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 6;">i</span><span class="char"
+                                                        data-char="." style="--char-index: 7;">.</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 8;">e</span><span class="char"
+                                                        data-char="x" style="--char-index: 9;">x</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 10;">p</span><span class="char"
+                                                        data-char="e" style="--char-index: 11;">e</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 12;">r</span><span class="char"
+                                                        data-char="t" style="--char-index: 13;">t</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/2.png"
+                                                alt="logo2">
+                                            <a href="https://sii.com.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 10;"><span class="word"
+                                                    data-word="sii.com.pl" style="--word-index: 0;"><span class="char"
+                                                        data-char="s" style="--char-index: 0;">s</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 1;">i</span><span class="char"
+                                                        data-char="i" style="--char-index: 2;">i</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 3;">.</span><span class="char"
+                                                        data-char="c" style="--char-index: 4;">c</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 5;">o</span><span class="char"
+                                                        data-char="m" style="--char-index: 6;">m</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 7;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 8;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 9;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".4s"
+                                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/8.png"
+                                                alt="logo8">
+                                            <a href="https://zo.com.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 9;"><span class="word"
+                                                    data-word="zo.com.pl" style="--word-index: 0;"><span class="char"
+                                                        data-char="z" style="--char-index: 0;">z</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 1;">o</span><span class="char"
+                                                        data-char="." style="--char-index: 2;">.</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 3;">c</span><span class="char"
+                                                        data-char="o" style="--char-index: 4;">o</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 5;">m</span><span class="char"
+                                                        data-char="." style="--char-index: 6;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 7;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 8;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".7s"
+                                        style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/9.png"
+                                                alt="logo9">
+                                            <a href="https://okolandoptyk.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 15;"><span class="word"
+                                                    data-word="okolandoptyk.pl" style="--word-index: 0;"><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 0;">o</span><span class="char"
+                                                        data-char="k" style="--char-index: 1;">k</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 2;">o</span><span class="char"
+                                                        data-char="l" style="--char-index: 3;">l</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 4;">a</span><span class="char"
+                                                        data-char="n" style="--char-index: 5;">n</span><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 6;">d</span><span class="char"
+                                                        data-char="o" style="--char-index: 7;">o</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 8;">p</span><span class="char"
+                                                        data-char="t" style="--char-index: 9;">t</span><span
+                                                        class="char" data-char="y"
+                                                        style="--char-index: 10;">y</span><span class="char"
+                                                        data-char="k" style="--char-index: 11;">k</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 12;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 13;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 14;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".5s"
+                                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/12.png"
+                                                alt="logo12">
+                                            <a href="https://fizjom.info" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="fizjom.info" style="--word-index: 0;"><span class="char"
+                                                        data-char="f" style="--char-index: 0;">f</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 1;">i</span><span class="char"
+                                                        data-char="z" style="--char-index: 2;">z</span><span
+                                                        class="char" data-char="j"
+                                                        style="--char-index: 3;">j</span><span class="char"
+                                                        data-char="o" style="--char-index: 4;">o</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 5;">m</span><span class="char"
+                                                        data-char="." style="--char-index: 6;">.</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 7;">i</span><span class="char"
+                                                        data-char="n" style="--char-index: 8;">n</span><span
+                                                        class="char" data-char="f"
+                                                        style="--char-index: 9;">f</span><span class="char"
+                                                        data-char="o" style="--char-index: 10;">o</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/10.png"
+                                                alt="logo10">
+                                            <a href="https://warszawa-bus.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 15;"><span class="word"
+                                                    data-word="warszawa-bus.pl" style="--word-index: 0;"><span
+                                                        class="char" data-char="w"
+                                                        style="--char-index: 0;">w</span><span class="char"
+                                                        data-char="a" style="--char-index: 1;">a</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 2;">r</span><span class="char"
+                                                        data-char="s" style="--char-index: 3;">s</span><span
+                                                        class="char" data-char="z"
+                                                        style="--char-index: 4;">z</span><span class="char"
+                                                        data-char="a" style="--char-index: 5;">a</span><span
+                                                        class="char" data-char="w"
+                                                        style="--char-index: 6;">w</span><span class="char"
+                                                        data-char="a" style="--char-index: 7;">a</span><span
+                                                        class="char" data-char="-"
+                                                        style="--char-index: 8;">-</span><span class="char"
+                                                        data-char="b" style="--char-index: 9;">b</span><span
+                                                        class="char" data-char="u"
+                                                        style="--char-index: 10;">u</span><span class="char"
+                                                        data-char="s" style="--char-index: 11;">s</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 12;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 13;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 14;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 text-white">
+                        <div>
+                            <div class="row bord">
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/1.png"
+                                                alt="logo1">
+                                            <a href="http://piko.edu.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="piko.edu.pl" style="--word-index: 0;"><span class="char"
+                                                        data-char="p" style="--char-index: 0;">p</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 1;">i</span><span class="char"
+                                                        data-char="k" style="--char-index: 2;">k</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 3;">o</span><span class="char"
+                                                        data-char="." style="--char-index: 4;">.</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 5;">e</span><span class="char"
+                                                        data-char="d" style="--char-index: 6;">d</span><span
+                                                        class="char" data-char="u"
+                                                        style="--char-index: 7;">u</span><span class="char"
+                                                        data-char="." style="--char-index: 8;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 9;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 10;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/14.png"
+                                                alt="logo14">
+                                            <a href="https://dezynfekcja.sii.com.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 22;"><span class="word"
+                                                    data-word="dezynfekcja.sii.com.pl" style="--word-index: 0;"><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 0;">d</span><span class="char"
+                                                        data-char="e" style="--char-index: 1;">e</span><span
+                                                        class="char" data-char="z"
+                                                        style="--char-index: 2;">z</span><span class="char"
+                                                        data-char="y" style="--char-index: 3;">y</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 4;">n</span><span class="char"
+                                                        data-char="f" style="--char-index: 5;">f</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 6;">e</span><span class="char"
+                                                        data-char="k" style="--char-index: 7;">k</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 8;">c</span><span class="char"
+                                                        data-char="j" style="--char-index: 9;">j</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 10;">a</span><span class="char"
+                                                        data-char="." style="--char-index: 11;">.</span><span
+                                                        class="char" data-char="s"
+                                                        style="--char-index: 12;">s</span><span class="char"
+                                                        data-char="i" style="--char-index: 13;">i</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 14;">i</span><span class="char"
+                                                        data-char="." style="--char-index: 15;">.</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 16;">c</span><span class="char"
+                                                        data-char="o" style="--char-index: 17;">o</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 18;">m</span><span class="char"
+                                                        data-char="." style="--char-index: 19;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 20;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 21;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/13.png"
+                                                alt="logo13">
+                                            <a href="https://monicure.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="monicure.pl" style="--word-index: 0;"><span class="char"
+                                                        data-char="m" style="--char-index: 0;">m</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 1;">o</span><span class="char"
+                                                        data-char="n" style="--char-index: 2;">n</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 3;">i</span><span class="char"
+                                                        data-char="c" style="--char-index: 4;">c</span><span
+                                                        class="char" data-char="u"
+                                                        style="--char-index: 5;">u</span><span class="char"
+                                                        data-char="r" style="--char-index: 6;">r</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 7;">e</span><span class="char"
+                                                        data-char="." style="--char-index: 8;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 9;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 10;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/11.png"
+                                                alt="logo11">
+                                            <a href="https://doktormarchewka.com" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 19;"><span class="word"
+                                                    data-word="doktormarchewka.com" style="--word-index: 0;"><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 0;">d</span><span class="char"
+                                                        data-char="o" style="--char-index: 1;">o</span><span
+                                                        class="char" data-char="k"
+                                                        style="--char-index: 2;">k</span><span class="char"
+                                                        data-char="t" style="--char-index: 3;">t</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 4;">o</span><span class="char"
+                                                        data-char="r" style="--char-index: 5;">r</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 6;">m</span><span class="char"
+                                                        data-char="a" style="--char-index: 7;">a</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 8;">r</span><span class="char"
+                                                        data-char="c" style="--char-index: 9;">c</span><span
+                                                        class="char" data-char="h"
+                                                        style="--char-index: 10;">h</span><span class="char"
+                                                        data-char="e" style="--char-index: 11;">e</span><span
+                                                        class="char" data-char="w"
+                                                        style="--char-index: 12;">w</span><span class="char"
+                                                        data-char="k" style="--char-index: 13;">k</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 14;">a</span><span class="char"
+                                                        data-char="." style="--char-index: 15;">.</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 16;">c</span><span class="char"
+                                                        data-char="o" style="--char-index: 17;">o</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 18;">m</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".8s"
+                                        style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/3.png"
+                                                alt="logo3">
+                                            <a href="https://palacowaprzystan.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 19;"><span class="word"
+                                                    data-word="palacowaprzystan.pl" style="--word-index: 0;"><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 0;">p</span><span class="char"
+                                                        data-char="a" style="--char-index: 1;">a</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 2;">l</span><span class="char"
+                                                        data-char="a" style="--char-index: 3;">a</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 4;">c</span><span class="char"
+                                                        data-char="o" style="--char-index: 5;">o</span><span
+                                                        class="char" data-char="w"
+                                                        style="--char-index: 6;">w</span><span class="char"
+                                                        data-char="a" style="--char-index: 7;">a</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 8;">p</span><span class="char"
+                                                        data-char="r" style="--char-index: 9;">r</span><span
+                                                        class="char" data-char="z"
+                                                        style="--char-index: 10;">z</span><span class="char"
+                                                        data-char="y" style="--char-index: 11;">y</span><span
+                                                        class="char" data-char="s"
+                                                        style="--char-index: 12;">s</span><span class="char"
+                                                        data-char="t" style="--char-index: 13;">t</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 14;">a</span><span class="char"
+                                                        data-char="n" style="--char-index: 15;">n</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 16;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 17;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 18;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/4.png"
+                                                alt="logo4">
+                                            <a href="https://dekontaminacja.info" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 19;"><span class="word"
+                                                    data-word="dekontaminacja.info" style="--word-index: 0;"><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 0;">d</span><span class="char"
+                                                        data-char="e" style="--char-index: 1;">e</span><span
+                                                        class="char" data-char="k"
+                                                        style="--char-index: 2;">k</span><span class="char"
+                                                        data-char="o" style="--char-index: 3;">o</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 4;">n</span><span class="char"
+                                                        data-char="t" style="--char-index: 5;">t</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 6;">a</span><span class="char"
+                                                        data-char="m" style="--char-index: 7;">m</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 8;">i</span><span class="char"
+                                                        data-char="n" style="--char-index: 9;">n</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 10;">a</span><span class="char"
+                                                        data-char="c" style="--char-index: 11;">c</span><span
+                                                        class="char" data-char="j"
+                                                        style="--char-index: 12;">j</span><span class="char"
+                                                        data-char="a" style="--char-index: 13;">a</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 14;">.</span><span class="char"
+                                                        data-char="i" style="--char-index: 15;">i</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 16;">n</span><span class="char"
+                                                        data-char="f" style="--char-index: 17;">f</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 18;">o</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row bord">
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/16.png"
+                                                alt="logo1">
+                                            <a href="https://krajowyrejestrdofinansowan.pl/"
+                                                class="link words chars splitting" data-splitting="" target="_BLANK"
+                                                style="line-height: 20px !important; padding-top: 60px; --word-total: 2; --char-total: 29;"><span
+                                                    class="word" data-word="KrajowyRejestr"
+                                                    style="--word-index: 0;"><span class="char" data-char="K"
+                                                        style="--char-index: 0;">K</span><span class="char"
+                                                        data-char="r" style="--char-index: 1;">r</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 2;">a</span><span class="char"
+                                                        data-char="j" style="--char-index: 3;">j</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 4;">o</span><span class="char"
+                                                        data-char="w" style="--char-index: 5;">w</span><span
+                                                        class="char" data-char="y"
+                                                        style="--char-index: 6;">y</span><span class="char"
+                                                        data-char="R" style="--char-index: 7;">R</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 8;">e</span><span class="char"
+                                                        data-char="j" style="--char-index: 9;">j</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 10;">e</span><span class="char"
+                                                        data-char="s" style="--char-index: 11;">s</span><span
+                                                        class="char" data-char="t"
+                                                        style="--char-index: 12;">t</span><span class="char"
+                                                        data-char="r" style="--char-index: 13;">r</span></span><br><span
+                                                    class="word" data-word="Dofinansowań.pl"
+                                                    style="--word-index: 1;"><span class="char" data-char="D"
+                                                        style="--char-index: 14;">D</span><span class="char"
+                                                        data-char="o" style="--char-index: 15;">o</span><span
+                                                        class="char" data-char="f"
+                                                        style="--char-index: 16;">f</span><span class="char"
+                                                        data-char="i" style="--char-index: 17;">i</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 18;">n</span><span class="char"
+                                                        data-char="a" style="--char-index: 19;">a</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 20;">n</span><span class="char"
+                                                        data-char="s" style="--char-index: 21;">s</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 22;">o</span><span class="char"
+                                                        data-char="w" style="--char-index: 23;">w</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 24;">a</span><span class="char"
+                                                        data-char="ń" style="--char-index: 25;">ń</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 26;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 27;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 28;">l</span></span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/17.png"
+                                                alt="logo14">
+                                            <a href="https://kamildemczuk.pl/" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 15;"><span class="word"
+                                                    data-word="KamilDemczuk.pl" style="--word-index: 0;"><span
+                                                        class="char" data-char="K"
+                                                        style="--char-index: 0;">K</span><span class="char"
+                                                        data-char="a" style="--char-index: 1;">a</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 2;">m</span><span class="char"
+                                                        data-char="i" style="--char-index: 3;">i</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 4;">l</span><span class="char"
+                                                        data-char="D" style="--char-index: 5;">D</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 6;">e</span><span class="char"
+                                                        data-char="m" style="--char-index: 7;">m</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 8;">c</span><span class="char"
+                                                        data-char="z" style="--char-index: 9;">z</span><span
+                                                        class="char" data-char="u"
+                                                        style="--char-index: 10;">u</span><span class="char"
+                                                        data-char="k" style="--char-index: 11;">k</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 12;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 13;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 14;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/18.png"
+                                                alt="logo13">
+                                            <a href="http://greenwat.eu/shop/" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="GreenWat.eu" style="--word-index: 0;"><span class="char"
+                                                        data-char="G" style="--char-index: 0;">G</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 1;">r</span><span class="char"
+                                                        data-char="e" style="--char-index: 2;">e</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 3;">e</span><span class="char"
+                                                        data-char="n" style="--char-index: 4;">n</span><span
+                                                        class="char" data-char="W"
+                                                        style="--char-index: 5;">W</span><span class="char"
+                                                        data-char="a" style="--char-index: 6;">a</span><span
+                                                        class="char" data-char="t"
+                                                        style="--char-index: 7;">t</span><span class="char"
+                                                        data-char="." style="--char-index: 8;">.</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 9;">e</span><span class="char"
+                                                        data-char="u" style="--char-index: 10;">u</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/19.png"
+                                                alt="logo11">
+                                            <a href="https://airon24.com/" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="Airon24.com" style="--word-index: 0;"><span class="char"
+                                                        data-char="A" style="--char-index: 0;">A</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 1;">i</span><span class="char"
+                                                        data-char="r" style="--char-index: 2;">r</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 3;">o</span><span class="char"
+                                                        data-char="n" style="--char-index: 4;">n</span><span
+                                                        class="char" data-char="2"
+                                                        style="--char-index: 5;">2</span><span class="char"
+                                                        data-char="4" style="--char-index: 6;">4</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 7;">.</span><span class="char"
+                                                        data-char="c" style="--char-index: 8;">c</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 9;">o</span><span class="char"
+                                                        data-char="m" style="--char-index: 10;">m</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".8s"
+                                        style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/15.png"
+                                                alt="logo3">
+                                            <a class="link words chars splitting" data-splitting="" target="_BLANK"
+                                                style="line-height: 20px !important; padding-top: 50px; --word-total: 5; --char-total: 36;"><span
+                                                    class="word" data-word="System" style="--word-index: 0;"><span
+                                                        class="char" data-char="S"
+                                                        style="--char-index: 0;">S</span><span class="char"
+                                                        data-char="y" style="--char-index: 1;">y</span><span
+                                                        class="char" data-char="s"
+                                                        style="--char-index: 2;">s</span><span class="char"
+                                                        data-char="t" style="--char-index: 3;">t</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 4;">e</span><span class="char"
+                                                        data-char="m" style="--char-index: 5;">m</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="Rezerwacji"
+                                                    style="--word-index: 1;"><span class="char" data-char="R"
+                                                        style="--char-index: 6;">R</span><span class="char"
+                                                        data-char="e" style="--char-index: 7;">e</span><span
+                                                        class="char" data-char="z"
+                                                        style="--char-index: 8;">z</span><span class="char"
+                                                        data-char="e" style="--char-index: 9;">e</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 10;">r</span><span class="char"
+                                                        data-char="w" style="--char-index: 11;">w</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 12;">a</span><span class="char"
+                                                        data-char="c" style="--char-index: 13;">c</span><span
+                                                        class="char" data-char="j"
+                                                        style="--char-index: 14;">j</span><span class="char"
+                                                        data-char="i" style="--char-index: 15;">i</span></span> <br>
+                                                <span class="word" data-word="Badań" style="--word-index: 2;"><span
+                                                        class="char" data-char="B"
+                                                        style="--char-index: 16;">B</span><span class="char"
+                                                        data-char="a" style="--char-index: 17;">a</span><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 18;">d</span><span class="char"
+                                                        data-char="a" style="--char-index: 19;">a</span><span
+                                                        class="char" data-char="ń"
+                                                        style="--char-index: 20;">ń</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="Doktor"
+                                                    style="--word-index: 3;"><span class="char" data-char="D"
+                                                        style="--char-index: 21;">D</span><span class="char"
+                                                        data-char="o" style="--char-index: 22;">o</span><span
+                                                        class="char" data-char="k"
+                                                        style="--char-index: 23;">k</span><span class="char"
+                                                        data-char="t" style="--char-index: 24;">t</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 25;">o</span><span class="char"
+                                                        data-char="r" style="--char-index: 26;">r</span></span><br>
+                                                <span class="word" data-word="Marchewka" style="--word-index: 4;"><span
+                                                        class="char" data-char="M"
+                                                        style="--char-index: 27;">M</span><span class="char"
+                                                        data-char="a" style="--char-index: 28;">a</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 29;">r</span><span class="char"
+                                                        data-char="c" style="--char-index: 30;">c</span><span
+                                                        class="char" data-char="h"
+                                                        style="--char-index: 31;">h</span><span class="char"
+                                                        data-char="e" style="--char-index: 32;">e</span><span
+                                                        class="char" data-char="w"
+                                                        style="--char-index: 33;">w</span><span class="char"
+                                                        data-char="k" style="--char-index: 34;">k</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 35;">a</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/20.png"
+                                                alt="logo4">
+                                            <a class="link words chars splitting" data-splitting="" target="_BLANK"
+                                                style="line-height: 20px !important; padding-top: 60px; --word-total: 5; --char-total: 25;"><span
+                                                    class="word" data-word="eKP" style="--word-index: 0;"><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 0;">e</span><span class="char"
+                                                        data-char="K" style="--char-index: 1;">K</span><span
+                                                        class="char" data-char="P"
+                                                        style="--char-index: 2;">P</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="-"
+                                                    style="--word-index: 1;"><span class="char" data-char="-"
+                                                        style="--char-index: 3;">-</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="platforma"
+                                                    style="--word-index: 2;"><span class="char" data-char="p"
+                                                        style="--char-index: 4;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 5;">l</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 6;">a</span><span class="char"
+                                                        data-char="t" style="--char-index: 7;">t</span><span
+                                                        class="char" data-char="f"
+                                                        style="--char-index: 8;">f</span><span class="char"
+                                                        data-char="o" style="--char-index: 9;">o</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 10;">r</span><span class="char"
+                                                        data-char="m" style="--char-index: 11;">m</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 12;">a</span></span> <br><span class="word"
+                                                    data-word="Kart" style="--word-index: 3;"><span class="char"
+                                                        data-char="K" style="--char-index: 13;">K</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 14;">a</span><span class="char"
+                                                        data-char="r" style="--char-index: 15;">r</span><span
+                                                        class="char" data-char="t"
+                                                        style="--char-index: 16;">t</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="Pacjenta"
+                                                    style="--word-index: 4;"><span class="char" data-char="P"
+                                                        style="--char-index: 17;">P</span><span class="char"
+                                                        data-char="a" style="--char-index: 18;">a</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 19;">c</span><span class="char"
+                                                        data-char="j" style="--char-index: 20;">j</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 21;">e</span><span class="char"
+                                                        data-char="n" style="--char-index: 22;">n</span><span
+                                                        class="char" data-char="t"
+                                                        style="--char-index: 23;">t</span><span class="char"
+                                                        data-char="a" style="--char-index: 24;">a</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 text-white">
+                        <div>
+                            <div class="row bord">
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/1.png"
+                                                alt="logo1">
+                                            <a href="http://piko.edu.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="piko.edu.pl" style="--word-index: 0;"><span class="char"
+                                                        data-char="p" style="--char-index: 0;">p</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 1;">i</span><span class="char"
+                                                        data-char="k" style="--char-index: 2;">k</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 3;">o</span><span class="char"
+                                                        data-char="." style="--char-index: 4;">.</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 5;">e</span><span class="char"
+                                                        data-char="d" style="--char-index: 6;">d</span><span
+                                                        class="char" data-char="u"
+                                                        style="--char-index: 7;">u</span><span class="char"
+                                                        data-char="." style="--char-index: 8;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 9;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 10;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/14.png"
+                                                alt="logo14">
+                                            <a href="https://dezynfekcja.sii.com.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 22;"><span class="word"
+                                                    data-word="dezynfekcja.sii.com.pl" style="--word-index: 0;"><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 0;">d</span><span class="char"
+                                                        data-char="e" style="--char-index: 1;">e</span><span
+                                                        class="char" data-char="z"
+                                                        style="--char-index: 2;">z</span><span class="char"
+                                                        data-char="y" style="--char-index: 3;">y</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 4;">n</span><span class="char"
+                                                        data-char="f" style="--char-index: 5;">f</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 6;">e</span><span class="char"
+                                                        data-char="k" style="--char-index: 7;">k</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 8;">c</span><span class="char"
+                                                        data-char="j" style="--char-index: 9;">j</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 10;">a</span><span class="char"
+                                                        data-char="." style="--char-index: 11;">.</span><span
+                                                        class="char" data-char="s"
+                                                        style="--char-index: 12;">s</span><span class="char"
+                                                        data-char="i" style="--char-index: 13;">i</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 14;">i</span><span class="char"
+                                                        data-char="." style="--char-index: 15;">.</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 16;">c</span><span class="char"
+                                                        data-char="o" style="--char-index: 17;">o</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 18;">m</span><span class="char"
+                                                        data-char="." style="--char-index: 19;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 20;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 21;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/13.png"
+                                                alt="logo13">
+                                            <a href="https://monicure.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="monicure.pl" style="--word-index: 0;"><span class="char"
+                                                        data-char="m" style="--char-index: 0;">m</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 1;">o</span><span class="char"
+                                                        data-char="n" style="--char-index: 2;">n</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 3;">i</span><span class="char"
+                                                        data-char="c" style="--char-index: 4;">c</span><span
+                                                        class="char" data-char="u"
+                                                        style="--char-index: 5;">u</span><span class="char"
+                                                        data-char="r" style="--char-index: 6;">r</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 7;">e</span><span class="char"
+                                                        data-char="." style="--char-index: 8;">.</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 9;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 10;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/11.png"
+                                                alt="logo11">
+                                            <a href="https://doktormarchewka.com" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 19;"><span class="word"
+                                                    data-word="doktormarchewka.com" style="--word-index: 0;"><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 0;">d</span><span class="char"
+                                                        data-char="o" style="--char-index: 1;">o</span><span
+                                                        class="char" data-char="k"
+                                                        style="--char-index: 2;">k</span><span class="char"
+                                                        data-char="t" style="--char-index: 3;">t</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 4;">o</span><span class="char"
+                                                        data-char="r" style="--char-index: 5;">r</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 6;">m</span><span class="char"
+                                                        data-char="a" style="--char-index: 7;">a</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 8;">r</span><span class="char"
+                                                        data-char="c" style="--char-index: 9;">c</span><span
+                                                        class="char" data-char="h"
+                                                        style="--char-index: 10;">h</span><span class="char"
+                                                        data-char="e" style="--char-index: 11;">e</span><span
+                                                        class="char" data-char="w"
+                                                        style="--char-index: 12;">w</span><span class="char"
+                                                        data-char="k" style="--char-index: 13;">k</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 14;">a</span><span class="char"
+                                                        data-char="." style="--char-index: 15;">.</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 16;">c</span><span class="char"
+                                                        data-char="o" style="--char-index: 17;">o</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 18;">m</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".8s"
+                                        style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/3.png"
+                                                alt="logo3">
+                                            <a href="https://palacowaprzystan.pl" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 19;"><span class="word"
+                                                    data-word="palacowaprzystan.pl" style="--word-index: 0;"><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 0;">p</span><span class="char"
+                                                        data-char="a" style="--char-index: 1;">a</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 2;">l</span><span class="char"
+                                                        data-char="a" style="--char-index: 3;">a</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 4;">c</span><span class="char"
+                                                        data-char="o" style="--char-index: 5;">o</span><span
+                                                        class="char" data-char="w"
+                                                        style="--char-index: 6;">w</span><span class="char"
+                                                        data-char="a" style="--char-index: 7;">a</span><span
+                                                        class="char" data-char="p"
+                                                        style="--char-index: 8;">p</span><span class="char"
+                                                        data-char="r" style="--char-index: 9;">r</span><span
+                                                        class="char" data-char="z"
+                                                        style="--char-index: 10;">z</span><span class="char"
+                                                        data-char="y" style="--char-index: 11;">y</span><span
+                                                        class="char" data-char="s"
+                                                        style="--char-index: 12;">s</span><span class="char"
+                                                        data-char="t" style="--char-index: 13;">t</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 14;">a</span><span class="char"
+                                                        data-char="n" style="--char-index: 15;">n</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 16;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 17;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 18;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/4.png"
+                                                alt="logo4">
+                                            <a href="https://dekontaminacja.info" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 19;"><span class="word"
+                                                    data-word="dekontaminacja.info" style="--word-index: 0;"><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 0;">d</span><span class="char"
+                                                        data-char="e" style="--char-index: 1;">e</span><span
+                                                        class="char" data-char="k"
+                                                        style="--char-index: 2;">k</span><span class="char"
+                                                        data-char="o" style="--char-index: 3;">o</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 4;">n</span><span class="char"
+                                                        data-char="t" style="--char-index: 5;">t</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 6;">a</span><span class="char"
+                                                        data-char="m" style="--char-index: 7;">m</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 8;">i</span><span class="char"
+                                                        data-char="n" style="--char-index: 9;">n</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 10;">a</span><span class="char"
+                                                        data-char="c" style="--char-index: 11;">c</span><span
+                                                        class="char" data-char="j"
+                                                        style="--char-index: 12;">j</span><span class="char"
+                                                        data-char="a" style="--char-index: 13;">a</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 14;">.</span><span class="char"
+                                                        data-char="i" style="--char-index: 15;">i</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 16;">n</span><span class="char"
+                                                        data-char="f" style="--char-index: 17;">f</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 18;">o</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row bord">
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/16.png"
+                                                alt="logo1">
+                                            <a href="https://krajowyrejestrdofinansowan.pl/"
+                                                class="link words chars splitting" data-splitting="" target="_BLANK"
+                                                style="line-height: 20px !important; padding-top: 60px; --word-total: 2; --char-total: 29;"><span
+                                                    class="word" data-word="KrajowyRejestr"
+                                                    style="--word-index: 0;"><span class="char" data-char="K"
+                                                        style="--char-index: 0;">K</span><span class="char"
+                                                        data-char="r" style="--char-index: 1;">r</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 2;">a</span><span class="char"
+                                                        data-char="j" style="--char-index: 3;">j</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 4;">o</span><span class="char"
+                                                        data-char="w" style="--char-index: 5;">w</span><span
+                                                        class="char" data-char="y"
+                                                        style="--char-index: 6;">y</span><span class="char"
+                                                        data-char="R" style="--char-index: 7;">R</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 8;">e</span><span class="char"
+                                                        data-char="j" style="--char-index: 9;">j</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 10;">e</span><span class="char"
+                                                        data-char="s" style="--char-index: 11;">s</span><span
+                                                        class="char" data-char="t"
+                                                        style="--char-index: 12;">t</span><span class="char"
+                                                        data-char="r" style="--char-index: 13;">r</span></span><br><span
+                                                    class="word" data-word="Dofinansowań.pl"
+                                                    style="--word-index: 1;"><span class="char" data-char="D"
+                                                        style="--char-index: 14;">D</span><span class="char"
+                                                        data-char="o" style="--char-index: 15;">o</span><span
+                                                        class="char" data-char="f"
+                                                        style="--char-index: 16;">f</span><span class="char"
+                                                        data-char="i" style="--char-index: 17;">i</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 18;">n</span><span class="char"
+                                                        data-char="a" style="--char-index: 19;">a</span><span
+                                                        class="char" data-char="n"
+                                                        style="--char-index: 20;">n</span><span class="char"
+                                                        data-char="s" style="--char-index: 21;">s</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 22;">o</span><span class="char"
+                                                        data-char="w" style="--char-index: 23;">w</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 24;">a</span><span class="char"
+                                                        data-char="ń" style="--char-index: 25;">ń</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 26;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 27;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 28;">l</span></span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/17.png"
+                                                alt="logo14">
+                                            <a href="https://kamildemczuk.pl/" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 15;"><span class="word"
+                                                    data-word="KamilDemczuk.pl" style="--word-index: 0;"><span
+                                                        class="char" data-char="K"
+                                                        style="--char-index: 0;">K</span><span class="char"
+                                                        data-char="a" style="--char-index: 1;">a</span><span
+                                                        class="char" data-char="m"
+                                                        style="--char-index: 2;">m</span><span class="char"
+                                                        data-char="i" style="--char-index: 3;">i</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 4;">l</span><span class="char"
+                                                        data-char="D" style="--char-index: 5;">D</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 6;">e</span><span class="char"
+                                                        data-char="m" style="--char-index: 7;">m</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 8;">c</span><span class="char"
+                                                        data-char="z" style="--char-index: 9;">z</span><span
+                                                        class="char" data-char="u"
+                                                        style="--char-index: 10;">u</span><span class="char"
+                                                        data-char="k" style="--char-index: 11;">k</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 12;">.</span><span class="char"
+                                                        data-char="p" style="--char-index: 13;">p</span><span
+                                                        class="char" data-char="l"
+                                                        style="--char-index: 14;">l</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/18.png"
+                                                alt="logo13">
+                                            <a href="http://greenwat.eu/shop/" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="GreenWat.eu" style="--word-index: 0;"><span class="char"
+                                                        data-char="G" style="--char-index: 0;">G</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 1;">r</span><span class="char"
+                                                        data-char="e" style="--char-index: 2;">e</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 3;">e</span><span class="char"
+                                                        data-char="n" style="--char-index: 4;">n</span><span
+                                                        class="char" data-char="W"
+                                                        style="--char-index: 5;">W</span><span class="char"
+                                                        data-char="a" style="--char-index: 6;">a</span><span
+                                                        class="char" data-char="t"
+                                                        style="--char-index: 7;">t</span><span class="char"
+                                                        data-char="." style="--char-index: 8;">.</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 9;">e</span><span class="char"
+                                                        data-char="u" style="--char-index: 10;">u</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s"
+                                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/19.png"
+                                                alt="logo11">
+                                            <a href="https://airon24.com/" class="link words chars splitting"
+                                                data-splitting="" target="_BLANK"
+                                                style="--word-total: 1; --char-total: 11;"><span class="word"
+                                                    data-word="Airon24.com" style="--word-index: 0;"><span class="char"
+                                                        data-char="A" style="--char-index: 0;">A</span><span
+                                                        class="char" data-char="i"
+                                                        style="--char-index: 1;">i</span><span class="char"
+                                                        data-char="r" style="--char-index: 2;">r</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 3;">o</span><span class="char"
+                                                        data-char="n" style="--char-index: 4;">n</span><span
+                                                        class="char" data-char="2"
+                                                        style="--char-index: 5;">2</span><span class="char"
+                                                        data-char="4" style="--char-index: 6;">4</span><span
+                                                        class="char" data-char="."
+                                                        style="--char-index: 7;">.</span><span class="char"
+                                                        data-char="c" style="--char-index: 8;">c</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 9;">o</span><span class="char"
+                                                        data-char="m" style="--char-index: 10;">m</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".8s"
+                                        style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/15.png"
+                                                alt="logo3">
+                                            <a class="link words chars splitting" data-splitting="" target="_BLANK"
+                                                style="line-height: 20px !important; padding-top: 50px; --word-total: 5; --char-total: 36;"><span
+                                                    class="word" data-word="System" style="--word-index: 0;"><span
+                                                        class="char" data-char="S"
+                                                        style="--char-index: 0;">S</span><span class="char"
+                                                        data-char="y" style="--char-index: 1;">y</span><span
+                                                        class="char" data-char="s"
+                                                        style="--char-index: 2;">s</span><span class="char"
+                                                        data-char="t" style="--char-index: 3;">t</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 4;">e</span><span class="char"
+                                                        data-char="m" style="--char-index: 5;">m</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="Rezerwacji"
+                                                    style="--word-index: 1;"><span class="char" data-char="R"
+                                                        style="--char-index: 6;">R</span><span class="char"
+                                                        data-char="e" style="--char-index: 7;">e</span><span
+                                                        class="char" data-char="z"
+                                                        style="--char-index: 8;">z</span><span class="char"
+                                                        data-char="e" style="--char-index: 9;">e</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 10;">r</span><span class="char"
+                                                        data-char="w" style="--char-index: 11;">w</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 12;">a</span><span class="char"
+                                                        data-char="c" style="--char-index: 13;">c</span><span
+                                                        class="char" data-char="j"
+                                                        style="--char-index: 14;">j</span><span class="char"
+                                                        data-char="i" style="--char-index: 15;">i</span></span> <br>
+                                                <span class="word" data-word="Badań" style="--word-index: 2;"><span
+                                                        class="char" data-char="B"
+                                                        style="--char-index: 16;">B</span><span class="char"
+                                                        data-char="a" style="--char-index: 17;">a</span><span
+                                                        class="char" data-char="d"
+                                                        style="--char-index: 18;">d</span><span class="char"
+                                                        data-char="a" style="--char-index: 19;">a</span><span
+                                                        class="char" data-char="ń"
+                                                        style="--char-index: 20;">ń</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="Doktor"
+                                                    style="--word-index: 3;"><span class="char" data-char="D"
+                                                        style="--char-index: 21;">D</span><span class="char"
+                                                        data-char="o" style="--char-index: 22;">o</span><span
+                                                        class="char" data-char="k"
+                                                        style="--char-index: 23;">k</span><span class="char"
+                                                        data-char="t" style="--char-index: 24;">t</span><span
+                                                        class="char" data-char="o"
+                                                        style="--char-index: 25;">o</span><span class="char"
+                                                        data-char="r" style="--char-index: 26;">r</span></span><br>
+                                                <span class="word" data-word="Marchewka" style="--word-index: 4;"><span
+                                                        class="char" data-char="M"
+                                                        style="--char-index: 27;">M</span><span class="char"
+                                                        data-char="a" style="--char-index: 28;">a</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 29;">r</span><span class="char"
+                                                        data-char="c" style="--char-index: 30;">c</span><span
+                                                        class="char" data-char="h"
+                                                        style="--char-index: 31;">h</span><span class="char"
+                                                        data-char="e" style="--char-index: 32;">e</span><span
+                                                        class="char" data-char="w"
+                                                        style="--char-index: 33;">w</span><span class="char"
+                                                        data-char="k" style="--char-index: 34;">k</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 35;">a</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="img">
+                                            <img src="https://codebuilder.app/project/Ravo/img/clients/brands/20.png"
+                                                alt="logo4">
+                                            <a class="link words chars splitting" data-splitting="" target="_BLANK"
+                                                style="line-height: 20px !important; padding-top: 60px; --word-total: 5; --char-total: 25;"><span
+                                                    class="word" data-word="eKP" style="--word-index: 0;"><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 0;">e</span><span class="char"
+                                                        data-char="K" style="--char-index: 1;">K</span><span
+                                                        class="char" data-char="P"
+                                                        style="--char-index: 2;">P</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="-"
+                                                    style="--word-index: 1;"><span class="char" data-char="-"
+                                                        style="--char-index: 3;">-</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="platforma"
+                                                    style="--word-index: 2;"><span class="char" data-char="p"
+                                                        style="--char-index: 4;">p</span><span class="char"
+                                                        data-char="l" style="--char-index: 5;">l</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 6;">a</span><span class="char"
+                                                        data-char="t" style="--char-index: 7;">t</span><span
+                                                        class="char" data-char="f"
+                                                        style="--char-index: 8;">f</span><span class="char"
+                                                        data-char="o" style="--char-index: 9;">o</span><span
+                                                        class="char" data-char="r"
+                                                        style="--char-index: 10;">r</span><span class="char"
+                                                        data-char="m" style="--char-index: 11;">m</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 12;">a</span></span> <br><span class="word"
+                                                    data-word="Kart" style="--word-index: 3;"><span class="char"
+                                                        data-char="K" style="--char-index: 13;">K</span><span
+                                                        class="char" data-char="a"
+                                                        style="--char-index: 14;">a</span><span class="char"
+                                                        data-char="r" style="--char-index: 15;">r</span><span
+                                                        class="char" data-char="t"
+                                                        style="--char-index: 16;">t</span></span><span
+                                                    class="whitespace"> </span><span class="word" data-word="Pacjenta"
+                                                    style="--word-index: 4;"><span class="char" data-char="P"
+                                                        style="--char-index: 17;">P</span><span class="char"
+                                                        data-char="a" style="--char-index: 18;">a</span><span
+                                                        class="char" data-char="c"
+                                                        style="--char-index: 19;">c</span><span class="char"
+                                                        data-char="j" style="--char-index: 20;">j</span><span
+                                                        class="char" data-char="e"
+                                                        style="--char-index: 21;">e</span><span class="char"
+                                                        data-char="n" style="--char-index: 22;">n</span><span
+                                                        class="char" data-char="t"
+                                                        style="--char-index: 23;">t</span><span class="char"
+                                                        data-char="a" style="--char-index: 24;">a</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+
+        <!-- testimonials area start -->
+
+
+
+
+        
+        <!-- blog area start -->
+        <section class="blog__area fix p-relative pt-60 pb-225">
+            <div class="blog__shape">
+                <img class="blog-shape-1" src="assets/images/shape/blog/blog-s-1.png" alt="Code Builder">
+                <img class="blog-shape-2" src="assets/images/shape/blog/blog-s-2.png" alt="Code Builder">
+                <img class="blog-shape-3 d-none d-sm-block" src="assets/images/shape/blog/blog-s-3.png"
+                    alt="Code Builder">
+                <img class="blog-shape-4" src="assets/images/shape/blog/blog-s-4.png" alt="Code Builder">
+                <img class="blog-shape-5 d-none d-sm-block" src="assets/images/shape/blog/blog-s-5.png"
+                    alt="Code Builder">
+            </div>
+            <div class="container">
+                <div class="row mb-65">
+                    <div class="col-xl-12">
+                        <div class="blog__title text-center">
+                            <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s">
+                                Our Blog
+                            </h4>
+                            <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
+                                <span>Our latest updates</span>
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">High turnaround rate and loop back vec but we
+                                want to empower the team with the right tools and guidance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="blog__item mb-40">
+                            <div class="blog__thumb">
+                                <a href="single-blog.html"><img src="assets/images/blog/blog-img-1.jpg" alt="blog"></a>
+                            </div>
+                            <div class="blog__content">
+                                <div class="blog__date d-flex align-items-center justify content-between">
+                                    <i class="fa-solid fa-clock d-none d-xl-block"></i>
+                                    <p>22 March, 2022</p>
+                                    <a href="blog.html" class="m-btn blog-btn">
+                                        Marketing
+                                    </a>
+                                </div>
+                                <h3>
+                                    <a href="single-blog.html">
+                                        Post launch shower
+                                        initiative forward
+                                    </a>
+                                </h3>
+                                <div class="blog__link">
+                                    <a href="single-blog.html" class="arrow-btn">Continue Reading<i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="blog__item mb-40">
+                            <div class="blog__thumb">
+                                <a href="single-blog.html"><img src="assets/images/blog/blog-img-2.jpg" alt="blog"></a>
+                            </div>
+                            <div class="blog__content">
+                                <div class="blog__date d-flex align-items-center">
+                                    <i class="fa-solid fa-clock d-none d-xl-block"></i>
+                                    <p>22 March, 2022</p>
+                                    <a href="blog.html" class="m-btn blog-btn">
+                                        Marketing
+                                    </a>
+                                </div>
+                                <h3>
+                                    <a href="single-blog.html">
+                                        Delivering the best
+                                        digital marketing
+                                    </a>
+                                </h3>
+                                <div class="blog__link">
+                                    <a href="single-blog.html" class="arrow-btn">Continue Reading<i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="blog__item mb-40">
+                            <div class="blog__thumb">
+                                <a href="single-blog.html"><img src="assets/images/blog/blog-img-3.jpg" alt="blog"></a>
+                            </div>
+                            <div class="blog__content">
+                                <div class="blog__date d-flex align-items-center justify content-between">
+                                    <i class="fa-solid fa-clock d-none d-xl-block"></i>
+                                    <p>22 March, 2022</p>
+                                    <a href="blog.html" class="m-btn blog-btn">
+                                        Marketing
+                                    </a>
+                                </div>
+                                <h3>
+                                    <a href="single-blog.html">
+                                        This is our north star
+                                        design baseline
+                                    </a>
+                                </h3>
+                                <div class="blog__link">
+                                    <a href="single-blog.html" class="arrow-btn">Continue Reading<i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- blog area end -->
+
+
+
+        <!-- about area start -->
+        <section class="about__area fix p-relative pt-120 pb-120 about__pb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-10">
+                        <div class="about__title mb-80">
+                            <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s">
+                                About Us
+                            </h4>
+                            <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
+                                <span>We are here to make your</span> product look more elegant.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="about__thumb">
+                            <div class="about__thumb-shape">
+                                <img class="about-s-1 d-none d-lg-block" src="assets/images/shape/about/about-s-1.png"
+                                    alt="Code Builder">
+                                <img class="about-s-2 d-none d-md-block wow zoomIn" data-wow-delay=".8s"
+                                    src="assets/images/shape/about/about-s-2.png" alt="Code Builder">
+                            </div>
+                            <div class="about__thumb-image">
+                                <img src="_zdjęcia/software-developer-6521720.jpg" alt="Code Builder">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-lg-6">
+                        <div class="about__content wow fadeInUp" data-wow-delay=".2s">
+                            <p>Rozpalenie energii ukrytej w materii to jedyny dom jaki kiedykolwiek poznaliśmy dzięki
+                                rozszyfrowaniu przez radioteleskop wywodzący się od nieuczciwych astronomów. Zakorzenia
+                                się sieć tuneli czasoprzestrzennych z liczbami pierwszymi.</p>
+                            <ul>
+                                <li>Sea of Tranquility dispassionate observer dream.</li>
+                                <li>Muse about as a patch of light brain is the seed of intelligence.</li>
+                                <li>The only home we've ever known dream of the mind's eye.</li>
+                            </ul>
+                        </div>
+                        <div class="about__counter-bg d-none d-sm-block">
+                            <div class="about__counter-content d-flex">
+                                <div class="about__counter-text text-center">
+                                    <h2><span class="counter">80</span>+</h2>
+                                    <p>Zrealizowanych<br> projektów</p>
+                                </div>
+                                <div class="about__counter-text text-center">
+                                    <h2><span class="counter">57</span>+</h2>
+                                    <p class="fs-7">Zadowolonych<br> klientów</p>
+                                </div>
+                                <div class="about__counter-text text-center">
+                                    <h2><span class="counter">8</span> lat</h2>
+                                    <p>Aktywnie<br> na rynku</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about area end -->
+
+
+        <style>
+        .grad {
+            background-image: linear-gradient(180deg, #fffef2, #fff) !important;
+        }
+    </style>
+
+    <section class="maxdi__area fix p-relative pt-115 pb-55 grad">
+        <div class="maxdi__shape">
+            <img class="m-shape-1 d-none d-sm-block" src="assets/images/shape/testimonials/t-shape-1.png"
+                alt="Code Builder">
+            <img class="m-shape-2" src="assets/images/shape/testimonials/t-shape-2.png" alt="Code Builder">
+            <img class="m-shape-3" src="assets/images/shape/testimonials/t-shape-3.png" alt="Code Builder">
+            <img class="m-shape-4" src="assets/images/shape/testimonials/t-shape-4.png" alt="Code Builder">
+        </div>
+        <div class="container">
+            <div class="row mb-110">
+                <div class="col-xl-12">
+                    <div class="maxdi__title text-center">
+                        <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s">
+                            We Are Maxdi
+                        </h4>
+                        <h2 class="section__title wow fadeInUp" data-wow-delay=".4s">
+                            Pracujemy, aby pomóc <br> w sukcesie <span>Twojej marki. &nbsp;</span>
+                        </h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">
+                            Narysuj linię na piasku szybka wygrana. moja pojemność jest pełna.
+                            Utrzymuj szczupłe wyrównanie, którego potrzebujemy, aby zabezpieczyć ten plan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="maxdi__counter">
+                        <div class="maxdi__counter-content text-center">
+                            <h2><span class="counter">50</span>+</h2>
+                            <p>Zadowolonych<br> klientów</p>
+                        </div>
+                    </div>
+                    <div class="maxdi__counter maxdi__counter-2">
+                        <div class="maxdi__counter-content maxdi__counter-content-2 text-center">
+                            <h2><span class="counter">5</span>+</h2>
+                            <p>Lat na rynku</p>
+                        </div>
+                    </div>
+                    <div class="maxdi__content d-flex">
+                        <div class="maxdi__thumb-1">
+                            <img src="https://alimasha.net/template/maxdi/assets/images/maxdi/maxdi-img-1.jpg"
+                                alt="Code Builder">
+                        </div>
+                        <div class="maxdi__thumb-2">
+                            <img src="https://alimasha.net/template/maxdi/assets/images/maxdi/maxdi-img-2.jpg"
+                                alt="Code Builder">
+                        </div>
+                        <div class="maxdi__thumb-3">
+                            <img src="https://alimasha.net/template/maxdi/assets/images/maxdi/maxdi-img-3.jpg"
+                                alt="Code Builder">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials__area fix p-relative pt-120 pb-120 grad">
+    <div class="testimonials__shape">
+        <img class="t-shape-1 d-none d-sm-block" src="assets/images/shape/testimonials/t-shape-1.png"
+            alt="Code Builder">
+        <img class="t-shape-2" src="assets/images/shape/testimonials/t-shape-2.png" alt="Code Builder">
+        <img class="t-shape-3" src="assets/images/shape/testimonials/t-shape-3.png" alt="Code Builder">
+        <img class="t-shape-4" src="assets/images/shape/testimonials/t-shape-4.png" alt="Code Builder">
+        <img class="t-shape-5 d-none d-lg-block" src="assets/images/shape/testimonials/t-shape-5.png"
+            alt="Code Builder">
+    </div>
+    <div class="container">
+        <div class="row mb-65">
+            <div class="col-xl-12">
+                <div class="testimonials__title text-center">
+                    <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s">
+                        Testimonials
+                    </h4>
+                    <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
+                        <span>What people say</span>
+                    </h2>
+                    <p class="wow fadeInUp" data-wow-delay=".5s">Draw a line in the sand quick win. My capacity
+                        is full. Keep it lean gain alignment we need to future-proof this plan.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="swiper testimonials__slider">
+                    <div class="swiper-wrapper">
+                        <div class="testimonials__item swiper-slide">
+                            <div class="testimonials__item-content">
+                                <div class="testimonials__logo">
+                                    <img src="assets/images/testimonials/client-logo/google.png"
+                                        alt="Code Builder">
+                                </div>
+                                <div class="testimonials__text">
+                                    <p>Big data run it up the flag pole core competencies bench mark. Three
+                                        martini lunch we need to dialog around your choice of work attire
+                                        data-point. Show pony after I ran into realized two projects crank this
+                                        out.</p>
+                                </div>
+                                <div class="testimonials__client d-flex align-items-center">
+                                    <div class="testimonials__client-thumb">
+                                        <img src="assets/images/testimonials/t-client-1.png" alt="Code Builder">
+                                    </div>
+                                    <div class="testimonials__client-text">
+                                        <h4>Alima Alisha</h4>
+                                        <span>CEO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item swiper-slide">
+                            <div class="testimonials__item-content">
+                                <div class="testimonials__logo">
+                                    <img src="assets/images/testimonials/client-logo/payoneer.png"
+                                        alt="Code Builder">
+                                </div>
+                                <div class="testimonials__text">
+                                    <p>Big data run it up the flag pole core competencies bench mark. Three
+                                        martini lunch we need to dialog around your choice of work attire
+                                        data-point. Show pony after I ran into realized two projects crank this
+                                        out.</p>
+                                </div>
+                                <div class="testimonials__client d-flex align-items-center">
+                                    <div class="testimonials__client-thumb">
+                                        <img src="assets/images/testimonials/t-client-2.png" alt="Code Builder">
+                                    </div>
+                                    <div class="testimonials__client-text">
+                                        <h4>David Clark</h4>
+                                        <span>Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item swiper-slide">
+                            <div class="testimonials__item-content">
+                                <div class="testimonials__logo">
+                                    <img src="assets/images/testimonials/client-logo/instagram.png"
+                                        alt="Code Builder">
+                                </div>
+                                <div class="testimonials__text">
+                                    <p>Big data run it up the flag pole core competencies bench mark. Three
+                                        martini lunch we need to dialog around your choice of work attire
+                                        data-point. Show pony after I ran into realized two projects crank this
+                                        out.</p>
+                                </div>
+                                <div class="testimonials__client d-flex align-items-center">
+                                    <div class="testimonials__client-thumb">
+                                        <img src="assets/images/testimonials/t-client-3.png" alt="Code Builder">
+                                    </div>
+                                    <div class="testimonials__client-text">
+                                        <h4>Moran Sham</h4>
+                                        <span>Team Leader</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimonials area end -->

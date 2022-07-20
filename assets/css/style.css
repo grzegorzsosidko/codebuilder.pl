@@ -6111,7 +6111,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .lets-work__title {
-  padding: 0 350px;
+  padding: 80px 50px 10px 50px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -7081,7 +7081,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   width: 100%;
   height: 578px;
   left: 0;
-  top: 28.7%;
+  top: 29.2%;
   background: #7432ff;
 }
 
@@ -7539,7 +7539,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   position: absolute;
   content: "";
   width: 1027px;
-  height: 432px;
+  height: 482px;
   background: #1d233a;
   right: 0;
   border-radius: 20px 0 0 132px;
