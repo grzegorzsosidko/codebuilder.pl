@@ -7715,13 +7715,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .customers__container {
   margin-top: 70px;
-  padding: 65px 95px;
+  padding: 35px 65px;
   border-radius: 28px;
   -webkit-border-radius: 28px;
   -moz-border-radius: 28px;
   -ms-border-radius: 28px;
   -o-border-radius: 28px;
-  background: #ffffff;
+  background: #ffffff05;
   -webkit-box-shadow: 0 0 50px 0 rgba(29, 35, 58, 0.1);
   -moz-box-shadow: 0 0 50px 0 rgba(29, 35, 58, 0.1);
   box-shadow: 0 0 50px 0 rgba(29, 35, 58, 0.1);

@@ -170,8 +170,6 @@
     <div class="offcanvas-overlay"></div>
     <!-- mobile menu sidebar end -->
 
-
-    
     <style>
         #scrollBarTop {
             border-radius: 0 10px 10px 0;
@@ -184,7 +182,6 @@
             transition: width 0.3s ease-in-out;
         }
     </style>
-
 
     <script>
         const ProgressOnScroll = () => {
@@ -631,7 +628,8 @@
                             Projektujemy <span> strony Internetowe <br> sklepy i aplikacje webowe i CMS </span>
                         </h2>
 
-                        <p class="hero-sub-heading pb-0">Poprawiamy użyteczność, zwiększamy sprzedaż, automatyzujemy procesy, pomagamy rosnąć.</p>
+                        <p class="hero-sub-heading pb-0">Poprawiamy użyteczność, zwiększamy sprzedaż, automatyzujemy
+                            procesy, pomagamy rosnąć.</p>
 
                         <div class="row mt-40 d-flex">
                             <div class="col-sm-2 mb-lg-3 mb-3 pb-lg-2">
@@ -671,7 +669,7 @@
                     <div class="welcome-image-group welcome-image-group--l3">
                         <img class="w-100 aos-init aos-animate"
                             src="https://finestdevs.com/demos/fastland-html/image/home-3/welcome-woman-l3.png" alt=""
-                            data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+                            data-aos="fade-left" data-aos-duration="500" data-aos-once="true" style="z-index: 3">
                         <div class="welcome-image-group--l3__img-1">
                             <img class="w-100 aos-init aos-animate"
                                 src="https://finestdevs.com/demos/fastland-html/image/home-3/welcome-man-l3.png" alt=""
@@ -802,10 +800,6 @@
             }
         </style>
 
-
-
-
-
         <section class="project__area project__area-pt p-relative pt-130">
             <div class="project__shape">
                 <img class="project-s-1" src="assets/images/shape/project/p-s-1.png" alt="">
@@ -820,12 +814,10 @@
                     <div class="col-xl-9 col-lg-10">
                         <div class="project__thumb d-sm-flex">
                             <div class="project__thumb-1">
-                                <img src="_zdjecia/pexels-cottonbro-5082580.jpg"
-                                    alt="">
+                                <img src="_zdjecia/pexels-cottonbro-5082580.jpg" alt="">
                             </div>
                             <div class="project__thumb-2">
-                                <img src="_zdjecia/pexels-olia-danilevich-4974914.jpg"
-                                    alt="">
+                                <img src="_zdjecia/pexels-olia-danilevich-4974914.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -839,12 +831,14 @@
                                     </h2>
                                     <h4 class="section__sub-title wow fadeInUp" data-wow-delay=".2s"
                                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                                        
+
                                     </h4>
                                     <p class="wow fadeInUp" data-wow-delay=".4s"
                                         style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                                         Wiedza zdobyta przez lata praktyki pozwala nam na oferowanie praktycznie
-                                        wszystkiego, co związane z istnieniem w internecie. Wiemy z jakimi problemami spotykasz się planując projekt i wypracowaliśmy dla Ciebie rozwiązania. <b>Efekt końcowy ma Cię satysfakcjonować!</b></p>
+                                        wszystkiego, co związane z istnieniem w internecie. Wiemy z jakimi problemami
+                                        spotykasz się planując projekt i wypracowaliśmy dla Ciebie rozwiązania. <b>Efekt
+                                            końcowy ma Cię satysfakcjonować!</b></p>
                                     <a class="m-btn mt-35" href="contact.html"> Zobacz zrealizowane projekty</a>
                                 </div>
                             </div>
@@ -854,63 +848,439 @@
             </div>
         </section>
 
-        <div class="fancy-feature-twentySeven lg-container mt-60 pt-60 pb-30 md-mt-60" id="product">
+
+        <style>
+            .what-we-do .single-what-we-do {
+                margin-top: 30px;
+                border-radius: 14px;
+                background-color: #fff;
+                -webkit-box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
+                box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
+                padding: 50px;
+                padding-left: 60px;
+                padding-bottom: 40px;
+                -webkit-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
+
+            @media (max-width: 991px) {
+                .what-we-do .single-what-we-do {
+                    padding: 30px;
+                }
+            }
+
+            .what-we-do .single-what-we-do:hover {
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+
+            .what-we-do .single-what-we-do:hover .content a {
+                color: #111;
+            }
+
+            .what-we-do .single-what-we-do .top {
+                overflow: hidden;
+                clear: both;
+            }
+
+            .what-we-do .single-what-we-do .icon {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #f2f2f2;
+                border-radius: 14px;
+                width: 84px;
+                height: 84px;
+                text-align: center;
+                line-height: 84px;
+                background-color: #fff;
+                margin-right: 30px;
+                float: left;
+                overflow: hidden;
+            }
+
+            .what-we-do .single-what-we-do .title {
+                overflow: auto;
+            }
+
+            .what-we-do .single-what-we-do .content {
+                margin-top: 30px;
+            }
+
+            .what-we-do .single-what-we-do .content p {
+                font-size: 17px;
+                line-height: 30px;
+            }
+
+            .what-we-do .single-what-we-do .content a {
+                text-transform: none;
+                margin-top: 25px;
+                display: block;
+                color: #c9c9c9;
+            }
+
+
+            .section-bg {
+                background-color: #f7f7f7;
+            }
+        </style>
+
+        <section class="what-we-do section-bg" style="padding: 100px 0; margin-top: -120px">
             <div class="container">
 
-                <div class="title-style-twelve text-center mb-10 md-mb-20 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="row">
-                        <div class="col-xl-10 col-lg-11 m-auto">
-                            <h2> Co możemy Ci zaoferować? </h2>
-                            <p class="mt-10 md-mt-30">Wraz z przydatnymi powiadomieniami, spostrzeżeniami dotyczącymi
-                                współpracy i wskazówkami dotyczącymi usprawnień — Twoje dokumenty zaczęły dla Ciebie
-                                racować.</p>
+                <div class="fancy-feature-twentySeven lg-container mt-100 pt-90 pb-30 md-mt-60" id="product">
+                    <div class="container">
+                        <div class="title-style-twelve text-center mb-10 md-mb-20 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="row">
+                                <div class="col-xl-10 col-lg-11 m-auto">
+                                    <h2> Co możemy Ci zaoferować? </h2>
+                                    <p class="mt-10 md-mt-30">Jesteśmy zespołem profesjonalistów, którzy pracują z pasją
+                                        oraz
+                                        zaangażowaniem aby spełnić najbardziej wymagające oczekiwania naszych klientów.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3 col-sm-6 aos-init wow fadeInUp" data-wow-delay=".2s" data-aos="fade-up">
-                        <div class="block-style-twentySeven">
-                            <div class="icon d-flex align-items-end justify-content-center"><img
-                                    src="https://html.creativegigstf.com/deski/deski/images/icon/144.svg" alt=""></div>
-                            <h4 class="font-gordita">Strony<br>Internetowe</h4>
-                            <p> Oparte na autorskim systemie CMS lub Wordpress </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 aos-init wow fadeInUp" data-wow-delay=".3s" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="block-style-twentySeven">
-                            <div class="icon d-flex align-items-end justify-content-center"><img
-                                    src="https://html.creativegigstf.com/deski/deski/images/icon/145.svg" alt=""></div>
-                            <h4 class="font-gordita">Sklepy<br>Internetowe</h4>
-                            <p> Sprzedawaj swoje produkty<br> na całym świecie </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 aos-init wow fadeInUp" data-wow-delay=".4s" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="block-style-twentySeven">
-                            <div class="icon d-flex align-items-end justify-content-center"><img
-                                    src="https://html.creativegigstf.com/deski/deski/images/icon/146.svg" alt=""></div>
-                            <h4 class="font-gordita">Systemy<br>dedykowane</h4>
-                            <p> Aplikacje internetowe do np. zarządzania Twoją firmą</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 aos-init wow fadeInUp" data-wow-delay=".5s" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div class="block-style-twentySeven">
-                            <div class="icon d-flex align-items-end justify-content-center"><img
-                                    src="https://html.creativegigstf.com/deski/deski/images/icon/147.svg" alt=""></div>
-                            <h4 class="font-gordita">Audyt SEO<br>optymalizacja</h4>
-                            <p> Wskażemy na co zwrócić uwagę i naprawimy błędy na stronie</p>
-                        </div>
-                    </div>
-                </div>
 
+                    <div class="col-md-6 col-xl-4">
+                        <div class="single-what-we-do">
+                            <div class="top">
+                                <div class="icon">
+                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service1.png"
+                                        alt="">
+                                </div>
+                                <div class="title">
+                                    <h3>Strony <br> Internetowe</h3>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Indywidualne strony i portale www, oparte na autorskim systemie CMS lub Wordpress,
+                                    najwyższej jakości.</p>
+                                <a href="services">Szczegóły oferty</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="single-what-we-do">
+                            <div class="top">
+                                <div class="icon">
+                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service2.png"
+                                        alt="">
+                                </div>
+                                <div class="title">
+                                    <h3>Sklepy<br> Internetowe</h3>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p> Customowe, dopasowane sklepy i platformy handlowe, umożliwiające transakcje na całym
+                                    świecie. </p>
+                                <a href="services">Szczegóły oferty</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="single-what-we-do">
+                            <div class="top">
+                                <div class="icon">
+                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service3.png"
+                                        alt="">
+                                </div>
+                                <div class="title">
+                                    <h3>Systemy <br>dedykowane</h3>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Aplikacje internetowe, indywidualnie tworzone do twoich potrzeb np. kalkulatory,
+                                    generatory leadów.</p>
+                                <a href="services">Szczegóły oferty</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 col-xl-5 offset-1">
+                        <div class="single-what-we-do">
+                            <div class="top">
+                                <div class="icon">
+                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service3.png"
+                                        alt="">
+                                </div>
+                                <div class="title">
+                                    <h3>Audyt SEO <br>Optymalizacja</h3>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Dokładny audyt, który wskaże nam co należy poprawić na Twojej stronie Internetowej,
+                                    zwiększając konwersje i optymalizację.</p>
+                                <a href="services">Szczegóły oferty</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-5">
+                        <div class="single-what-we-do">
+                            <div class="top">
+                                <div class="icon">
+                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service3.png"
+                                        alt="">
+                                </div>
+                                <div class="title">
+                                    <h3>Zarządzanie <br>social media</h3>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p> Prowadzimy i zarządzamy kontami Facebook i Instagram. Dbamy o reklamę i konwersję, a
+                                    także zapewniamy ruch Twoich social media.</p>
+                                <a href="services">Szczegóły oferty</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
+        </section>
+
+        <style>
+            .screenshots.style-4 {
+                background-color: #f0eff5;
+                overflow: hidden;
+                padding-top: 100px;
+                position: relative;
+                height: 700px;
+            }
+
+            .screenshots.style-4::after {
+                position: absolute;
+                content: "";
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 0px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                background-color: #f0eff5;
+                z-index: 10;
+            }
+
+            .screenshots.style-4 .screenshots-slider {
+                position: absolute;
+                top: 110px;
+                width: calc(100% + 120px);
+                left: -60px;
+            }
+
+            .screenshots.style-4 .screenshots-slider .img {
+                margin: 0 auto;
+                height: 420px;
+                width: 190px;
+            }
+
+            .screenshots.style-4 .screenshots-slider .img img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+
+            .screenshots.style-4 .mob-hand {
+                pointer-events: none;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                -webkit-transform: translateX(-33%);
+                -ms-transform: translateX(-33%);
+                transform: translateX(-33%);
+                height: 600px;
+                z-index: 10;
+            }
+
+            .screenshots.style-4 .screenshots-slider {
+                width: 100%;
+                left: 0;
+            }
+
+            .screenshots.style-4 .screenshots-slider .img {
+                margin: 0 auto;
+                width: 190px;
+            }
+
+            @media screen and (max-width: 1100px) {
+                .screenshots.style-4 .screenshots-slider .img {
+                    margin: 0 auto;
+                    width: 190px;
+                }
+            }
+        </style>
+
+
+        <!-- ====== global style ====== -->
+
+        <div class="screenshots style-4" id="4">
+            <div class="screenshots-slider style-4">
+                <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper"
+                        style="transition-duration: 1000ms; transform: translate3d(-2448px, 0px, 0px);">
+                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                            style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/1.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                            style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/2.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                            data-swiper-slide-index="2" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/3.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                            data-swiper-slide-index="3" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/4.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                            data-swiper-slide-index="4" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/5.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-swiper-slide-index="0" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/1.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-swiper-slide-index="1" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/2.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/3.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/4.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="4" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/5.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                            style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/1.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                            style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/2.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                            data-swiper-slide-index="2" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/3.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                            data-swiper-slide-index="3" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/4.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                            data-swiper-slide-index="4" style="width: 408px;">
+                            <div class="img">
+                                <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/5.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+            <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/hand.png" alt=""
+                class="mob-hand">
         </div>
 
-        <!-- services area start -->
-        <section class="services__area p-relative fix mt-75 pt-120 pb-90">
+
+        <script src="https://smartinnovates.com/items/iteck/html/assets/js/lib/jquery-3.0.0.min.js"></script>
+        <script>
+
+            // ------------ swiper sliders -----------
+            $(document).ready(function () {
+
+                // ------------ works sliders -----------
+                var swiper = new Swiper('.screenshots-slider.style-4 .swiper-container', {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                    centeredSlides: true,
+                    speed: 1000,
+                    pagination: false,
+                    navigation: false,
+                    mousewheel: false,
+                    keyboard: true,
+                    autoplay: {
+                        delay: 4000,
+                    },
+                    loop: true,
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 2,
+                        },
+                        480: {
+                            slidesPerView: 2,
+                        },
+                        787: {
+                            slidesPerView: 3,
+                        },
+                        991: {
+                            slidesPerView: 3,
+                        },
+                        1200: {
+                            slidesPerView: 4,
+                        }
+                    }
+                });
+
+            });
+
+        </script>
+
+        <section class="services__area p-relative fix pt-120 pb-90">
             <div class="services__shape">
                 <img class="services-s-1 wow fadeInDown" data-wow-delay="1.2s"
                     src="assets/images/shape/services/services-s-1.png" alt="Code Builder">
@@ -925,7 +1295,7 @@
                                 Dlaczego warto wybrać Codebuilder
                             </h4>
                             <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
-                                <span>Współpraca</span> z CodeBuilder
+                                <span>Kompleksowe</span> rozwiązania najwyższej jakości
                             </h2>
                         </div>
                     </div>
@@ -939,7 +1309,8 @@
                                 </div>
                                 <div class="single__service-content">
                                     <h3>UI/UX Design</h3>
-                                    <p>Przedstawimy ci kilka projektów, które zrealizujemy na podstawie audytu. Wprowadzimy zmiany, które później przełożymy na kod.</p>
+                                    <p>Przedstawimy ci kilka projektów, które zrealizujemy na podstawie audytu.
+                                        Wprowadzimy zmiany, które później przełożymy na kod.</p>
                                 </div>
                                 <div class="single__service-link">
                                     <a href="###" class="s-btn">Więcej informacji</a>
@@ -955,7 +1326,8 @@
                                 </div>
                                 <div class="single__service-content">
                                     <h3>Optymalizacja</h3>
-                                    <p>Zaakceptowany i wdrożony projekt zapewni Ci maksymalną jakość kodu wykorzystanego w procesie realizacji zlecenia.</p>
+                                    <p>Zaakceptowany i wdrożony projekt zapewni Ci maksymalną jakość kodu wykorzystanego
+                                        w procesie realizacji zlecenia.</p>
                                 </div>
                                 <div class="single__service-link">
                                     <a href="###" class="s-btn">Więcej informacji</a>
@@ -971,7 +1343,8 @@
                                 </div>
                                 <div class="single__service-content">
                                     <h3>Responsywność</h3>
-                                    <p>Twoje zlecenie dopasowane zostanie do każdego urządzenia, na którym wyświetlone zostanie przez Twoich klientów.</p>
+                                    <p>Twoje zlecenie dopasowane zostanie do każdego urządzenia, na którym wyświetlone
+                                        zostanie przez Twoich klientów.</p>
                                 </div>
                                 <div class="single__service-link">
                                     <a href="###" class="s-btn">Więcej informacji</a>
@@ -987,7 +1360,8 @@
                                 </div>
                                 <div class="single__service-content">
                                     <h3>Pozycjonowanie</h3>
-                                    <p>Dobierzemy nagłówki, i podłączymy wszystkie systemy monitorowania ruchu na stronie, zwiększając wyniki wyszukiwania.</p>
+                                    <p>Dobierzemy nagłówki, i podłączymy wszystkie systemy monitorowania ruchu na
+                                        stronie, zwiększając wyniki wyszukiwania.</p>
                                 </div>
                                 <div class="single__service-link">
                                     <a href="###" class="s-btn">Więcej informacji</a>
@@ -1003,7 +1377,8 @@
                                 </div>
                                 <div class="single__service-content">
                                     <h3>Teksty na stronie</h3>
-                                    <p>Przygotujemy Ci gotowe treści na stronie www, zgodne z kategrią Twojego produktu oraz Twojej działalności.</p>
+                                    <p>Przygotujemy Ci gotowe treści na stronie www, zgodne z kategrią Twojego produktu
+                                        oraz Twojej działalności.</p>
                                 </div>
                                 <div class="single__service-link">
                                     <a href="###" class="s-btn">Więcej informacji</a>
@@ -1019,7 +1394,8 @@
                                 </div>
                                 <div class="single__service-content">
                                     <h3>Zarządzanie</h3>
-                                    <p> Umożliwimy Ci samodzielne zarządzanie treścią strony www oraz jej edycję. Jednak nie zostawimy Cię samego! </p>
+                                    <p> Umożliwimy Ci samodzielne zarządzanie treścią strony www oraz jej edycję. Jednak
+                                        nie zostawimy Cię samego! </p>
                                 </div>
                                 <div class="single__service-link">
                                     <a href="###" class="s-btn">Więcej informacji</a>
@@ -1030,9 +1406,7 @@
                 </div>
             </div>
         </section>
-        <!-- services area end -->
 
-        <!-- facts area start -->
         <section class="facts__area fix p-relative pt-120 pb-0 facts__pb">
             <div class="container">
                 <div class="row">
@@ -1063,9 +1437,11 @@
                                     Jakość codebuilder
                                 </h4>
                                 <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
-                                    Pomożemy Ci <span>wyróżnić się </span>
+                                    Pomożemy Cie <span>odkryć w internecie</span>
                                 </h2>
-                                <p class="wow fadeInUp" data-wow-delay=".3s">Nie lubimy chodzić na skróty i nie praktykujemy gotowych, iniwersalnych rozwiązań. Wierzymy, że dzięki zaangażowania i ciężkiej pracy możliwe jest osiąganie ponadprzeciętnych rezultatów. </p>
+                                <p class="wow fadeInUp" data-wow-delay=".3s">Nie lubimy chodzić na skróty i nie
+                                    praktykujemy gotowych, iniwersalnych rozwiązań. Wierzymy, że dzięki zaangażowania i
+                                    ciężkiej pracy możliwe jest osiąganie ponadprzeciętnych rezultatów. </p>
                             </div>
                             <div class="facts__counter-content d-flex">
                                 <div class="facts__counter-text">
@@ -1084,106 +1460,669 @@
                 </div>
             </div>
         </section>
-        <!-- facts area end -->
 
-        
-        <section class="customers__area fix p-relative pt-0 pb-100">
-            <div class="customers__shape">
-                <!-- <img class="c-s-1" src="assets/images/shape/customers/c-s-1.png" alt=""> -->
-                <img class="c-s-2" src="assets/images/shape/customers/c-s-2.png" alt="">
-            </div>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+
+        <style>
+            .client-slider {
+                max-width: 1200px;
+            }
+
+            .client-slider .client-slider__slide>.fusion-column-wrapper>.fusion-builder-row {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .client-slider .slide__image {
+                flex: 0 0 16.6666666%;
+            }
+
+            .client-slider .slide__image {
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            .client-slider .slide__image:nth-child(1) {
+                transition-delay: .1s;
+            }
+
+            .client-slider .slide__image:nth-child(2) {
+                transition-delay: .2s;
+            }
+
+            .client-slider .slide__image:nth-child(3) {
+                transition-delay: .3s;
+            }
+
+            .client-slider .slide__image:nth-child(4) {
+                transition-delay: .4s;
+            }
+
+            .client-slider .slide__image:nth-child(5) {
+                transition-delay: .5s;
+            }
+
+            .client-slider .slide__image:nth-child(6) {
+                transition-delay: .6s;
+            }
+
+            .client-slider .is-selected .slide__image {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .client-slider .slide__image>.fusion-column-wrapper>div>.fusion-imageframe>img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+
+        <section class="facts__area fix p-relative pt-50 pb-60">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
 
-                        <div class="customers__container">
+                <div
+                    class="fusion-fullwidth fullwidth-box fusion-builder-row-4 fusion-flex-container client-slider nonhundred-percent-fullwidth non-hundred-percent-height-scrolling">
+                    <div class="fusion-builder-row fusion-row fusion-flex-align-items-flex-start">
+
+                        <div
+                            class="fusion-layout-column fusion_builder_column fusion-builder-column-6 fusion_builder_column_1_1 1_1 fusion-flex-column client-slider__slide slide">
                             <div
-                                class="swiper brand__slider swiper-initialized swiper-horizontal swiper-pointer-events">
-                                <div class="swiper-wrapper"
-                                    style="transform: translate3d(-847.5px, 0px, 0px); transition-duration: 0ms;"
-                                    id="swiper-wrapper-10640899a29cdc206" aria-live="polite">
+                                class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                <div
+                                    class="fusion-builder-row fusion-builder-row-inner fusion-row fusion-flex-align-items-flex-start">
 
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate"
-                                        data-swiper-slide-index="1" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="2 / 5">
-                                        <img src="clients/brands/18.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate"
-                                        data-swiper-slide-index="2" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="3 / 5">
-                                        <img src="clients/brands/16.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate swiper-slide-prev"
-                                        data-swiper-slide-index="3" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="4 / 5">
-                                        <img src="clients/brands/2.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate swiper-slide-active"
-                                        data-swiper-slide-index="4" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="5 / 5">
-                                        <img src="clients/brands/20.png" alt="">
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-0 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
 
-
-                                    <div class="brand__item swiper-slide text-center swiper-slide-next"
-                                        data-swiper-slide-index="0" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="1 / 5">
-                                        <img src="clients/brands/19.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center" data-swiper-slide-index="1"
-                                        style="width: 252.5px; margin-right: 30px;" role="group" aria-label="2 / 5">
-                                        <img src="clients/brands/18.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center" data-swiper-slide-index="2"
-                                        style="width: 252.5px; margin-right: 30px;" role="group" aria-label="3 / 5">
-                                        <img src="clients/brands/16.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate-prev"
-                                        data-swiper-slide-index="3" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="4 / 5">
-                                        <img src="clients/brands/2.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate-active"
-                                        data-swiper-slide-index="4" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="5 / 5">
-                                        <img src="clients/brands/20.png" alt="">
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-1 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
 
-
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate swiper-slide-duplicate-next"
-                                        data-swiper-slide-index="0" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="1 / 5">
-                                        <img src="clients/brands/19.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate"
-                                        data-swiper-slide-index="1" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="2 / 5">
-                                        <img src="clients/brands/18.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate"
-                                        data-swiper-slide-index="2" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="3 / 5">
-                                        <img src="clients/brands/16.png" alt="">
-                                    </div>
-                                    <div class="brand__item swiper-slide text-center swiper-slide-duplicate"
-                                        data-swiper-slide-index="3" style="width: 252.5px; margin-right: 30px;"
-                                        role="group" aria-label="4 / 5">
-                                        <img src="clients/brands/2.png" alt="">
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-2 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
 
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-3 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-4 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-5 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
                         </div>
+
+                        <div
+                            class="fusion-layout-column fusion_builder_column fusion-builder-column-6 fusion_builder_column_1_1 1_1 fusion-flex-column client-slider__slide slide">
+                            <div
+                                class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                <div
+                                    class="fusion-builder-row fusion-builder-row-inner fusion-row fusion-flex-align-items-flex-start">
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-0 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-1 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-2 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-3 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-4 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-5 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="fusion-layout-column fusion_builder_column fusion-builder-column-6 fusion_builder_column_1_1 1_1 fusion-flex-column client-slider__slide slide">
+                            <div
+                                class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                <div
+                                    class="fusion-builder-row fusion-builder-row-inner fusion-row fusion-flex-align-items-flex-start">
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-0 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-1 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-2 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-3 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-4 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-5 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="fusion-layout-column fusion_builder_column fusion-builder-column-6 fusion_builder_column_1_1 1_1 fusion-flex-column client-slider__slide slide">
+                            <div
+                                class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                <div
+                                    class="fusion-builder-row fusion-builder-row-inner fusion-row fusion-flex-align-items-flex-start">
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-0 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-1 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-2 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-3 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-4 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-5 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="fusion-layout-column fusion_builder_column fusion-builder-column-6 fusion_builder_column_1_1 1_1 fusion-flex-column client-slider__slide slide">
+                            <div
+                                class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                <div
+                                    class="fusion-builder-row fusion-builder-row-inner fusion-row fusion-flex-align-items-flex-start">
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-0 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-1 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-2 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-3 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-4 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-5 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="fusion-layout-column fusion_builder_column fusion-builder-column-6 fusion_builder_column_1_1 1_1 fusion-flex-column client-slider__slide slide">
+                            <div
+                                class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                <div
+                                    class="fusion-builder-row fusion-builder-row-inner fusion-row fusion-flex-align-items-flex-start">
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-0 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-1 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-2 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-3 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-4 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-5 fusion_builder_column_inner_1_6 1_6 fusion-flex-column slide__image">
+                                        <div
+                                            class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column">
+                                            <div>
+                                                <span
+                                                    class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none">
+                                                    <img width="565" height="382" title="AON"
+                                                        src="https://www.skycreek.com/wp-content/uploads/2021/09/AON.jpg">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </section>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 
-        <!-- portfolio area start -->
+        <script>
+
+            $('.client-slider > .fusion-builder-row').flickity({
+                cellSelector: '.client-slider__slide',
+                fade: true,
+                autoPlay: 1000,
+                prevNextButtons: false,
+                pageDots: false,
+                selectedAttraction: 0.009,
+            });
+
+        </script>
+
+
+
         <section class="portfolio__area fix p-relative pb-90">
             <div class="portfolio__shape">
                 <img class="portfolio-s-1" src="assets/images/shape/portfolio/portfolio-s-1.png" alt="Code Builder">
@@ -1304,11 +2243,7 @@
                 </div>
             </div>
         </section>
-        <!-- portfolio area end -->
 
-       
-
-        <!-- experience area start -->
         <section class="experience__area fix p-relative pt-120 pb-120">
             <div class="experience__shape">
                 <img class="experience-s-1" src="assets/images/shape/experience/experience-s-1.png" alt="">
@@ -1334,12 +2269,15 @@
 
                             <p class="wow fadeInUp" data-wow-delay=".4s"
                                 style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                                W każdym projekcie udowadniamy, jak ważne są dobre pomysły i zaangażowanie zespołu w dążeniu do wyznaczonego na początku celu. Zrealizowaliśmy wiele unikalnych projektów, które przyniosły naszym klientom wyątkowe rezultaty. 
+                                W każdym projekcie udowadniamy, jak ważne są dobre pomysły i zaangażowanie zespołu w
+                                dążeniu do wyznaczonego na początku celu. Zrealizowaliśmy wiele unikalnych projektów,
+                                które przyniosły naszym klientom wyątkowe rezultaty.
                             </p>
 
                             <p class="wow fadeInUp" data-wow-delay=".4s"
                                 style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                                Rozumiemy potrzeby Twojego biznesu. Sprawimy, że będziesz sprzedawał więcej w Internecie. Należymy do Twojego zespołu! 
+                                Rozumiemy potrzeby Twojego biznesu. Sprawimy, że będziesz sprzedawał więcej w
+                                Internecie. Należymy do Twojego zespołu!
                             </p>
 
                             <a href="contact.html" class="m-btn mt-35 wow fadeInUp" data-wow-delay=".6s"
@@ -1361,10 +2299,6 @@
             </div>
         </section>
 
-
-
-
-        <!-- faq area start -->
         <section class="faq__area fix p-relative pt-105 pb-60 faq__rs">
             <div class="faq__shape">
                 <img class="faq-shape-1 d-none d-lg-block" src="assets/images/shape/faq/faq-s-1.png" alt="Code Builder">
@@ -1468,10 +2402,7 @@
                 </div>
             </div>
         </section>
-        <!-- faq area end -->
 
-
-        <!-- lets-work area start -->
         <section class="lets-work__area p-relative pt-165 pb-160">
             <div class="lets-work__shape">
                 <img class="lets-work-shape-1" src="assets/images/shape/lets-work/lets-work-s-1.png" alt="Code Builder">
@@ -1489,18 +2420,18 @@
                                 Decyzja pozostawiamy tobie, wiedz, że
                             </h4>
                             <h2 class="section__title wow fadeInUp" data-wow-delay=".3s">
-                                Zapewnimy Twojej firmie wsparcie, <br>którego potrzebuje, aby zyskać<span>przewagę konkurencyjną! </span>
+                                Zapewnimy Twojej firmie wsparcie, <br>którego potrzebuje, aby zyskać<span>przewagę
+                                    konkurencyjną! </span>
                             </h2>
-                            <a class="m-btn mt-35 wow fadeInUp" data-wow-delay=".6s" href="contact.html"> Darmowa rozmowa bez zobowiązań </a>
+                            <a class="m-btn mt-35 wow fadeInUp" data-wow-delay=".6s" href="contact.html"> Zamów
+                                bezpłatną rozmowę </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- lets-work area end -->
 
     </main>
-
 
     <footer>
         <div class="footer__area fix p-relative pt-200 pb-10">
@@ -1513,13 +2444,15 @@
             </div>
 
             <div class="container">
+
                 <div class="row mb-50">
                     <div class="col-xl-4 col-lg-4 col-md-10 col-sm-10">
                         <div class="footer__widget wow fadeIn" data-wow-delay=".5s">
                             <div class="footer__widget-logo">
                                 <img src="_logotype-CodeBuilder/Logo_codebuilder-white.png" style="max-width: 70%"
                                     alt="logo">
-                                <p>Tworzymy indywidualne strony Internetowe i aplikacje webowe. Wykonujemy aplikacje CMS dla firm.</p>
+                                <p>Tworzymy indywidualne strony Internetowe i aplikacje webowe. Wykonujemy aplikacje CMS
+                                    dla firm.</p>
                             </div>
                             <div class="footer__widget-social">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
