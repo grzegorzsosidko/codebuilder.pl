@@ -20,6 +20,9 @@
 		speed: 4e3
 	});
 
+
+
+	
 	// Mobile Side Menu
 	$('.side-toggle').on('click', function () {
 		$('.side-info').addClass('info-open');
