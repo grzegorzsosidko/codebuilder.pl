@@ -4,12 +4,78 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codebuilder - strony, sklepy Internetowe - SEO, Audyt</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Place favicon.ico in the root directory -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.png">
+
+    <meta name="google-site-verification" content="3XCVQLKogasyz6JesxxJJjhbfGHLtqLmA4-kcU6URgI" />
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#73efcc" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Codebuilder - strony internetowe, sklepy internetowe </title>
+
+    <meta name="author" content="CodeBuilder">
+    <meta name="description" content="CodeBuilder | Zwiększamy zasięgi">
+    <meta name="keywords"
+        content="web developer, strony internetowe, sklepy internetowe, wordpress, prestashop, ecommerce, programista, sosidko, grzegorz sosidko, codebuilder,
+        aplikacje mobile, aplikacje CMS, aplikacje CRM, CMS, CRM, zasięg, SEO, UX, UI, IO, AI, AO, social media, zarzadzanie social media, atheus, atheus, web, creative, works, showcase, portfolio, highlight, projects, modern, agency, digital, studio, css, animation, transition, freelancers">
+
+    <meta name="copyright" content="codebuilder.app" />
+    <meta name="robots" content="follow" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="43200" />
+
+    <!-- SOCIAL MEDIA META -->
+    <meta property="og:description" content="CodeBuilder | Zwiększamy zasięgi">
+    <meta property="og:image" content="https://codebuilder.app/welcome/preview.png">
+    <meta property="og:site_name" content="codebuilderapp">
+    <meta property="og:title" content="CodeBuilder">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codebuilder.app">
+
+    <!-- TWITTER META -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@zuzuzlke">
+    <meta name="twitter:creator" content="@zuzuzlke">
+    <meta name="twitter:title" content="zuzuzlke">
+    <meta name="twitter:description" content="CodeBuilder | Zwiększamy zasięgi">
+    <meta name="twitter:image" content="https://codebuilder.app/welcome/preview.png">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5Z596LQ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TRLGNDCPE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5TRLGNDCPE');
+    </script>
+
+    <link rel="stylesheet preconnect" href="assets/css/_disabled.css">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -23,16 +89,25 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="assets/css/flickity.css">
+    <link rel="stylesheet" href="assets/css/flickity-fade.css">
+
 </head>
 
 <body>
+
+    <div class="custom-cursor"></div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z596LQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Messenger Wtyczka czatu Code -->
     <div id="fb-root"></div>
 
     <!-- Your Wtyczka czatu code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <script>
         var chatbox = document.getElementById('fb-customer-chat');
@@ -170,439 +245,9 @@
     <div class="offcanvas-overlay"></div>
     <!-- mobile menu sidebar end -->
 
-    <style>
-        #scrollBarTop {
-            border-radius: 0 10px 10px 0;
-            background-color: #75dab4;
-            width: 0;
-            height: 1px;
-            position: fixed;
-            top: 94.1px;
-            z-index: 995;
-            transition: width 0.3s ease-in-out;
-        }
-    </style>
-
-    <script>
-        const ProgressOnScroll = () => {
-            const d = document;
-            const win = window;
-            win.addEventListener('scroll', () => {
-                const scroll = d.getElementById("scrollBarTop"),
-                    w = d.documentElement.scrollTop,
-                    h = d.body.scrollHeight,
-                    width = Math.ceil(w / (h - win.innerHeight) * 100);
-
-                scroll.style.width = `${width}%`;
-            });
-        };
-
-        ProgressOnScroll();
-    </script>
-
     <main>
 
-
-        <style>
-            .welcome-area--l3 {
-                padding-top: 125px;
-                position: relative;
-            }
-
-            @media (min-width: 768px) {
-                .welcome-area--l3 {
-                    padding-top: 115px;
-                    padding-bottom: 38px;
-                }
-            }
-
-            @media (min-width: 992px) {
-                .welcome-area--l3 {
-                    padding-top: 185px;
-                    padding-bottom: 80px;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                .welcome-area--l3 {
-                    padding-top: 220px;
-                    padding-bottom: 180px;
-                }
-            }
-
-            .welcome-content--l3 {
-                margin-bottom: 40px;
-                margin-top: 0;
-            }
-
-            @media (min-width: 768px) {
-                .welcome-content--l3 {
-                    margin-top: 30px;
-                    margin-bottom: 40px;
-                }
-            }
-
-            @media (min-width: 992px) {
-                .welcome-content--l3 {
-                    margin-top: 0;
-                }
-            }
-
-            .welcome-content--l3__sub-title {
-                color: #ff5722;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.75;
-            }
-
-            @media (min-width: 992px) {
-                .welcome-content--l3__sub-title {
-                    margin-bottom: 28px;
-                }
-            }
-
-            .welcome-content--l3__title {
-                font-size: 38px;
-                font-weight: 500;
-                letter-spacing: -0.5px;
-                line-height: 1.2068;
-                margin-bottom: 21px;
-            }
-
-            @media (min-width: 768px) {
-                .welcome-content--l3__title {
-                    font-size: 48px;
-                }
-            }
-
-            @media (min-width: 992px) {
-                .welcome-content--l3__title {
-                    font-size: 58px;
-                }
-            }
-
-            .welcome-content--l3__descriptions {
-                font-size: 16px;
-                font-weight: 400;
-                letter-spacing: normal;
-                line-height: 1.875;
-                margin-bottom: 10px;
-            }
-
-            .welcome-content--l3 .welcome-btn-group--l3 {
-                padding-top: 15px;
-                margin-bottom: -20px;
-            }
-
-            @media (min-width: 992px) {
-                .welcome-content--l3 .welcome-btn-group--l3 {
-                    padding-top: 28px;
-                }
-            }
-
-            .welcome-content--l3 .welcome-btn-group--l3 .btn {
-                margin-bottom: 20px;
-            }
-
-            .welcome-content--l3 .welcome-btn-group--l3 .btn--lg-2 {
-                min-width: 120px;
-                height: 50px;
-            }
-
-            @media (min-width: 480px) {
-                .welcome-content--l3 .welcome-btn-group--l3 .btn--lg-2 {
-                    min-width: 180px;
-                    height: 56px;
-                }
-            }
-
-            .welcome-image-group-wrapper--l3 {
-                position: relative;
-                width: 100%;
-            }
-
-            @media (min-width: 768px) {
-                .welcome-image-group-wrapper--l3 {
-                    position: absolute;
-                    width: 20%;
-                    bottom: 0;
-                    right: 11%;
-                }
-            }
-
-            @media (min-width: 992px) {
-                .welcome-image-group-wrapper--l3 {
-                    position: absolute;
-                    width: 100%;
-                    bottom: 0;
-                    right: -10%;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                .welcome-image-group-wrapper--l3 {
-                    position: absolute;
-                    width: 100%;
-                    bottom: 0;
-                    right: 0%;
-                }
-            }
-
-            @media (min-width: 992px) {
-                .welcome-image-group-wrapper--l3 {
-                    max-width: 543px;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                .welcome-image-group-wrapper--l3 {
-                    max-width: 695px;
-                }
-            }
-
-            @media (min-width: 1400px) {
-                .welcome-image-group-wrapper--l3 {
-                    max-width: 815px;
-                }
-            }
-
-            .welcome-image-group--l3 {
-                position: relative;
-                max-width: 100%;
-                z-index: 1;
-            }
-
-            @media (min-width: 992px) {
-                .welcome-image-group--l3 {
-                    max-width: 350px;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                .welcome-image-group--l3 {
-                    max-width: 450px;
-                }
-            }
-
-            @media (min-width: 1400px) {
-                .welcome-image-group--l3 {
-                    max-width: 525px;
-                }
-            }
-
-            .welcome-image-group--l3__img-1 {
-                position: absolute;
-                right: -55%;
-                bottom: 0;
-                width: 100%;
-                z-index: -1;
-            }
-
-            .welcome-image-group--l3__img-2 {
-                position: absolute;
-                left: 83%;
-                top: 35%;
-                width: 20%;
-                z-index: -1;
-            }
-
-            @media (min-width: 1200px) {
-                .welcome-image-group--l3__img-2 {
-                    max-width: 500px;
-                }
-            }
-
-            .welcome-image-group--l3__img-3 {
-                position: absolute;
-                left: -10%;
-                bottom: 8%;
-                width: 61%;
-                z-index: 1;
-            }
-
-            @media (min-width: 1200px) {
-                .welcome-image-group--l3__img-3 {
-                    max-width: 500px;
-                }
-            }
-
-
-            .content-section--l2-1__shape {
-                position: absolute;
-                left: -3.8%;
-                top: 12%;
-                z-index: 0;
-                width: 9%;
-            }
-        </style>
-
-        <div class="custom-cursor"></div>
-
-        <style>
-            .hero-banner-nine {
-                position: relative;
-                z-index: 1;
-                padding-top: 270px
-            }
-
-            .hero-banner-nine .hero-heading {
-                font-weight: 700;
-                font-size: 72px;
-                line-height: 1.25em
-            }
-
-            .hero-banner-nine .hero-heading-h6 {
-                font-weight: 500;
-                font-size: 32px;
-                line-height: 1.25em
-            }
-
-            .hero-banner-nine .hero-heading span {
-                display: inline-block;
-                position: relative
-            }
-
-            .hero-banner-nine .hero-heading span img {
-                position: absolute;
-                max-height: 100%;
-                z-index: -1;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%)
-            }
-
-            .hero-banner-nine .hero-sub-heading {
-                font-size: 24px;
-                line-height: 1.5em;
-                color: #2f2f2f;
-                padding: 36px 0 58px 0
-            }
-
-            .hero-banner-nine form {
-                max-width: 550px;
-                height: 70px;
-                position: relative
-            }
-
-            .hero-banner-nine form input {
-                border: none;
-                background: #f4f4f4;
-                border-radius: 54px;
-                width: calc(100% - 100px);
-                height: 100%;
-                font-size: 16px;
-                padding: 0 50px
-            }
-
-            .hero-banner-nine form button {
-                position: absolute;
-                right: 0;
-                top: 0;
-                background: #572ff6;
-                width: 70px;
-                height: 70px;
-                border-radius: 50%;
-                text-align: center;
-                color: #fff;
-                font-size: 17px;
-                transition: all .3s ease-in-out
-            }
-
-            .hero-banner-nine form button:hover {
-                background: #ff4a8b
-            }
-
-            .hero-banner-nine form ::-webkit-input-placeholder {
-                color: #0b0b0b
-            }
-
-            .hero-banner-nine form :-ms-input-placeholder {
-                color: #0b0b0b
-            }
-
-            .hero-banner-nine form ::placeholder {
-                color: #0b0b0b
-            }
-
-            .hero-banner-nine .term-text {
-                font-size: 16px;
-                color: #a5a5a5;
-                margin-top: 22px
-            }
-
-            .hero-banner-nine .term-text a {
-                color: #572ff6
-            }
-
-            .hero-banner-nine .bg-shape {
-                top: 0;
-                right: 0
-            }
-
-            .hero-banner-nine .illustration-container {
-                position: absolute;
-                right: 0;
-                top: 22%;
-                z-index: 1;
-                width: 44%
-            }
-
-            .hero-banner-nine .illustration-container:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 70px;
-                right: -30px;
-                bottom: 50px;
-                background: rgba(255, 255, 255, .4);
-                border-radius: 10px;
-                z-index: -1
-            }
-
-            .hero-banner-nine .illustration-container:after {
-                content: '';
-                position: absolute;
-                top: -25px;
-                left: 100px;
-                right: -30px;
-                bottom: 50px;
-                background: rgba(255, 255, 255, .2);
-                border-radius: 10px;
-                z-index: -2
-            }
-
-
-            .partner-slider-two p {
-                font-size: 20px;
-                color: #000;
-                padding-bottom: 45px
-            }
-
-            .partner-slider-two p span {
-                font-weight: 500
-            }
-
-            .partner-slider-two .img-meta {
-                height: 80px
-            }
-
-            .partner-slider-two p.text-lg {
-                font-size: 36px;
-                line-height: 1.44em;
-                font-weight: 500
-            }
-
-            .partner-slider-two p.text-lg span {
-                color: #ffb840
-            }
-
-            .shapes {
-                position: absolute;
-                z-index: -1
-            }
-        </style>
-
-        <div class="hero-banner-nine lg-container" style="margin-top: -35px">
+        <div class="hero-banner-nine lg-container" style="margin-top: -35px;">
             <img src="https://html.creativegigstf.com/deski/deski/images/shape/190.svg" alt="" class="shapes bg-shape"
                 style="margin-top: -40px">
             <div class="hero__shape">
@@ -693,114 +338,7 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <style>
-            .me-3 {
-                margin-right: 1rem !important
-            }
-
-            .fs-sm {
-                font-size: 0.875rem !important
-            }
-        </style>
-
-
-
-
-
-        <!-- https://www.devsnews.com/template/neeha/neeha/index.html -->
-
-
-
-
-        <style>
-            .title-style-twelve .upper-title {
-                text-transform: uppercase;
-                font-size: 18px;
-                color: rgba(0, 0, 0, .4);
-                letter-spacing: 3px;
-                padding-bottom: 8px
-            }
-
-            .title-style-twelve h2 {
-                font-weight: 700;
-                font-size: 58px;
-                line-height: 1.29em
-            }
-
-            .title-style-twelve span {
-                position: relative
-            }
-
-            .title-style-twelve span img {
-                position: absolute;
-                bottom: -20px;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: -1
-            }
-
-            .title-style-twelve p {
-                font-size: 24px;
-                line-height: 1.75em
-            }
-
-
-            .block-style-twentySeven {
-                border: 1px solid #000;
-                border-radius: 20px;
-                padding: 55px 12px 40px;
-                text-align: center;
-                margin-top: 35px;
-                transition: all .3s ease-in-out
-            }
-
-            .block-style-twentySeven:hover {
-                border-color: #fff;
-                background: #fff;
-                box-shadow: 0 15px 40px rgba(21, 21, 21, .09)
-            }
-
-            .block-style-twentySeven .icon {
-                height: 50px
-            }
-
-            .block-style-twentySeven .icon img {
-                max-height: 100%
-            }
-
-            .block-style-twentySeven h4 {
-                font-weight: 500;
-                font-size: 24px;
-                letter-spacing: -.5px;
-                margin: 42px 0 20px
-            }
-
-            .block-style-twentySeven p {
-                font-size: 17px;
-                line-height: 28px
-            }
-        </style>
-
-        <section class="project__area project__area-pt p-relative pt-130">
+        <section class="project__area project__area-pt p-relative pt-130" style="z-index: 2">
             <div class="project__shape">
                 <img class="project-s-1" src="assets/images/shape/project/p-s-1.png" alt="">
                 <img class="project-s-2" src="assets/images/shape/project/p-s-2.png" alt="">
@@ -848,83 +386,7 @@
             </div>
         </section>
 
-
-        <style>
-            .what-we-do .single-what-we-do {
-                margin-top: 30px;
-                border-radius: 14px;
-                background-color: #fff;
-                -webkit-box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
-                box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
-                padding: 50px;
-                padding-left: 60px;
-                padding-bottom: 40px;
-                -webkit-transition: all .3s ease-in-out;
-                transition: all .3s ease-in-out;
-            }
-
-            @media (max-width: 991px) {
-                .what-we-do .single-what-we-do {
-                    padding: 30px;
-                }
-            }
-
-            .what-we-do .single-what-we-do:hover {
-                -webkit-transform: translateY(-10px);
-                transform: translateY(-10px);
-            }
-
-            .what-we-do .single-what-we-do:hover .content a {
-                color: #111;
-            }
-
-            .what-we-do .single-what-we-do .top {
-                overflow: hidden;
-                clear: both;
-            }
-
-            .what-we-do .single-what-we-do .icon {
-                border-style: solid;
-                border-width: 2px;
-                border-color: #f2f2f2;
-                border-radius: 14px;
-                width: 84px;
-                height: 84px;
-                text-align: center;
-                line-height: 84px;
-                background-color: #fff;
-                margin-right: 30px;
-                float: left;
-                overflow: hidden;
-            }
-
-            .what-we-do .single-what-we-do .title {
-                overflow: auto;
-            }
-
-            .what-we-do .single-what-we-do .content {
-                margin-top: 30px;
-            }
-
-            .what-we-do .single-what-we-do .content p {
-                font-size: 17px;
-                line-height: 30px;
-            }
-
-            .what-we-do .single-what-we-do .content a {
-                text-transform: none;
-                margin-top: 25px;
-                display: block;
-                color: #c9c9c9;
-            }
-
-
-            .section-bg {
-                background-color: #f7f7f7;
-            }
-        </style>
-
-        <section class="what-we-do section-bg" style="padding: 100px 0; margin-top: -120px">
+        <section class="what-we-do section-bg digi-service" style="padding: 100px 0 100px 0; margin-top: -120px">
             <div class="container">
 
                 <div class="fancy-feature-twentySeven lg-container mt-100 pt-90 pb-30 md-mt-60" id="product">
@@ -943,189 +405,76 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row mt-30">
 
-                    <div class="col-md-6 col-xl-4">
-                        <div class="single-what-we-do">
-                            <div class="top">
-                                <div class="icon">
-                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service1.png"
-                                        alt="">
-                                </div>
-                                <div class="title">
-                                    <h3>Strony <br> Internetowe</h3>
-                                </div>
+                    <div class="col-lg-3 col-sm-6 mt30 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <div class="ree-card reebga">
+                            <div class="creative-cntnt">
+                                <h4 class="mb15"><a href="service-details.html"> Strony Internetowe</a></h4>
+                                <p>We don't just build websites, we build websites that SELLS</p>
                             </div>
-                            <div class="content">
-                                <p>Indywidualne strony i portale www, oparte na autorskim systemie CMS lub Wordpress,
-                                    najwyższej jakości.</p>
-                                <a href="services">Szczegóły oferty</a>
-                            </div>
+                            <div class="creative-img"><img
+                                    src="https://separateweb.com/reevan-demo/images/svg/prototype.svg"
+                                    alt="App Development" class="img-fluid"></div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-xl-4">
-                        <div class="single-what-we-do">
-                            <div class="top">
-                                <div class="icon">
-                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service2.png"
-                                        alt="">
-                                </div>
-                                <div class="title">
-                                    <h3>Sklepy<br> Internetowe</h3>
-                                </div>
+                    <div class="col-lg-3 col-sm-6 mt30 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <div class="ree-card reebgb">
+                            <div class="creative-cntnt">
+                                <h4 class="mb15"><a href="service-details.html"> Sklepy Internetowe</a></h4>
+                                <p>We don't just build websites, we build websites that SELLS</p>
                             </div>
-                            <div class="content">
-                                <p> Customowe, dopasowane sklepy i platformy handlowe, umożliwiające transakcje na całym
-                                    świecie. </p>
-                                <a href="services">Szczegóły oferty</a>
-                            </div>
+                            <div class="creative-img"><img
+                                    src="https://separateweb.com/reevan-demo/images/svg/appdevelop.svg"
+                                    alt="App Development" class="img-fluid"></div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-xl-4">
-                        <div class="single-what-we-do">
-                            <div class="top">
-                                <div class="icon">
-                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service3.png"
-                                        alt="">
-                                </div>
-                                <div class="title">
-                                    <h3>Systemy <br>dedykowane</h3>
-                                </div>
+                    <div class="col-lg-3 col-sm-6 mt30 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
+                        <div class="ree-card reebgc">
+                            <div class="creative-cntnt">
+                                <h4 class="mb15"><a href="service-details.html"> Aplikacje CMS</a></h4>
+                                <p>We don't just build websites, we build websites that SELLS</p>
                             </div>
-                            <div class="content">
-                                <p>Aplikacje internetowe, indywidualnie tworzone do twoich potrzeb np. kalkulatory,
-                                    generatory leadów.</p>
-                                <a href="services">Szczegóły oferty</a>
-                            </div>
+                            <div class="creative-img"><img
+                                    src="https://separateweb.com/reevan-demo/images/svg/graphic.svg"
+                                    alt="App Development" class="img-fluid"></div>
                         </div>
                     </div>
 
-
-
-                    <div class="col-md-6 col-xl-5 offset-1">
-                        <div class="single-what-we-do">
-                            <div class="top">
-                                <div class="icon">
-                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service3.png"
-                                        alt="">
-                                </div>
-                                <div class="title">
-                                    <h3>Audyt SEO <br>Optymalizacja</h3>
-                                </div>
+                    <div class="col-lg-3 col-sm-6 mt30 aos-init aos-animate" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="ree-card reebgd">
+                            <div class="creative-cntnt">
+                                <h4 class="mb15"><a href="service-details.html"> Social Media</a></h4>
+                                <p>We don't just build websites, we build websites that SELLS</p>
                             </div>
-                            <div class="content">
-                                <p>Dokładny audyt, który wskaże nam co należy poprawić na Twojej stronie Internetowej,
-                                    zwiększając konwersje i optymalizację.</p>
-                                <a href="services">Szczegóły oferty</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-xl-5">
-                        <div class="single-what-we-do">
-                            <div class="top">
-                                <div class="icon">
-                                    <img src="https://codexpeed.com/html/promix-html/assets/img/icon/service3.png"
-                                        alt="">
-                                </div>
-                                <div class="title">
-                                    <h3>Zarządzanie <br>social media</h3>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <p> Prowadzimy i zarządzamy kontami Facebook i Instagram. Dbamy o reklamę i konwersję, a
-                                    także zapewniamy ruch Twoich social media.</p>
-                                <a href="services">Szczegóły oferty</a>
-                            </div>
+                            <div class="creative-img"><img
+                                    src="https://separateweb.com/reevan-demo/images/svg/stracture.svg"
+                                    alt="App Development" class="img-fluid"></div>
                         </div>
                     </div>
 
 
                 </div>
+
+                <div class="cta-block-wide mt-50">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-10 vcenter">
+                            <div class="cta-heading-wide-bt">
+                                <h3 class="mt-10"> ... I wiele wiele więcej, poznaj <span class="ree-text rt40"><a
+                                            href="oferta">naszą ofertę</a></span></h3><br>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
-        <style>
-            .screenshots.style-4 {
-                background-color: #f0eff5;
-                overflow: hidden;
-                padding-top: 100px;
-                position: relative;
-                height: 700px;
-            }
-
-            .screenshots.style-4::after {
-                position: absolute;
-                content: "";
-                bottom: -1px;
-                left: 0;
-                width: 100%;
-                height: 0px;
-                border-top-left-radius: 30px;
-                border-top-right-radius: 30px;
-                background-color: #f0eff5;
-                z-index: 10;
-            }
-
-            .screenshots.style-4 .screenshots-slider {
-                position: absolute;
-                top: 110px;
-                width: calc(100% + 120px);
-                left: -60px;
-            }
-
-            .screenshots.style-4 .screenshots-slider .img {
-                margin: 0 auto;
-                height: 420px;
-                width: 190px;
-            }
-
-            .screenshots.style-4 .screenshots-slider .img img {
-                width: 100%;
-                height: 100%;
-                -o-object-fit: cover;
-                object-fit: cover;
-                border-radius: 20px;
-            }
-
-            .screenshots.style-4 .mob-hand {
-                pointer-events: none;
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                -webkit-transform: translateX(-33%);
-                -ms-transform: translateX(-33%);
-                transform: translateX(-33%);
-                height: 600px;
-                z-index: 10;
-            }
-
-            .screenshots.style-4 .screenshots-slider {
-                width: 100%;
-                left: 0;
-            }
-
-            .screenshots.style-4 .screenshots-slider .img {
-                margin: 0 auto;
-                width: 190px;
-            }
-
-            @media screen and (max-width: 1100px) {
-                .screenshots.style-4 .screenshots-slider .img {
-                    margin: 0 auto;
-                    width: 190px;
-                }
-            }
-        </style>
-
-
-        <!-- ====== global style ====== -->
-
         <div class="screenshots style-4" id="4">
             <div class="screenshots-slider style-4">
-                <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                <div class="swiper-container swiper-container-initialized swiper-container-horizontal" style="max-width: 1280px">
                     <div class="swiper-wrapper"
                         style="transition-duration: 1000ms; transform: translate3d(-2448px, 0px, 0px);">
                         <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
@@ -1235,50 +584,6 @@
             <img src="https://smartinnovates.com/items/iteck/html/assets/img/screenshots/hand.png" alt=""
                 class="mob-hand">
         </div>
-
-
-        <script src="https://smartinnovates.com/items/iteck/html/assets/js/lib/jquery-3.0.0.min.js"></script>
-        <script>
-
-            // ------------ swiper sliders -----------
-            $(document).ready(function () {
-
-                // ------------ works sliders -----------
-                var swiper = new Swiper('.screenshots-slider.style-4 .swiper-container', {
-                    slidesPerView: 4,
-                    spaceBetween: 0,
-                    centeredSlides: true,
-                    speed: 1000,
-                    pagination: false,
-                    navigation: false,
-                    mousewheel: false,
-                    keyboard: true,
-                    autoplay: {
-                        delay: 4000,
-                    },
-                    loop: true,
-                    breakpoints: {
-                        0: {
-                            slidesPerView: 2,
-                        },
-                        480: {
-                            slidesPerView: 2,
-                        },
-                        787: {
-                            slidesPerView: 3,
-                        },
-                        991: {
-                            slidesPerView: 3,
-                        },
-                        1200: {
-                            slidesPerView: 4,
-                        }
-                    }
-                });
-
-            });
-
-        </script>
 
         <section class="services__area p-relative fix pt-120 pb-90">
             <div class="services__shape">
@@ -1460,66 +765,6 @@
                 </div>
             </div>
         </section>
-
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
-        <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
-
-        <style>
-            .client-slider {
-                max-width: 1200px;
-            }
-
-            .client-slider .client-slider__slide>.fusion-column-wrapper>.fusion-builder-row {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                justify-content: center;
-            }
-
-            .client-slider .slide__image {
-                flex: 0 0 16.6666666%;
-            }
-
-            .client-slider .slide__image {
-                transition: transform 0.3s ease, opacity 0.3s ease;
-                opacity: 0;
-                transform: translateY(16px);
-            }
-
-            .client-slider .slide__image:nth-child(1) {
-                transition-delay: .1s;
-            }
-
-            .client-slider .slide__image:nth-child(2) {
-                transition-delay: .2s;
-            }
-
-            .client-slider .slide__image:nth-child(3) {
-                transition-delay: .3s;
-            }
-
-            .client-slider .slide__image:nth-child(4) {
-                transition-delay: .4s;
-            }
-
-            .client-slider .slide__image:nth-child(5) {
-                transition-delay: .5s;
-            }
-
-            .client-slider .slide__image:nth-child(6) {
-                transition-delay: .6s;
-            }
-
-            .client-slider .is-selected .slide__image {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            .client-slider .slide__image>.fusion-column-wrapper>div>.fusion-imageframe>img {
-                max-width: 100%;
-                height: auto;
-            }
-        </style>
 
         <section class="facts__area fix p-relative pt-50 pb-60">
             <div class="container">
@@ -2104,25 +1349,6 @@
             </div>
         </section>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
-
-        <script>
-
-            $('.client-slider > .fusion-builder-row').flickity({
-                cellSelector: '.client-slider__slide',
-                fade: true,
-                autoPlay: 1000,
-                prevNextButtons: false,
-                pageDots: false,
-                selectedAttraction: 0.009,
-            });
-
-        </script>
-
-
-
         <section class="portfolio__area fix p-relative pb-90">
             <div class="portfolio__shape">
                 <img class="portfolio-s-1" src="assets/images/shape/portfolio/portfolio-s-1.png" alt="Code Builder">
@@ -2145,21 +1371,21 @@
                                     </h2>
                                 </div>
                                 <div class="portfolio__menu">
-                                    <button class="active" data-filter="*">Show All</button>
-                                    <button data-filter=".cat1">UI/UX Design</button>
-                                    <button data-filter=".cat2">Marketing</button>
-                                    <button data-filter=".cat3">Development</button>
-                                    <button data-filter=".cat4">Content Writing</button>
+                                    <button class="active" data-filter="*">Wszystko</button>
+                                    <button data-filter=".cat1">Strona www</button>
+                                    <button data-filter=".cat2">Sklep internetowy</button>
+                                    <button data-filter=".cat3">Aplikacje CMS</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row grid mt-150">
+
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat4 cat3">
                         <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
                             <div class="portfolio__image">
-                                <img src="assets/images/portfolio/portfolio-1.jpg" alt="portfolio">
+                                <img src="assets/images/portfolio/portfolio-2.jpg" alt="portfolio">
                                 <div class="portfolio__text">
                                     <p>Web Design</p>
                                     <h3><a href="single-portfolio.html">Digital Agency</a></h3>
@@ -2170,6 +1396,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat2 cat6 cat3">
                         <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
                             <div class="portfolio__image">
@@ -2184,6 +1411,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat5 cat1 cat4">
                         <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
                             <div class="portfolio__image">
@@ -2198,6 +1426,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat3 cat4 cat5">
                         <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
                             <div class="portfolio__image">
@@ -2212,10 +1441,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat6 cat1 cat4">
                         <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
                             <div class="portfolio__image">
-                                <img src="assets/images/portfolio/portfolio-6.jpg" alt="portfolio">
+                                <img src="assets/images/portfolio/portfolio-1.jpg" alt="portfolio">
                                 <div class="portfolio__text">
                                     <p>Web Design</p>
                                     <h3><a href="single-portfolio.html">Digital Agency</a></h3>
@@ -2226,6 +1456,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat2 cat6 cat3">
                         <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
                             <div class="portfolio__image">
@@ -2240,6 +1471,97 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat4 cat3">
+                        <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
+                            <div class="portfolio__image">
+                                <img src="assets/images/portfolio/portfolio-2.jpg" alt="portfolio">
+                                <div class="portfolio__text">
+                                    <p>Web Design</p>
+                                    <h3><a href="single-portfolio.html">Digital Agency</a></h3>
+                                    <div class="portfolio__link">
+                                        <a href="portfolio.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat2 cat6 cat3">
+                        <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
+                            <div class="portfolio__image">
+                                <img src="assets/images/portfolio/portfolio-2.jpg" alt="portfolio">
+                                <div class="portfolio__text">
+                                    <p>Web Design</p>
+                                    <h3><a href="single-portfolio.html">Digital Agency</a></h3>
+                                    <div class="portfolio__link">
+                                        <a href="portfolio.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat5 cat1 cat4">
+                        <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
+                            <div class="portfolio__image">
+                                <img src="assets/images/portfolio/portfolio-3.jpg" alt="portfolio">
+                                <div class="portfolio__text">
+                                    <p>Web Design</p>
+                                    <h3><a href="single-portfolio.html">Digital Agency</a></h3>
+                                    <div class="portfolio__link">
+                                        <a href="portfolio.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat3 cat4 cat5">
+                        <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
+                            <div class="portfolio__image">
+                                <img src="assets/images/portfolio/portfolio-4.jpg" alt="portfolio">
+                                <div class="portfolio__text">
+                                    <p>Web Design</p>
+                                    <h3><a href="single-portfolio.html">Digital Agency</a></h3>
+                                    <div class="portfolio__link">
+                                        <a href="portfolio.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat6 cat1 cat4">
+                        <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
+                            <div class="portfolio__image">
+                                <img src="assets/images/portfolio/portfolio-1.jpg" alt="portfolio">
+                                <div class="portfolio__text">
+                                    <p>Web Design</p>
+                                    <h3><a href="single-portfolio.html">Digital Agency</a></h3>
+                                    <div class="portfolio__link">
+                                        <a href="portfolio.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat2 cat6 cat3">
+                        <div class="portfolio__item mb-30 wow fadeIn" data-wow-delay=".3s">
+                            <div class="portfolio__image">
+                                <img src="assets/images/portfolio/portfolio-5.jpg" alt="portfolio">
+                                <div class="portfolio__text">
+                                    <p>Web Design</p>
+                                    <h3><a href="single-portfolio.html">Digital Agency</a></h3>
+                                    <div class="portfolio__link">
+                                        <a href="portfolio.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -2522,7 +1844,22 @@
         </div>
     </footer>
 
+    <script src="assets/js/vendor/jquery-3.0.0.min.js"></script>
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/flickity.pkgd.min.js"></script>
+    <script src="assets/js/vendor/flickity-fade.js"></script>
+
+    <script>
+        $('.client-slider > .fusion-builder-row').flickity({
+            cellSelector: '.client-slider__slide',
+            fade: true,
+            autoPlay: 1000,
+            prevNextButtons: false,
+            pageDots: false,
+            selectedAttraction: 0.009,
+        });
+    </script>
+
     <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/backToTop.js"></script>
@@ -2537,188 +1874,16 @@
     <script src="assets/js/tilt.jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script src="assets/js/jquery.min.js"></script>
+    <script src='assets/js/bundle.js'></script>
 
-    <style>
-        /* CUSTOM CURSOR */
-        .custom-cursor {
-            position: fixed;
-            opacity: 0;
-            pointer-events: none;
-            mix-blend-mode: difference;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #fff;
-            transition: transform 350ms ease;
-            transform: translate(-50%, -50%) scale(0.4);
-            z-index: 999;
-        }
-
-        .custom-cursor--link {
-            transform: translate(-50%, -50%) scale(1);
-        }
-
-        /* RESPONSIVE TABLET  */
-        @media only screen and (max-width: 991px),
-        only screen and (max-device-width: 991px) {
-            body {
-                cursor: inherit !important;
-            }
-
-            .custom-cursor {
-                display: none;
-            }
-        }
-
-        /* KEYFRAMES */
-        @keyframes texteffect {
-            0% {
-                transform: translateY(50%);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes texteffect {
-            0% {
-                -webkit-transform: translateY(50%);
-                -webkit-opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translateY(0);
-                -webkit-opacity: 1;
-            }
-        }
-
-        @-moz-keyframes texteffect {
-            0% {
-                -moz-transform: translateY(50%);
-                opacity: 0;
-            }
-
-            100% {
-                -moz-transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @-o-keyframes texteffect {
-            0% {
-                -o-transform: translateY(50%);
-                opacity: 0;
-            }
-
-            100% {
-                -o-transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /*# sourceMappingURL=style.css.map */
-    </style>
-
-    <div class="custom-cursor"></div>
-
-
-    <script src="https://themezinho.net/atheus/js/jquery.min.js"></script>
-    <script src='https://themezinho.net/atheus/js/bundle.js'></script>
-
-    <script>
-        (function ($) {
-
-            // CUSTOM CURSOR
-            document.addEventListener("DOMContentLoaded", function (event) {
-                var cursor = document.querySelector(".custom-cursor");
-                var links = document.querySelectorAll(
-                    "a, .svg, .swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet, h1, h2, img"
-                );
-                var initCursor = false;
-
-                for (var i = 0; i < links.length; i++) {
-                    var selfLink = links[i];
-
-                    selfLink.addEventListener("mouseover", function () {
-                        cursor.classList.add("custom-cursor--link");
-                    });
-                    selfLink.addEventListener("mouseout", function () {
-                        cursor.classList.remove("custom-cursor--link");
-                    });
-                }
-
-                window.onmousemove = function (e) {
-                    var mouseX = e.clientX;
-                    var mouseY = e.clientY;
-
-                    if (!initCursor) {
-                        // cursor.style.opacity = 1;
-                        TweenLite.to(cursor, 0.3, {
-                            opacity: 1
-                        });
-                        initCursor = true;
-                    }
-
-                    TweenLite.to(cursor, 0, {
-                        top: mouseY + "px",
-                        left: mouseX + "px"
-                    });
-                };
-
-                window.onmouseout = function (e) {
-                    TweenLite.to(cursor, 0.3, {
-                        opacity: 0
-                    });
-                    initCursor = false;
-                };
-            });
-
-        })(jQuery);
-    </script>
-
-    <script>
-        jQuery(document).ready(function ($) {
-
-            var text = ["Wróć do mnie ...", "... mam coś dla Ciebie!"];
-            var pageTitle = $("title").text();
-            var inicon = "img/favicon.png";
-            var sadicon = "img/favicon.png";
-            var counter = 0;
-            var stop = 0;
-            var intervaltime = 1000;
-
-            function change() {
-                if (stop == 1) {
-                    clearInterval(inst);
-                } else {
-                    $("title").text(text[counter]);
-                    counter++;
-                    if (counter >= text.length) {
-                        counter = 0;
-                    }
-                }
-            }
-
-            // Change page title on blur
-            $(window).blur(function () {
-                stop = 0;
-                var inst = setInterval(change, intervaltime);
-                $("#favicon").attr("href", sadicon);
-            });
-
-            // Change page title back on focus
-            $(window).focus(function () {
-                inst = null;
-                stop = 1;
-                $("#favicon").attr("href", inicon);
-                $("title").text(pageTitle);
-
-            });
-        });
-    </script>
+    <div itemscope itemtype="http://schema.org/Person" class="disabled_all">
+        <span itemprop="name"> CodebBuilder </span>
+        <span itemprop="company"> CodebBuilder</span>
+        <span itemprop="tel">(+48)737793708</span>
+        <a itemprop="email" href="mailto:kontakt@codebbuilder.app">kontakt@codebbuilder.app</a>
+        <a itemprop="whatsup" href="https://wa.me/+48737793708">737793708</a>
+    </div>
 
 </body>
 

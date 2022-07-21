@@ -156,4 +156,148 @@
 	});
 
 
+	const ProgressOnScroll = () => {
+		const d = document;
+		const win = window;
+		win.addEventListener('scroll', () => {
+			const scroll = d.getElementById("scrollBarTop"),
+				w = d.documentElement.scrollTop,
+				h = d.body.scrollHeight,
+				width = Math.ceil(w / (h - win.innerHeight) * 100);
+
+			scroll.style.width = `${width}%`;
+		});
+	};
+
+	ProgressOnScroll();
+
+
+	// ------------ swiper sliders -----------
+	$(document).ready(function () {
+
+		// ------------ works sliders -----------
+		var swiper = new Swiper('.screenshots-slider.style-4 .swiper-container', {
+			slidesPerView: 4,
+			spaceBetween: 0,
+			centeredSlides: true,
+			speed: 1000,
+			pagination: false,
+			navigation: false,
+			mousewheel: false,
+			keyboard: true,
+			autoplay: {
+				delay: 4000,
+			},
+			loop: true,
+			breakpoints: {
+				0: {
+					slidesPerView: 2,
+				},
+				480: {
+					slidesPerView: 2,
+				},
+				787: {
+					slidesPerView: 3,
+				},
+				991: {
+					slidesPerView: 3,
+				},
+				1200: {
+					slidesPerView: 4,
+				}
+			}
+		});
+
+	});
+
+
+	// CUSTOM CURSOR
+	document.addEventListener("DOMContentLoaded", function (event) {
+		var cursor = document.querySelector(".custom-cursor");
+		var links = document.querySelectorAll(
+			"a, .svg, .swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet, h1, h2, img"
+		);
+		var initCursor = false;
+
+		for (var i = 0; i < links.length; i++) {
+			var selfLink = links[i];
+
+			selfLink.addEventListener("mouseover", function () {
+				cursor.classList.add("custom-cursor--link");
+			});
+			selfLink.addEventListener("mouseout", function () {
+				cursor.classList.remove("custom-cursor--link");
+			});
+		}
+
+		window.onmousemove = function (e) {
+			var mouseX = e.clientX;
+			var mouseY = e.clientY;
+
+			if (!initCursor) {
+				// cursor.style.opacity = 1;
+				TweenLite.to(cursor, 0.3, {
+					opacity: 1
+				});
+				initCursor = true;
+			}
+
+			TweenLite.to(cursor, 0, {
+				top: mouseY + "px",
+				left: mouseX + "px"
+			});
+		};
+
+		window.onmouseout = function (e) {
+			TweenLite.to(cursor, 0.3, {
+				opacity: 0
+			});
+			initCursor = false;
+		};
+	});
+
+
+
+	// TITLE AND GREEN DOT 
+
+	jQuery(document).ready(function ($) {
+
+		var text = ["Wróć do mnie ...", "... mam coś dla Ciebie!"];
+		var pageTitle = $("title").text();
+		var inicon = "img/favicon.png";
+		var sadicon = "img/favicon.png";
+		var counter = 0;
+		var stop = 0;
+		var intervaltime = 1000;
+
+		function change() {
+			if (stop == 1) {
+				clearInterval(inst);
+			} else {
+				$("title").text(text[counter]);
+				counter++;
+				if (counter >= text.length) {
+					counter = 0;
+				}
+			}
+		}
+
+		// Change page title on blur
+		$(window).blur(function () {
+			stop = 0;
+			var inst = setInterval(change, intervaltime);
+			$("#favicon").attr("href", sadicon);
+		});
+
+		// Change page title back on focus
+		$(window).focus(function () {
+			inst = null;
+			stop = 1;
+			$("#favicon").attr("href", inicon);
+			$("title").text(pageTitle);
+
+		});
+	});
+
+
 })(jQuery);

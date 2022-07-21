@@ -40,7 +40,17 @@
             7. Ciekawostka (typu co zyskasz i inne)
         TODO:    5. Stopka (może z formularzem)
 
+        'Uzupełnić dane na stronie głównej:'
+            @ portfolio
+            @ logotypy klientow
+            @ rozbudować i naprawić menu
+            @ zerknąć na szerokość zdjęcia w header ('co wystaje')
+
         + odnośniki na portfolio, o mnie, kontakt, oferta 
+
+
+        :-----------------:
+
 
         Strona o mnie
             -- 'zawiera informacje o czynnościach i działaniach':
@@ -52,6 +62,10 @@
             5. Co dla kogo robimy (po krótce)
             6. Wywoływacz
             7. Członkowie zespołu
+
+
+        :-----------------:
+
 
         Strona oferta
             -- 'zawiera pełny opis oferty':
@@ -74,12 +88,21 @@
             10. 'Oferta graficzna':
                - realizacja zamówień na logotypy, banery, ulotki, wizytkówki, 
                plakaty, zdjęcia na stronę Internetową, zdjęcia inne (dowolny projekt)
-               
+
+
+        :-----------------:
+
+
+
         Strona portfolio
             -- 'podzielić na zakres współpracy':
             1. Logotyp klientów
             2. Zrzuty ekranu strony Internetowych
             3. Znane technologie
+
+
+        :-----------------:
+
 
         Strona single projekt
             -- 'szczegółowe omówienie projektu':
@@ -92,12 +115,21 @@
                kto był odpowiedzialny za kod, kto za grafikę, kto za tekst, kto za UX.
             6. Link do podglądu na żywo / lub informacja o dektywacji lub niedostępności w sieci.
 
+
+
+        :-----------------:
+
+
         Strona kontaktu:
             -- formularz kontaktowy:
 
             1. Informacje adresowe
             2. Formularz
             3. Fajny naganiacz
+
+
+        :-----------------:
+
 
         Sekcja rekrutacyjna:
             -- typowe CV podzielone na sekcje, z odzdzielnym Analystic, oraz śledzeniem IP (jeżeli to możliwe)
@@ -118,6 +150,10 @@
                -- rekomendacje i referencje
                -- udział w tym i w tym (szkolenia, np. spotkania, konferencje itp...)
 
+
+        :-----------------:
+
+
         Sekcja kariera:
             -- 'informacja o tym, że chętnie podejmiemy współpracę z każdym, kto tak jak my
             chce pogodzinach, bez większego ciśnienia, dorobić sobie do wynagrodzenia'.
@@ -127,10 +163,17 @@
             2. Nasze wymagania
             3. Informacja o zarobkach
 
+
+        :-----------------:
+
+
         Kalkulator brief
             - formularz kontaktowy, dzięki któremu będzie można 
             przesłać 'zapytanie z odpowiedzią na kluczowe informacje' 
             dot. projektu itp. 
+
+            - ankieta online, podzielona zgodnie z zapotrzebowaniem klienta
+
 
         Sekcja Landing Page:
             1. Landing page na kategorię oferty.
@@ -192,6 +235,10 @@
     <body class="content cardsContainer" id="cards-container" oncontextmenu="window.event.returnValue=false;">
     <script language="JavaScript"> document.onkeypress=function(n){if(123==(n=n||window.event).keyCode)return!1},document.onmousedown=function(n){if(123==(n=n||window.event).keyCode)return!1},document.onkeydown=function(n){if(123==(n=n||window.event).keyCode)return!1}; </script>'
 
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"72e45b2e7d746961","token":"0627f0b8b73941069bc19139e63db853","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+        
+
 
         • Projektowanie i rozwój bezpieczeństwa sieci (PKWiU 62.01.12.0) - 8,5%
         • Projektowanie i rozwój oprogramowania (62.01.11.0) - 12%
@@ -244,41 +291,6 @@
         Wszelkie aktualizacje sklepu czy nowe projekty to ten adres.
 
         W sezonie letnim gdy nie pada jeździ motocyklem, a gdy pada poleruje szprychy :)
-
-
-: ====================================================================================================================================== :
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#73efcc"/>
-    <title>Atheus | Modern Creative Agensy </title>
-    <meta name="author" content="Themezinho">
-    <meta name="description" content="Atheus | Modern Creative Agensy ">
-    <meta name="keywords" content="atheus, atheus, web, creative, works, showcase, portfolio, highlight, projects, modern, agency, digital, studio, css, animation, transition, freelancers">
-
-    <!-- SOCIAL MEDIA META -->
-    <meta property="og:description" content="Atheus | Modern Creative Agensy ">
-    <meta property="og:image" content="http://www.themezinho.net/atheus/preview.png">
-    <meta property="og:site_name" content="atheus">
-    <meta property="og:title" content="atheus">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.themezinho.net/atheus">
-
-    <!-- TWITTER META -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@atheus">
-    <meta name="twitter:creator" content="@atheus">
-    <meta name="twitter:title" content="atheus">
-    <meta name="twitter:description" content="Atheus | Modern Creative Agensy ">
-    <meta name="twitter:image" content="http://www.themezinho.net/atheus/preview.png">
-
-    <!-- FAVICON FILES -->
-    <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
-    <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
 
 
 : ====================================================================================================================================== :

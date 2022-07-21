@@ -1,0 +1,252 @@
+
+
+
+/* -----------------------------------------------------------------
+  2. General CSS + marshall own reset
+-------------------------------------------------------------------*/
+.clearfix::after,
+.clearfix::before,
+.marshall-container::before,
+.marshall-container::after,
+[class^="marshall-col-"]::before,
+[class^="marshall-col-"]::after,
+.marshall-content-column::after,
+.marshall-content-column::before,
+.marshall-social-column::before,
+.marshall-social-column::after,
+.marshall-the_content::after,
+.marshall-the_content::before,
+.marshall-gallery::before,
+.marshall-gallery::after,
+.stay_connent_with_social::before,
+.stay_connent_with_social::after,
+.divided_or::before,
+.divided_or::after,
+.marshall-newsletter-content::before,
+.marshall-newsletter-content::after,
+.marshall-static-content::before,
+.marshall-static-content::after,
+.simply-countdown-column::before,
+.simply-countdown-column::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.marshall-container,
+.marshall-social-column {
+  width: 100%;
+}
+body.mrs-v7 .bg-container {
+  background-image: url(images/v7/blue-beach.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.marshall-col-content {
+  position: relative;
+  z-index: 3;
+}
+.marshall-col-screen {
+  z-index: 4;
+  position: relative;
+}
+.marshall-col-1,
+.marshall-col-2,
+.marshall-col-3,
+.marshall-col-4,
+.marshall-col-5,
+.marshall-col-6,
+.marshall-col-7,
+.marshall-col-8,
+.marshall-col-9,
+.marshall-col-10,
+.marshall-col-11,
+.marshall-col-12 {
+  float: left;
+  min-height: 1;
+  height: 100vh;
+}
+.marshall-col-1,
+.marshall-col-1 {
+  width: 8.33333%;
+}
+.marshall-col-2,
+.marshall-col-2{
+  width: 16.6667%;
+}
+.marshall-col-3,
+.marshall-col-3{
+  width: 25%;
+}
+.marshall-col-4,
+.marshall-col-4{
+  width: 33.3333%;
+}
+.marshall-col-5,
+.marshall-col-5{
+  width: 41.6667%;
+}
+.marshall-col-6,
+.marshall-col-6{
+  width: 50%;
+}
+.marshall-col-7,
+.marshall-col-7{
+  width: 58.3333%;
+}
+.marshall-col-8,
+.marshall-col-8{
+  width: 66.6667%;
+}
+.marshall-col-9,
+.marshall-col-9{
+  width: 75%;
+}
+.marshall-col-10,
+.marshall-col-10{
+  width: 83.3333%;
+}
+.marshall-col-11,
+.marshall-col-11{
+  width: 91.6667%;
+}
+.marshall-col-12,
+.marshall-col-12{
+  width: 100%;
+}
+.marshall-position{
+  position: relative;
+}
+.special_title {
+  font-family: 'Ranga', cursive;
+}
+.marshall-btn {
+  background-color: #f61067;
+  border-radius: 0;
+  display: inline-block;
+  margin: 0 15px 0 0;
+  padding: 7px 30px 8px;
+  -webkit-transition: all 0.1s linear 0s;
+  transition: all 0.1s linear 0s;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  color: #FFF;
+  border: 1px solid #f61067;
+}
+.marshall-btn.marshall-btn-text {
+  background-color: transparent;
+  border-radius: 0;
+  display: inline-block;
+  margin: 0 15px 0 0;
+  padding: 7px 30px;
+  border-color: transparent;: 
+}
+.marshall-btn i {
+  margin-right: 5px;
+  -webkit-transition: all 0.4 ease 0s;
+  transition: all 0.4 ease 0s;
+}
+.marshall-btn:hover, 
+.marshall-btn:focus, 
+.marshall-btn:active {
+  background-color: transparent;
+  border-style: dashed;
+}
+.marshall-btn.marshall-btn-text:hover, 
+.marshall-btn.marshall-btn-text:focus, 
+.marshall-btn.marshall-btn-text:active {
+  color: #fff;
+}
+.marshall-btn.marshall-btn-text:hover i,
+.marshall-animate-open.marshall-btn i{
+  color: #f61067;
+}
+.marshall-hide {
+  display: none;
+}
+.bottom-separator {
+  border-bottom: 1px solid #e2e2e2;
+  margin: 60px auto;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.fat_title {
+  font-size: 2.7em;
+  font-weight: 800;
+}
+.content_overley {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.bg-content-rgba {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.marshall-col-10.marshall-middle-10.marshall-col-content {
+  margin-left: 8.3%;
+  text-align: center;
+}
+
+/* -----------------------------------------------------------------
+  *. Particles canvas
+-------------------------------------------------------------------*/
+.mrs_canvas {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+/* -----------------------------------------------------------------
+  *. v2
+-------------------------------------------------------------------*/
+.align-center {
+  text-align: center;
+}
+.align-center .marshall-logo {
+  margin-left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.inner-content {
+  display: block;
+  margin-left: 15%;
+  position: absolute;
+  top: 50%;
+  visibility: visible;
+  width: 73%;
+}
+.inner-content.css-center {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.mrs-v2 .marshall-animate-content::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.inner-content .big_title {
+  color: #fff;
+}
+.mrs-v2 .marshall-content {
+    margin-left: 0;
+    width: 100%;
+}
+
